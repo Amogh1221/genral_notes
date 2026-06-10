@@ -270,10 +270,10 @@ Developer writes YAML manifest
     Scheduler decides placement
          │
     ┌────┴──────────────────────────────────────────┐
-    │                 Worker Nodes                   │
+    │                 Worker Nodes                  │
     │                                               │
     │  ┌──────────────────┐  ┌───────────────────┐  │
-    │  │  Node 1           │  │  Node 2           │  │
+    │  │  Node 1          │  │  Node 2           │  │
     │  │  ┌─────────────┐ │  │  ┌─────────────┐  │  │
     │  │  │ Data        │ │  │  │ Model       │  │  │
     │  │  │ Ingestion   │ │  │  │ Serving x3  │  │  │
@@ -284,7 +284,7 @@ Developer writes YAML manifest
     │  │  │ Pod         │ │  │  │ Pod         │  │  │
     │  │  └─────────────┘ │  │  └─────────────┘  │  │
     │  └──────────────────┘  └───────────────────┘  │
-    └────────────────────────────────────────────────┘
+    └───────────────────────────────────────────────┘
                     │
              Service objects
              route traffic
