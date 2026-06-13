@@ -4470,47 +4470,378 @@ long long l = (long long)a / g * b;
 
 # 📋 C++ Cheat Sheet
 
+## Vector
+
 ```cpp
-// ── Containers ──────────────────────────────────────────────
-unordered_map<int,int> mp;
+vector<int> v;
+```
+
+| Operation                     | Description                | TC         |
+| ----------------------------- | -------------------------- | ---------- |
+| `v.push_back(x)`              | Add element at end         | O(1)*      |
+| `v.pop_back()`                | Remove last element        | O(1)       |
+| `v.front()`                   | First element              | O(1)       |
+| `v.back()`                    | Last element               | O(1)       |
+| `v.size()`                    | Number of elements         | O(1)       |
+| `v.empty()`                   | Check if empty             | O(1)       |
+| `sort(v.begin(), v.end())`    | Sort ascending             | O(n log n) |
+| `sort(v.rbegin(), v.rend())`  | Sort descending            | O(n log n) |
+| `reverse(v.begin(), v.end())` | Reverse vector             | O(n)       |
+| `lower_bound(...)`            | First element ≥ x          | O(log n)   |
+| `upper_bound(...)`            | First element > x          | O(log n)   |
+| `binary_search(...)`          | Check if x exists (sorted) | O(log n)   |
+| `accumulate(...)`             | Sum elements               | O(n)       |
+| `count(...)`                  | Count occurrences          | O(n)       |
+| `find(...)`                   | Find value                 | O(n)       |
+
+---
+
+## String
+
+```cpp
+string s;
+```
+
+| Operation         | Description           |
+| ----------------- | --------------------- |
+| `s.size()`        | Length of string      |
+| `s.push_back(c)`  | Add character         |
+| `s.pop_back()`    | Remove last character |
+| `s.substr(i,len)` | Extract substring     |
+| `s.find("abc")`   | Position of substring |
+| `reverse(...)`    | Reverse string        |
+| `sort(...)`       | Sort characters       |
+| `stoi(s)`         | String → int          |
+| `stoll(s)`        | String → long long    |
+| `to_string(x)`    | Number → string       |
+
+---
+
+## Pair
+
+```cpp
+pair<int,int> p = {1,2};
+```
+
+| Operation        | Description  |
+| ---------------- | ------------ |
+| `p.first`        | First value  |
+| `p.second`       | Second value |
+| `make_pair(a,b)` | Create pair  |
+
+---
+
+## Set (Sorted Unique)
+
+```cpp
+set<int> st;
+```
+
+| Operation           | Description     | TC       |
+| ------------------- | --------------- | -------- |
+| `st.insert(x)`      | Insert value    | O(log n) |
+| `st.erase(x)`       | Remove value    | O(log n) |
+| `st.count(x)`       | Check existence | O(log n) |
+| `st.find(x)`        | Iterator to x   | O(log n) |
+| `st.lower_bound(x)` | First ≥ x       | O(log n) |
+| `st.upper_bound(x)` | First > x       | O(log n) |
+
+---
+
+## Unordered Set
+
+```cpp
 unordered_set<int> st;
-priority_queue<int> maxHeap;                               // max-heap (default)
-priority_queue<int, vector<int>, greater<int>> minHeap;    // min-heap
+```
+
+Average O(1) insert/search/delete.
+
+---
+
+## Map (Sorted Key-Value)
+
+```cpp
+map<int,int> mp;
+```
+
+| Operation             | Description           |
+| --------------------- | --------------------- |
+| `mp[key]++`           | Frequency counting    |
+| `mp[key]`             | Access value          |
+| `mp.count(key)`       | Key exists?           |
+| `mp.erase(key)`       | Remove key            |
+| `mp.lower_bound(key)` | First key ≥ given key |
+
+---
+
+## Unordered Map
+
+```cpp
+unordered_map<int,int> mp;
+```
+
+Average O(1) insert/search/delete.
+
+Most used for frequency counting.
+
+---
+
+## Multiset
+
+```cpp
+multiset<int> ms;
+```
+
+Stores duplicates.
+
+```cpp
+ms.insert(x);
+ms.erase(ms.find(x)); // erase one occurrence
+```
+
+Useful for sliding window and median problems.
+
+---
+
+## Stack (LIFO)
+
+```cpp
+stack<int> st;
+```
+
+| Operation | Description |
+| --------- | ----------- |
+| `push(x)` | Insert      |
+| `pop()`   | Remove top  |
+| `top()`   | Access top  |
+| `empty()` | Check empty |
+
+---
+
+## Queue (FIFO)
+
+```cpp
+queue<int> q;
+```
+
+| Operation | Description    |
+| --------- | -------------- |
+| `push(x)` | Insert at back |
+| `pop()`   | Remove front   |
+| `front()` | Access front   |
+| `back()`  | Access back    |
+
+Used heavily in BFS.
+
+---
+
+## Deque
+
+```cpp
 deque<int> dq;
-stack<int> sk;
+```
+
+Insert/remove from both ends.
+
+```cpp
+dq.push_front(x);
+dq.push_back(x);
+
+dq.pop_front();
+dq.pop_back();
+```
+
+---
+
+## Priority Queue
+
+### Max Heap
+
+```cpp
+priority_queue<int> pq;
+```
+
+Largest element always on top.
+
+### Min Heap
+
+```cpp
+priority_queue<
+    int,
+    vector<int>,
+    greater<int>
+> pq;
+```
+
+Smallest element always on top.
+
+Operations:
+
+```cpp
+pq.push(x);
+pq.pop();
+pq.top();
+```
+
+All O(log n).
+
+---
+
+## Math
+
+| Function     | Description             |
+| ------------ | ----------------------- |
+| `__gcd(a,b)` | Greatest Common Divisor |
+| `lcm(a,b)`   | Least Common Multiple   |
+| `abs(x)`     | Absolute value          |
+| `sqrt(x)`    | Square root             |
+| `pow(a,b)`   | a^b                     |
+| `ceil(x)`    | Round up                |
+| `floor(x)`   | Round down              |
+
+---
+
+## Useful Constants
+
+```cpp
+INT_MAX
+INT_MIN
+
+LLONG_MAX
+LLONG_MIN
+
+const int MOD = 1e9+7;
+```
+
+---
+
+## Bit Manipulation
+
+| Expression                | Meaning                     |             |
+| ------------------------- | --------------------------- | ----------- |
+| `n & 1`                   | Check odd                   |             |
+| `(n>>k)&1`                | Check kth bit               |             |
+| `n                        | (1<<k)`                     | Set kth bit |
+| `n & ~(1<<k)`             | Clear kth bit               |             |
+| `n ^ (1<<k)`              | Toggle kth bit              |             |
+| `n & (n-1)`               | Remove lowest set bit       |             |
+| `__builtin_popcount(n)`   | Count set bits              |             |
+| `__builtin_popcountll(n)` | Count set bits in long long |             |
+| `__builtin_ctz(n)`        | Trailing zeros              |             |
+| `__builtin_clz(n)`        | Leading zeros               |             |
+
+---
+
+## Algorithms
+
+### Next Permutation
+
+```cpp
+next_permutation(v.begin(), v.end());
+```
+
+Transforms into next lexicographical permutation.
+
+Example:
+
+```
+123 -> 132
+132 -> 213
+```
+
+---
+
+### Unique Elements
+
+```cpp
+sort(v.begin(), v.end());
+
+v.erase(
+    unique(v.begin(), v.end()),
+    v.end()
+);
+```
+
+Removes duplicates from sorted vector.
+
+---
+
+### Min / Max
+
+```cpp
+*min_element(v.begin(), v.end());
+
+*max_element(v.begin(), v.end());
+```
+
+Find minimum/maximum.
+
+---
+
+## Common Interview Patterns
+
+### Frequency Count
+
+```cpp
+unordered_map<int,int> freq;
+
+for(auto x : nums)
+    freq[x]++;
+```
+
+---
+
+### Prefix Sum
+
+```cpp
+pref[0]=0;
+
+for(int i=0;i<n;i++)
+    pref[i+1]=pref[i]+a[i];
+```
+
+Range sum:
+
+```cpp
+sum(l,r)=pref[r+1]-pref[l];
+```
+
+---
+
+### BFS
+
+```cpp
 queue<int> q;
 
-// ── String operations ────────────────────────────────────────
-sort(s.begin(), s.end());
-reverse(s.begin(), s.end());
-s.substr(start, length);
-stoi(s), stoll(s), to_string(n);
+q.push(src);
 
-// ── Vector ───────────────────────────────────────────────────
-sort(v.begin(), v.end());
-sort(v.begin(), v.end(), greater<int>());                  // descending
-auto it = lower_bound(v.begin(), v.end(), x);             // first >= x
-auto it = upper_bound(v.begin(), v.end(), x);             // first > x
-*max_element(v.begin(), v.end());
-accumulate(v.begin(), v.end(), 0);                        // sum
+while(!q.empty()){
+    int node=q.front();
+    q.pop();
+}
+```
 
-// ── Useful functions ─────────────────────────────────────────
-__gcd(a, b);                    // GCD
-abs(x);
-INT_MAX, INT_MIN, LONG_MAX, LONG_MIN;
+Used for shortest path in unweighted graphs.
 
-// ── Lambda comparator ────────────────────────────────────────
-sort(v.begin(), v.end(), [](auto& a, auto& b) {
-    return a.second < b.second;
-});
+---
 
-// ── Bit tricks ───────────────────────────────────────────────
-n & 1            // check if odd
-n & (n-1)        // clear lowest set bit (Kernighan's)
-n | (1 << k)     // set bit k
-n & ~(1 << k)    // clear bit k
-n ^ (1 << k)     // toggle bit k
-__builtin_popcount(n)   // count set bits
+### DFS
+
+```cpp
+void dfs(int node){
+
+    vis[node]=1;
+
+    for(auto nxt:adj[node]){
+
+        if(!vis[nxt])
+            dfs(nxt);
+    }
+}
+```
+
+Used for traversal, components, cycles, trees.
+
 ```
 
 ---
