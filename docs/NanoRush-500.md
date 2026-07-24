@@ -92,47 +92,47 @@ To build the Mixture of LoRAs, we will train specific Low-Rank Adaptation (LoRA)
 
 ### 4.2 The Industry-Grade Datasets (20 Adapters)
 *(Note: Because the base model is 28 layers deep, adapter parameter sizes scale linearly with depth.)*
-| Domain                                | Adapter Dataset                                                                                                        | Rank (`r`) | Target    | Params |
-| :--------------------------------------| :-----------------------------------------------------------------------------------------------------------------------| :-----------| :----------| :-------|
-| **1. Code (Syntax & Algorithms)**     | [Evol-Instruct](https://huggingface.co/datasets/nickrosh/Evol-Instruct-Code-80k-v1)                                    | 64         | Attn+MLP  | 19.27M |
-|                                       | [Magicoder](https://huggingface.co/datasets/ise-uiuc/Magicoder-OSS-Instruct-75K)                                       | 64         | Attn+MLP  | 19.27M |
-|                                       | [CodeAlpaca](https://huggingface.co/datasets/sahil2801/CodeAlpaca-20k)                                                 | 32         | Attn+MLP  | 9.63M  |
-| **2. Math (Chain of Thought)**        | [MetaMathQA](https://huggingface.co/datasets/meta-math/MetaMathQA)                                                     | 64         | Attn+MLP  | 19.27M |
-|                                       | [OpenOrca](https://huggingface.co/datasets/Open-Orca/OpenOrca)                                                         | 32         | Attn+MLP  | 9.63M  |
-| **3. Medical (Clinical & Facts)**     | [MedAlpaca](https://huggingface.co/datasets/medalpaca/medical_meadow_medical_flashcards)                               | 64         | Attn+MLP  | 19.27M |
-|                                       | [ChatDoctor](https://huggingface.co/datasets/Luoapp/ChatDoctor)                                                        | 32         | Attn+MLP  | 9.63M  |
-| **4. Finance (Business Logic)**       | [Finance-Alpaca](https://huggingface.co/datasets/gbharti/finance-alpaca)                                               | 32         | Attn+MLP  | 9.63M  |
-| **5. General (Conversational)**       | [OpenHermes 2.5](https://huggingface.co/datasets/teknium/OpenHermes-2.5)                                               | 32         | Attn-only | 2.75M  |
-|                                       | [Capybara](https://huggingface.co/datasets/LDJnr/Capybara)                                                             | 32         | Attn-only | 2.75M  |
-| **6. Legal (Structured Jargon)**      | [Joelito Legal Instruction](https://huggingface.co/datasets/joelito/legal-instruction-tuning)                          | 32         | Attn+MLP  | 9.63M  |
-| **7. STEM (Physics/Chemistry)**       | [Camel-AI Physics & Chemistry](https://huggingface.co/datasets/camel-ai/physics)                                       | 64         | Attn+MLP  | 19.27M |
-| **8. Creative (Roleplay/Fiction)**    | [Airoboros](https://huggingface.co/datasets/jondurbin/airoboros-2.2)                                                   | 16         | Attn-only | 1.38M  |
-| **9. Cybersecurity (Hacking/SecOps)** | [Cybersecurity Alpaca](https://huggingface.co/datasets/tatsu-lab/alpaca)                                               | 64         | Attn+MLP  | 19.27M |
-| **10. Multilingual (Translation)**    | [Cohere Aya](https://huggingface.co/datasets/CohereForAI/aya_dataset)                                                  | 32         | Attn+MLP  | 9.63M  |
-| **11. Psychology (Mental Health)**    | [Psychology-10k](https://huggingface.co/datasets/samhog/psychology-10k)                                                | 16         | Attn-only | 1.38M  |
-| **12. Data Science (SQL)**            | [SQL-Create-Context](https://huggingface.co/datasets/b-mc2/sql-create-context)                                         | 64         | Attn+MLP  | 19.27M |
-| **13. History (Factual Recall)**      | [Wikipedia QA](https://huggingface.co/datasets/Tevatron/wikipedia-qa)                                                  | 32         | Attn+MLP  | 9.63M  |
-| **14. Ethics (Safety/Alignment)**     | [Anthropic HH-RLHF](https://huggingface.co/datasets/Anthropic/hh-rlhf)                                                 | 32         | Attn-only | 2.75M  |
-| **15. Customer Support (Tone)**       | [Bitext Customer Support](https://huggingface.co/datasets/bitext/Bitext-customer-support-llm-chatbot-training-dataset) | 16         | Attn-only | 1.38M  |
+| Domain                                | Adapter Dataset                                                                                                                                   | Rank (`r`) | Target    | Params |
+| :--------------------------------------| :--------------------------------------------------------------------------------------------------------------------------------------------------| :-----------| :----------| :-------|
+| **1. Code (Syntax & Algorithms)**     | <a href="https://huggingface.co/datasets/nickrosh/Evol-Instruct-Code-80k-v1" target="_blank">Evol-Instruct</a>                                    | 64         | Attn+MLP  | 19.27M |
+|                                       | <a href="https://huggingface.co/datasets/ise-uiuc/Magicoder-OSS-Instruct-75K" target="_blank">Magicoder</a>                                       | 64         | Attn+MLP  | 19.27M |
+|                                       | <a href="https://huggingface.co/datasets/sahil2801/CodeAlpaca-20k" target="_blank">CodeAlpaca</a>                                                 | 32         | Attn+MLP  | 9.63M  |
+| **2. Math (Chain of Thought)**        | <a href="https://huggingface.co/datasets/meta-math/MetaMathQA" target="_blank">MetaMathQA</a>                                                     | 64         | Attn+MLP  | 19.27M |
+|                                       | <a href="https://huggingface.co/datasets/Open-Orca/OpenOrca" target="_blank">OpenOrca</a>                                                         | 32         | Attn+MLP  | 9.63M  |
+| **3. Medical (Clinical & Facts)**     | <a href="https://huggingface.co/datasets/medalpaca/medical_meadow_medical_flashcards" target="_blank">MedAlpaca</a>                               | 64         | Attn+MLP  | 19.27M |
+|                                       | <a href="https://huggingface.co/datasets/Luoapp/ChatDoctor" target="_blank">ChatDoctor</a>                                                        | 32         | Attn+MLP  | 9.63M  |
+| **4. Finance (Business Logic)**       | <a href="https://huggingface.co/datasets/gbharti/finance-alpaca" target="_blank">Finance-Alpaca</a>                                               | 32         | Attn+MLP  | 9.63M  |
+| **5. General (Conversational)**       | <a href="https://huggingface.co/datasets/teknium/OpenHermes-2.5" target="_blank">OpenHermes 2.5</a>                                               | 32         | Attn-only | 2.75M  |
+|                                       | <a href="https://huggingface.co/datasets/LDJnr/Capybara" target="_blank">Capybara</a>                                                             | 32         | Attn-only | 2.75M  |
+| **6. Legal (Structured Jargon)**      | <a href="https://huggingface.co/datasets/joelito/legal-instruction-tuning" target="_blank">Joelito Legal Instruction</a>                          | 32         | Attn+MLP  | 9.63M  |
+| **7. STEM (Physics/Chemistry)**       | <a href="https://huggingface.co/datasets/camel-ai/physics" target="_blank">Camel-AI Physics & Chemistry</a>                                       | 64         | Attn+MLP  | 19.27M |
+| **8. Creative (Roleplay/Fiction)**    | <a href="https://huggingface.co/datasets/jondurbin/airoboros-2.2" target="_blank">Airoboros</a>                                                   | 16         | Attn-only | 1.38M  |
+| **9. Cybersecurity (Hacking/SecOps)** | <a href="https://huggingface.co/datasets/tatsu-lab/alpaca" target="_blank">Cybersecurity Alpaca</a>                                               | 64         | Attn+MLP  | 19.27M |
+| **10. Multilingual (Translation)**    | <a href="https://huggingface.co/datasets/CohereForAI/aya_dataset" target="_blank">Cohere Aya</a>                                                  | 32         | Attn+MLP  | 9.63M  |
+| **11. Psychology (Mental Health)**    | <a href="https://huggingface.co/datasets/samhog/psychology-10k" target="_blank">Psychology-10k</a>                                                | 16         | Attn-only | 1.38M  |
+| **12. Data Science (SQL)**            | <a href="https://huggingface.co/datasets/b-mc2/sql-create-context" target="_blank">SQL-Create-Context</a>                                         | 64         | Attn+MLP  | 19.27M |
+| **13. History (Factual Recall)**      | <a href="https://huggingface.co/datasets/Tevatron/wikipedia-qa" target="_blank">Wikipedia QA</a>                                                  | 32         | Attn+MLP  | 9.63M  |
+| **14. Ethics (Safety/Alignment)**     | <a href="https://huggingface.co/datasets/Anthropic/hh-rlhf" target="_blank">Anthropic HH-RLHF</a>                                                 | 32         | Attn-only | 2.75M  |
+| **15. Customer Support (Tone)**       | <a href="https://huggingface.co/datasets/bitext/Bitext-customer-support-llm-chatbot-training-dataset" target="_blank">Bitext Customer Support</a> | 16         | Attn-only | 1.38M  |
 
 ### 4.3 Master Hyperparameter Table
-| Component | Hyperparameter | Value | Description |
-| :--- | :--- | :--- | :--- |
-| **Base Model** | Layers / Hidden / Heads | 28 / 768 / 12 | Deep, narrow GPT-2 architecture |
-| | Vocab Size / Context | 32,000 / 2048 | Custom tokenizer |
-| **BERT Router** | Layers / Hidden / Heads | 14 / 512 / 8 | Deeper classification engine |
-| | Output Labels / Classes | 20 | "Double Duty" tracking every adapter |
-| **LoRA Adapters**| Code, Math, STEM, Medical | `r=64`, Attn+MLP | Massive capacity for hard factual recall |
-| | Legal, Finance, History, SQL | `r=32`, Attn+MLP | Strong capacity for structured facts |
-| | General Chat, Align, Creative | `r=32` & `r=16`, Attn-only | Lightweight structural/tonal formatting |
-| **Inference Config**| `router_top_k` | 2 | Max domains selected per prompt |
-| *(MoE Routing)* | `router_threshold` | 0.15 | Minimum confidence to trigger adapter |
-| | `fallback_domain` | "General Chat" | Used if all scores fall below threshold |
-| | `lora_alpha_multiplier` | 1.0 | Scales the strength of adapter activations |
-| **Generation Config**| `temperature` | 0.8 | Controls randomness of generated text |
-| *(General LLM)*| `top_p` (Nucleus) | 0.95 | Filters out long tail of low probability tokens |
-| | `top_k` | 50 | Restricts sampling to K most likely tokens |
-| | `repetition_penalty` | 1.1 | Penalizes the model for repeating recent tokens |
+| Component             | Hyperparameter                | Value                      | Description                                     |
+| :----------------------| :------------------------------| :---------------------------| :------------------------------------------------|
+| **Base Model**        | Layers / Hidden / Heads       | 28 / 768 / 12              | Deep, narrow GPT-2 architecture                 |
+|                       | Vocab Size / Context          | 32,000 / 2048              | Custom tokenizer                                |
+| **BERT Router**       | Layers / Hidden / Heads       | 14 / 512 / 8               | Deeper classification engine                    |
+|                       | Output Labels / Classes       | 20                         | "Double Duty" tracking every adapter            |
+| **LoRA Adapters**     | Code, Math, STEM, Medical     | `r=64`, Attn+MLP           | Massive capacity for hard factual recall        |
+|                       | Legal, Finance, History, SQL  | `r=32`, Attn+MLP           | Strong capacity for structured facts            |
+|                       | General Chat, Align, Creative | `r=32` & `r=16`, Attn-only | Lightweight structural/tonal formatting         |
+| **Inference Config**  | `router_top_k`                | 2                          | Max domains selected per prompt                 |
+| *(MoE Routing)*       | `router_threshold`            | 0.15                       | Minimum confidence to trigger adapter           |
+|                       | `fallback_domain`             | "General Chat"             | Used if all scores fall below threshold         |
+|                       | `lora_alpha_multiplier`       | 1.0                        | Scales the strength of adapter activations      |
+| **Generation Config** | `temperature`                 | 0.8                        | Controls randomness of generated text           |
+| *(General LLM)*       | `top_p` (Nucleus)             | 0.95                       | Filters out long tail of low probability tokens |
+|                       | `top_k`                       | 50                         | Restricts sampling to K most likely tokens      |
+|                       | `repetition_penalty`          | 1.1                        | Penalizes the model for repeating recent tokens |
 
 > **CRITICAL: Benchmark Decontamination**
 > Before Phase 3 training, an n-gram decontamination script must be run against all evaluation sets (BLiMP, HellaSwag, GSM8K) to ensure test data did not leak into the adapter training data.
