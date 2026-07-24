@@ -1,4 +1,4 @@
-# 🧠 nanoRush-500: Macro Mixture of Experts (MoE) Architecture & Master Plan
+# 🧠 NanoRush-500: Macro Mixture of Experts (MoE) Architecture & Master Plan
 
 This document outlines the complete end-to-end architecture, hyperparameter specifications, training pipeline, and evaluation strategy for the nanoRush-500 project. The system is designed to achieve state-of-the-art multi-domain performance while remaining small enough to run inference entirely on a single consumer GPU (12GB VRAM).
 
@@ -14,10 +14,10 @@ The system utilizes a **Macro Mixture of Experts (MoE)** architecture via dynami
 **Final System Specification:**
 | Component | Spec | Params |
 | :--- | :--- | :--- |
-| **Base model** | 28-layer GPT-2 class, 768 hidden, 12 heads, 2048 ctx, 32k vocab | 224.0M |
+| **Base model** | 28-layer GPT-2 class, 768 hidden, 12 heads, 2048 ctx, 32k vocab | 224.37M |
 | **BERT Router** | 14-layer, 512 hidden, 8 heads, 32k vocab (shared tokenizer) | 61.48M |
 | **20 LoRA adapters** | Mixed r=16/32/64, Attn-only or Attn+MLP by domain | 214.69M |
-| **Total** | | **≈500.2M ("0.5B")** |
+| **Total** | | **≈500.54M ("0.5B")** |
 
 **Active Inference Footprint:** ~225M to 262.5M parameters (Varies dynamically based on whether the Router selects lightweight Attention-only or heavyweight Attn+MLP adapters).
 
@@ -25,7 +25,7 @@ The system utilizes a **Macro Mixture of Experts (MoE)** architecture via dynami
 ```mermaid
 graph TD
     Prompt[User Prompt] --> Router(BERT Router<br>61.48M Params)
-    Prompt --> Base(Base GPT-2 Model<br>224.0M Params)
+    Prompt --> Base(Base GPT-2 Model<br>224.37M Params)
     
     Router -->|20-way Softmax| Selector{Top-2 Domain<br>Selector}
     
@@ -50,7 +50,7 @@ graph TD
 *   **Embedding Dimension (`n_embd`):** 768
 *   **Context Window (`block_size`):** 2048 tokens
 *   **Vocabulary Size:** 32,000 (Custom Trained Tokenizer)
-*   **Parameters:** ~224M
+*   **Parameters:** ~224.37M
 *   **Optimizations:** Flash Attention via `scaled_dot_product_attention`, learned absolute positional encoding, weight tying between token embedding and `lm_head`.
 
 ### 2.2 Pretraining Dataset (`build_dataset.py`)
