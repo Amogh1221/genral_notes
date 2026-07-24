@@ -1,4 +1,4 @@
-# 🧠 nanoRush-500: Macro Mixture of Experts (MoE) Architecture & Master Plan
+# 🧠 NanoRush-500: Macro Mixture of Experts (MoE) Architecture & Master Plan
 
 This document outlines the complete end-to-end architecture, hyperparameter specifications, training pipeline, and evaluation strategy for the nanoRush-500 project. The system is designed to achieve state-of-the-art multi-domain performance while remaining small enough to run inference entirely on a single consumer GPU (12GB VRAM).
 
