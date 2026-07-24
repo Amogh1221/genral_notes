@@ -126,9 +126,13 @@ To build the Mixture of LoRAs, we will train specific Low-Rank Adaptation (LoRA)
 | | Legal, Finance, History, SQL | `r=32`, Attn+MLP | Strong capacity for structured facts |
 | | General Chat, Align, Creative | `r=32` & `r=16`, Attn-only | Lightweight structural/tonal formatting |
 | **Inference Config**| `router_top_k` | 2 | Max domains selected per prompt |
-| *(User Tunable)*| `router_threshold` | 0.15 | Minimum confidence to trigger adapter |
+| *(MoE Routing)* | `router_threshold` | 0.15 | Minimum confidence to trigger adapter |
 | | `fallback_domain` | "General Chat" | Used if all scores fall below threshold |
 | | `lora_alpha_multiplier` | 1.0 | Scales the strength of adapter activations |
+| **Generation Config**| `temperature` | 0.8 | Controls randomness of generated text |
+| *(General LLM)*| `top_p` (Nucleus) | 0.95 | Filters out long tail of low probability tokens |
+| | `top_k` | 50 | Restricts sampling to K most likely tokens |
+| | `repetition_penalty` | 1.1 | Penalizes the model for repeating recent tokens |
 
 > **CRITICAL: Benchmark Decontamination**
 > Before Phase 3 training, an n-gram decontamination script must be run against all evaluation sets (BLiMP, HellaSwag, GSM8K) to ensure test data did not leak into the adapter training data.
