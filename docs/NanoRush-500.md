@@ -38,12 +38,6 @@ graph TD
     LoRA2 --> Add
     
     Add --> Output[Final Output Token]
-    
-    style Router fill:#f9f,stroke:#333,stroke-width:2px
-    style Base fill:#bbf,stroke:#333,stroke-width:2px
-    style LoRA1 fill:#bfb,stroke:#333,stroke-width:2px
-    style LoRA2 fill:#bfb,stroke:#333,stroke-width:2px
-    style Add fill:#fdb,stroke:#333,stroke-width:2px
 ```
 
 ---
