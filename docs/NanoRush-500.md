@@ -1,4 +1,4 @@
-# 🧠 NanoRush-500: Macro Mixture of Experts (MoE) Architecture & Master Plan
+# 🧠 nanoRush-500: Macro Mixture of Experts (MoE) Architecture & Master Plan
 
 This document outlines the complete end-to-end architecture, hyperparameter specifications, training pipeline, and evaluation strategy for the nanoRush-500 project. The system is designed to achieve state-of-the-art multi-domain performance while remaining small enough to run inference entirely on a single consumer GPU (12GB VRAM).
 
@@ -71,7 +71,7 @@ To ensure a robust, multi-domain foundational vocabulary, the dataset streams fr
 ## 3. Phase 2: Instruction Fine-Tuning (SFT)
 
 Before attaching domain experts, the raw Base Model must learn to chat.
-*   **Dataset:** `alpaca_data_cleaned.json` (~52,000 instruction-response pairs).
+*   **Dataset:** A blended SFT corpus combining `alpaca_data_cleaned.json` (~52,000 pairs) with subsets from the General Chat, Ethics, and Customer Support datasets. This ensures the base model has well-rounded communication skills, safety, and helpfulness before specialized domain adapters are attached. *(Note: We intentionally allow full overlap between these SFT subsets and the Phase 3 LoRA datasets. SFT establishes a broad baseline of conversational competence, while the dedicated LoRA adapters later reinforce and specialize that exact same data into deeper mastery).*
 *   **Training Duration:** Exactly **3 epochs**.
 *   **Result:** The Base Model becomes the "Chat Model".
 *   **Post-SFT Forgetting Check:** To verify the base model hasn't catastrophically forgotten its world knowledge during instruction tuning, the original Phase 1 per-domain perplexity evaluation will be re-run on the Chat Model to confirm performance has not degraded significantly.
@@ -84,7 +84,7 @@ To build the Mixture of LoRAs, we will train specific Low-Rank Adaptation (LoRA)
 
 ### 4.1 Adapter Configuration
 *   **Target Layers (Dynamic Selection):** 
-    *   *Factual & Reasoning Domains* (Medical, Legal, STEM, History, Math, Cybersecurity, SQL, Code, Finance, Multilingual) will target both Attention + MLP (`q_proj`, `v_proj`, `c_fc`, `c_proj`). This applies established findings (e.g., Geva et al. 2021) that Transformer FFNs behave as key-value memories for factual associations, which literature shows is particularly critical for preventing degradation on reasoning benchmarks like GSM8K and semantic logic queries.
+    *   *Factual & Reasoning Domains* (Medical, Legal, STEM, History, Math, Cybersecurity, SQL, Code, Finance, Logic) will target both Attention + MLP (`q_proj`, `v_proj`, `c_fc`, `c_proj`). This applies established findings (e.g., Geva et al. 2021) that Transformer FFNs behave as key-value memories for factual associations, which literature shows is particularly critical for preventing degradation on reasoning benchmarks like GSM8K and semantic logic queries.
     *   *Structural/Tonal Domains* (Chat, Creative, Psychology, Support, Ethics) will target Attention-only (`q_proj`, `v_proj`) to control logic and syntax formatting without risking catastrophic interference of the base model's world knowledge.
 *   **Ranks (r):** Variable based on domain complexity (r=64 for complex logic/facts, r=32 for standard structure, r=16 for conversational tone).
 *   **Epochs:** Scaled proportionally to adapter complexity to prevent overfitting (5 epochs for r=64, 4 epochs for r=32, and strictly 3 epochs for r=16).
@@ -107,8 +107,8 @@ To build the Mixture of LoRAs, we will train specific Low-Rank Adaptation (LoRA)
 | **6. Legal (Structured Jargon)**      | <a href="https://huggingface.co/datasets/joelito/legal-instruction-tuning" target="_blank">Joelito Legal Instruction</a>                          | 32         | Attn+MLP  | 9.63M  |
 | **7. STEM (Physics/Chemistry)**       | <a href="https://huggingface.co/datasets/camel-ai/physics" target="_blank">Camel-AI Physics & Chemistry</a>                                       | 64         | Attn+MLP  | 19.27M |
 | **8. Creative (Roleplay/Fiction)**    | <a href="https://huggingface.co/datasets/jondurbin/airoboros-2.2" target="_blank">Airoboros</a>                                                   | 16         | Attn-only | 1.38M  |
-| **9. Cybersecurity (Hacking/SecOps)** | <a href="https://huggingface.co/datasets/tatsu-lab/alpaca" target="_blank">Cybersecurity Alpaca</a>                                               | 64         | Attn+MLP  | 19.27M |
-| **10. Multilingual (Translation)**    | <a href="https://huggingface.co/datasets/CohereForAI/aya_dataset" target="_blank">Cohere Aya</a>                                                  | 32         | Attn+MLP  | 9.63M  |
+| **9. Cybersecurity (Hacking/SecOps)** | <a href="https://huggingface.co/datasets/Mohabahmed03/Alpaca_Dataset_General_CyberSecurity" target="_blank">Cybersecurity Alpaca</a>              | 64         | Attn+MLP  | 19.27M |
+| **10. Logic & Reasoning (Puzzles)**   | <a href="https://huggingface.co/datasets/lucasmccabe/logiqa" target="_blank">LogiQA</a>                                                           | 32         | Attn+MLP  | 9.63M  |
 | **11. Psychology (Mental Health)**    | <a href="https://huggingface.co/datasets/samhog/psychology-10k" target="_blank">Psychology-10k</a>                                                | 16         | Attn-only | 1.38M  |
 | **12. Data Science (SQL)**            | <a href="https://huggingface.co/datasets/b-mc2/sql-create-context" target="_blank">SQL-Create-Context</a>                                         | 64         | Attn+MLP  | 19.27M |
 | **13. History (Factual Recall)**      | <a href="https://huggingface.co/datasets/Tevatron/wikipedia-qa" target="_blank">Wikipedia QA</a>                                                  | 32         | Attn+MLP  | 9.63M  |
