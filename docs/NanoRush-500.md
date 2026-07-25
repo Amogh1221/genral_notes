@@ -144,7 +144,7 @@ To build the Mixture of LoRAs, we will train specific Low-Rank Adaptation (LoRA)
 An encoder-only model (14 layers, 8 heads, 512 hidden size, 32,000 custom vocab size) designed to classify user prompts. Crucially, the router performs a **"Double Duty" 20-way classification**, treating every single adapter (e.g., Evol-Instruct vs. Magicoder) as an independent label. This gives us the fine-grained signal needed for "True MoE" blending, without sacrificing the safety of Domain-level routing.
 *   **Proxy Capacity Test:** Before full pretraining, a randomly initialized 61.48M model will be quickly fine-tuned on the routing dataset as a cheap sanity check to verify sufficient classification capacity.
 *   **Pretraining:** Uses the exact same `corpus.txt` built in Phase 1, but bounded to Chinchilla scaling laws for ~61M parameters, preserving the base model's compute budget.
-*   **Fine-Tuning:** Downsampled stratified training (~16,000 rows extracted from *each* of the 20 adapter datasets). An explicit 80/10/10 Train/Val/Test split will be maintained (decontaminated against downstream evals) to ensure the reported Router Accuracy is completely honest and unbiased.
+*   **Fine-Tuning (Synthetic Multi-Turn Augmentation):** The dataset is downsampled to **~8,000 rows per adapter** (160k total) to ensure rapid convergence on a single RTX 3060. To train BERT for the "5 concatenated prompts" inference logic, the training data is augmented: ~20% isolated prompts, ~40% same-domain concatenated histories, and ~40% cross-domain histories (labeled as the domain of the *final* prompt to teach Recency Bias). An explicit 80/10/10 Train/Val/Test split will be maintained.
 
 ---
 
@@ -171,15 +171,15 @@ This section documents the hard limitations baked into the neural network archit
 
 ### 7.1 The Multi-Turn Context Drift Problem
 *   **The Model Limitation:** The BERT Router is entirely stateless. If it only sees a user's newest sentence (e.g., "improve the logic"), it has no conversational memory and will drop the correct adapter, routing randomly.
-*   **The Application Solution (Context Concatenation):** The Python inference script intercepts the dialogue state. It actively extracts and concatenates the last 5 *User Prompts* (ignoring Assistant responses) into a single string. This injects lightweight historical context (like the word "Python" from 3 turns ago) directly into the router's current forward pass.
+*   **The Application Solution (Context Concatenation):** The Python inference script intercepts the dialogue state. It actively extracts and concatenates the last 5 *User Prompts* (ignoring Assistant responses) using a strict structural delimiter (e.g., `\n---\n`) to prevent word-boundary bleeding. This injects lightweight historical context directly into the router's current forward pass while maintaining clear turn boundaries.
 
 ### 7.2 The Long Prompt Truncation Problem
 *   **The Model Limitation:** The BERT Router has a strict physical maximum sequence length of 512 tokens. Passing 513 tokens will crash the forward pass or drop critical context.
-*   **The Application Solution (Head+Tail Slicing):** If the concatenated user prompts exceed 512 tokens (e.g., the user pastes a massive code block to debug), the Python script executes a Head+Tail truncation `string[:128] + string[-384:]`. This drops the middle of the text but perfectly preserves the user's explicit instructions (which usually sit at the very top or very bottom of the prompt), ensuring BERT still sees the vital keywords required for routing.
+*   **The Application Solution (Token-Level Head+Tail Slicing):** If the concatenated user prompts exceed 512 tokens (e.g., the user pastes a massive code block to debug), the Python script executes a Head+Tail truncation. Crucially, this must happen *post-tokenization* (not via Python character slicing). The script isolates the first 128 tokens and the last 384 tokens, joining them with a `\n[...]\n` marker. This perfectly preserves the user's explicit instructions (which usually sit at the very top or very bottom of the prompt), ensuring BERT still sees the vital keywords.
 
 ### 7.3 Adapter Capacity Saturation (Overfitting)
 *   **The Model Limitation:** An `r=32` LoRA adapter has extremely limited parameter capacity (~9.63M). Passing massive datasets (like the 1-Million row OpenHermes dataset) will cause the low-rank matrices to repeatedly overwrite themselves, destroying generalization.
-*   **The Application Solution (Stratified Downsampling):** The data-preparation pipeline actively downsamples massive datasets into high-quality subsets (strictly capped at ~40,000 diverse rows per adapter). This gives the small matrices exactly enough data to master the domain's structure without hitting capacity saturation.
+*   **The Application Solution (Rank-Scaled Stratified Downsampling):** The data-preparation pipeline actively downsamples massive datasets into high-quality subsets, but scales the data cap proportionally to the adapter's mathematical capacity. A flat cap risks overfitting smaller adapters. The logic dictates: **~40,000 rows for `r=64`** (Complex facts), **~30,000 rows for `r=32`** (Structure), and **~20,000 rows for `r=16`** (Tone/Style). This gives the small matrices exactly enough data without hitting capacity saturation.
 
 ---
 
