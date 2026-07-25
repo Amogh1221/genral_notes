@@ -88,7 +88,7 @@ To build the Mixture of LoRAs, we will train specific Low-Rank Adaptation (LoRA)
     *   *Structural/Tonal Domains* (Chat, Creative, Psychology, Support, Ethics) will target Attention-only (`q_proj`, `v_proj`) to control logic and syntax formatting without risking catastrophic interference of the base model's world knowledge.
 *   **Ranks (r):** Variable based on domain complexity (r=64 for complex logic/facts, r=32 for standard structure, r=16 for conversational tone).
 *   **Epochs:** Scaled proportionally to adapter complexity to prevent overfitting (5 epochs for r=64, 4 epochs for r=32, and strictly 3 epochs for r=16).
-*   **Quantization:** For future scaling, we will experiment with `int8` quantization of the base model to free up VRAM for even more adapters. *(Note: This will require an explicit upcast/dequantization step during inference before summing the `bfloat16` LoRA activations with the `int8` base model activations).*
+
 
 ### 4.2 The Industry-Grade Datasets (20 Adapters)
 *(Note: Because the base model is 28 layers deep, adapter parameter sizes scale linearly with depth.)*
@@ -100,19 +100,19 @@ To build the Mixture of LoRAs, we will train specific Low-Rank Adaptation (LoRA)
 | **2. Math (Chain of Thought)**        | <a href="https://huggingface.co/datasets/meta-math/MetaMathQA" target="_blank">MetaMathQA</a>                                                     | 64         | Attn+MLP  | 19.27M |
 |                                       | <a href="https://huggingface.co/datasets/Open-Orca/OpenOrca" target="_blank">OpenOrca</a>                                                         | 32         | Attn+MLP  | 9.63M  |
 | **3. Medical (Clinical & Facts)**     | <a href="https://huggingface.co/datasets/medalpaca/medical_meadow_medical_flashcards" target="_blank">MedAlpaca</a>                               | 64         | Attn+MLP  | 19.27M |
-|                                       | <a href="https://huggingface.co/datasets/Luoapp/ChatDoctor" target="_blank">ChatDoctor</a>                                                        | 32         | Attn+MLP  | 9.63M  |
+|                                       | <a href="https://huggingface.co/datasets/lavita/ChatDoctor-HealthCareMagic-100k" target="_blank">ChatDoctor (HealthCareMagic)</a>                                                        | 32         | Attn+MLP  | 9.63M  |
 | **4. Finance (Business Logic)**       | <a href="https://huggingface.co/datasets/gbharti/finance-alpaca" target="_blank">Finance-Alpaca</a>                                               | 32         | Attn+MLP  | 9.63M  |
 | **5. General (Conversational)**       | <a href="https://huggingface.co/datasets/teknium/OpenHermes-2.5" target="_blank">OpenHermes 2.5</a>                                               | 32         | Attn-only | 2.75M  |
 |                                       | <a href="https://huggingface.co/datasets/LDJnr/Capybara" target="_blank">Capybara</a>                                                             | 32         | Attn-only | 2.75M  |
-| **6. Legal (Structured Jargon)**      | <a href="https://huggingface.co/datasets/joelito/legal-instruction-tuning" target="_blank">Joelito Legal Instruction</a>                          | 32         | Attn+MLP  | 9.63M  |
+| **6. Legal (Structured Jargon)**      | <a href="https://huggingface.co/datasets/lawinstruct/lawinstruct" target="_blank">LawInstruct</a>                          | 32         | Attn+MLP  | 9.63M  |
 | **7. STEM (Physics/Chemistry)**       | <a href="https://huggingface.co/datasets/camel-ai/physics" target="_blank">Camel-AI Physics & Chemistry</a>                                       | 64         | Attn+MLP  | 19.27M |
 | **8. Creative (Roleplay/Fiction)**    | <a href="https://huggingface.co/datasets/jondurbin/airoboros-2.2" target="_blank">Airoboros</a>                                                   | 16         | Attn-only | 1.38M  |
 | **9. Cybersecurity (Hacking/SecOps)** | <a href="https://huggingface.co/datasets/Mohabahmed03/Alpaca_Dataset_General_CyberSecurity" target="_blank">Cybersecurity Alpaca</a>              | 64         | Attn+MLP  | 19.27M |
 | **10. Logic & Reasoning (Puzzles)**   | <a href="https://huggingface.co/datasets/lucasmccabe/logiqa" target="_blank">LogiQA</a>                                                           | 32         | Attn+MLP  | 9.63M  |
 | **11. Psychology (Mental Health)**    | <a href="https://huggingface.co/datasets/samhog/psychology-10k" target="_blank">Psychology-10k</a>                                                | 16         | Attn-only | 1.38M  |
 | **12. Data Science (SQL)**            | <a href="https://huggingface.co/datasets/b-mc2/sql-create-context" target="_blank">SQL-Create-Context</a>                                         | 64         | Attn+MLP  | 19.27M |
-| **13. History (Factual Recall)**      | <a href="https://huggingface.co/datasets/Tevatron/wikipedia-qa" target="_blank">Wikipedia QA</a>                                                  | 32         | Attn+MLP  | 9.63M  |
-| **14. Ethics (Safety/Alignment)**     | <a href="https://huggingface.co/datasets/Anthropic/hh-rlhf" target="_blank">Anthropic HH-RLHF</a>                                                 | 32         | Attn-only | 2.75M  |
+| **13. History (Factual Recall)**      | <a href="https://huggingface.co/datasets/Mungus451/Universal-Verified-Wiki-Historian-American-History" target="_blank">Wiki-Historian QA</a>                                                  | 32         | Attn+MLP  | 9.63M  |
+| **14. Safety (Refusal/Alignment)**    | <a href="https://huggingface.co/datasets/nvidia/Nemotron-RL-Safety-v1" target="_blank">Nvidia Nemotron Safety</a>                                                 | 32         | Attn-only | 2.75M  |
 | **15. Customer Support (Tone)**       | <a href="https://huggingface.co/datasets/bitext/Bitext-customer-support-llm-chatbot-training-dataset" target="_blank">Bitext Customer Support</a> | 16         | Attn-only | 1.38M  |
 
 ### 4.3 Master Hyperparameter Table
@@ -150,7 +150,7 @@ An encoder-only model (14 layers, 8 heads, 512 hidden size, 32,000 custom vocab 
 
 ## 6. Dynamic Inference Logic (The "Double Duty Macro MoE")
 
-1.  **Classification (20-way):** The 61.48M BERT Router processes the prompt and outputs 20 Softmax probabilities (one for each individual adapter).
+1.  **Classification (20-way Context-Aware):** To solve multi-turn context drift while respecting the router's strict 512-token limit, the inference script will extract and concatenate only the *last 5 User Prompts* (ignoring the lengthy Assistant responses) into a single string. The 61.48M BERT Router processes this user-only history and outputs 20 Softmax probabilities (one for each individual adapter).
 2.  **Domain Collapse (Step A):** The system maps the 20 probabilities to their 15 parent Domains by summing sibling probabilities (e.g., `Code_Prob = p_Evol + p_Magicoder + p_Alpaca`).
 3.  **Filtering (Top-2 Threshold):** The system ignores Domain probabilities below 15% and strictly selects a maximum of the top 2 **Domains**. 
     *   **Domain Renormalization:** The remaining top-2 domain probabilities (e.g., 55% Code and 20% Math) must be explicitly renormalized so they sum to 1.0 (e.g., `Code_Weight = 0.55 / 0.75`).
@@ -165,34 +165,52 @@ An encoder-only model (14 layers, 8 heads, 512 hidden size, 32,000 custom vocab 
 
 ---
 
-## 7. Evaluation & Benchmarking Strategy
+## 7. Architectural Limitations & Application-Layer Solutions
+
+This section documents the hard limitations baked into the neural network architecture (e.g., parameter limits, context window constraints) and the explicit software engineering solutions used in the Python application layer to circumvent them without retraining.
+
+### 7.1 The Multi-Turn Context Drift Problem
+*   **The Model Limitation:** The BERT Router is entirely stateless. If it only sees a user's newest sentence (e.g., "improve the logic"), it has no conversational memory and will drop the correct adapter, routing randomly.
+*   **The Application Solution (Context Concatenation):** The Python inference script intercepts the dialogue state. It actively extracts and concatenates the last 5 *User Prompts* (ignoring Assistant responses) into a single string. This injects lightweight historical context (like the word "Python" from 3 turns ago) directly into the router's current forward pass.
+
+### 7.2 The Long Prompt Truncation Problem
+*   **The Model Limitation:** The BERT Router has a strict physical maximum sequence length of 512 tokens. Passing 513 tokens will crash the forward pass or drop critical context.
+*   **The Application Solution (Head+Tail Slicing):** If the concatenated user prompts exceed 512 tokens (e.g., the user pastes a massive code block to debug), the Python script executes a Head+Tail truncation `string[:128] + string[-384:]`. This drops the middle of the text but perfectly preserves the user's explicit instructions (which usually sit at the very top or very bottom of the prompt), ensuring BERT still sees the vital keywords required for routing.
+
+### 7.3 Adapter Capacity Saturation (Overfitting)
+*   **The Model Limitation:** An `r=32` LoRA adapter has extremely limited parameter capacity (~9.63M). Passing massive datasets (like the 1-Million row OpenHermes dataset) will cause the low-rank matrices to repeatedly overwrite themselves, destroying generalization.
+*   **The Application Solution (Stratified Downsampling):** The data-preparation pipeline actively downsamples massive datasets into high-quality subsets (strictly capped at ~40,000 diverse rows per adapter). This gives the small matrices exactly enough data to master the domain's structure without hitting capacity saturation.
+
+---
+
+## 8. Evaluation Strategy (Sub-1B Focus)
 
 Evaluating a 224M parameter model on billion-scale benchmarks (MMLU, GPQA) yields random chance. nanoRush-500 will be evaluated using the industry-standard Sub-1B Benchmark Suite (BabyLM-style metrics), prioritizing ablations to prove the architecture's worth.
 
-### 7.1 Primary Capability Diagnostics
+### 8.1 Primary Capability Diagnostics
 *   **Per-Domain Perplexity:** The ultimate test. We will measure bits-per-byte/perplexity on held-out data specifically targeting Code, Math, and General text.
 *   **BLiMP & EWoK:** Zero-shot linguistic and reasoning diagnostics specifically designed for sub-1B models to test core grammar and world knowledge.
 *   **HellaSwag & ARC-Easy:** Unlike ARC-Challenge, these provide realistic targets and meaningful performance gaps for a 224M model.
 *   **GSM8K & HumanEval-Easy:** Tested as "stretch goals". Expectations are low, but this will prove if the Code/Math LoRAs move the needle versus the base model.
 
-### 7.2 Ablation Studies (Proving the Architecture)
+### 8.2 Ablation Studies (Proving the Architecture)
 To prove that our Macro MoE actually works and isn't just "brown paint," we must compare three baselines on the exact same prompts:
 1.  **Baseline A:** Chat Model with NO LoRA.
 2.  **Baseline B:** Chat Model + Single Best-Matching LoRA (no blending).
 3.  **nanoRush-500 MoE:** The full Top-2 weighted blend.
 *If nanoRush-500 MoE consistently scores higher on HellaSwag/Perplexity than Baseline B across multiple training seeds (tracked via strict seed-fixing and logged to W&B/TensorBoard for perfect reproducibility), we have strong empirical evidence that probability-weighted activation addition successfully synthesizes domain knowledge. We will honestly report per-domain breakdowns, even in cases where the MoE underperforms.*
 
-### 7.3 Router Metrics
+### 8.3 Router Metrics
 Because the router performs "Double Duty," accuracy must be reported at two distinct levels on the held-out test split:
 *   **Domain-Level Accuracy (15-way):** Evaluated after the Step A collapse. This is the safety-critical metric that catches hard misroutes (e.g., sending a Code prompt to the Medical domain).
 *   **Sibling-Level Calibration (Within-Domain):** Evaluates if the raw 20-way logits dynamically shift correctly among siblings (e.g., does `p_Alpaca` spike relative to `p_Evol` on simple code queries?). This metric proves whether Step B's prompt-conditioned blending is extracting genuine signal or just adding random noise.
 
-### 7.4 Preference Benchmarks
+### 8.4 Preference Benchmarks
 *   **Unified Elo Rating:** Measuring how often human judges (or LLM-as-a-judge) prefer nanoRush-500's formatting and helpfulness over our own **Baseline A (SFT Chat Model)** or comparable external models like Qwen 0.5B-Chat. *(Note: Comparing Elo against a non-instruction-tuned base GPT-2 is not a fair benchmark).*
 
 ---
 
-## 8. Responsible Release & Licensing
+## 9. Responsible Release & Licensing
 
 *   **Licensing Audit:** Before publishing model weights to Hugging Face, a full license audit must be performed on the training datasets (e.g., MedAlpaca and Magicoder variants frequently carry strict non-commercial/research-only terms).
 *   **Medical Adapter Disclaimer:** A 224M model with a Medical LoRA will confidently hallucinate clinical jargon without possessing genuine medical reasoning capability. A highly visible disclaimer specifically warning against real-world medical use must be included in the release repository.
