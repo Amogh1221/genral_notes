@@ -268,6 +268,16 @@ int findMax(vector<int>& nums) {
 }
 ```
 
+**Example 1:**
+**Input:** `nums = [1, 5, 3, 9, 2]`
+**Output:** `9`
+**Explanation:** The maximum value in the array is 9.
+
+**Example 2:**
+**Input:** `nums = [-1, -5, -3]`
+**Output:** `-1`
+**Explanation:** The maximum value in the array is -1.
+
 ---
 
 #### 121. Best Time to Buy and Sell Stock
@@ -285,6 +295,16 @@ int maxProfit(vector<int>& prices) {
 }
 ```
 
+**Example 1:**
+**Input:** `prices = [7,1,5,3,6,4]`
+**Output:** `5`
+**Explanation:** Buy on day 2 (price = 1) and sell on day 5 (price = 6), profit = 6-1 = 5. Note that buying on day 2 and selling on day 1 is not allowed because you must buy before you sell.
+
+**Example 2:**
+**Input:** `prices = [7,6,4,3,1]`
+**Output:** `0`
+**Explanation:** In this case, no transactions are done and the max profit = 0.
+
 ---
 
 #### 169. Majority Element
@@ -301,6 +321,16 @@ int majorityElement(vector<int>& nums) {
     return candidate;
 }
 ```
+
+**Example 1:**
+**Input:** `nums = [3,2,3]`
+**Output:** `3`
+**Explanation:** The element 3 appears 2 times, which is > 3/2.
+
+**Example 2:**
+**Input:** `nums = [2,2,1,1,1,2,2]`
+**Output:** `2`
+**Explanation:** The element 2 appears 4 times, which is > 7/2.
 
 ---
 
@@ -325,6 +355,16 @@ vector<int> twoSum(vector<int>& numbers, int target) {
 }
 ```
 
+**Example 1:**
+**Input:** `numbers = [2,7,11,15], target = 9`
+**Output:** `[1,2]`
+**Explanation:** The sum of 2 and 7 is 9. Therefore, index1 = 1, index2 = 2. We return [1, 2].
+
+**Example 2:**
+**Input:** `numbers = [2,3,4], target = 6`
+**Output:** `[1,3]`
+**Explanation:** The sum of 2 and 4 is 6. Therefore index1 = 1, index2 = 3. We return [1, 3].
+
 ---
 
 #### 11. Container With Most Water
@@ -343,6 +383,16 @@ int maxArea(vector<int>& height) {
 }
 ```
 
+**Example 1:**
+**Input:** `height = [1,8,6,2,5,4,8,3,7]`
+**Output:** `49`
+**Explanation:** The above vertical lines are represented by array [1,8,6,2,5,4,8,3,7]. In this case, the max area of water (blue section) the container can contain is 49.
+
+**Example 2:**
+**Input:** `height = [1,1]`
+**Output:** `1`
+**Explanation:** The max area is 1 * 1 = 1.
+
 ---
 
 #### 283. Move Zeroes
@@ -356,6 +406,16 @@ void moveZeroes(vector<int>& nums) {
     while (pos < nums.size()) nums[pos++] = 0;
 }
 ```
+
+**Example 1:**
+**Input:** `nums = [0,1,0,3,12]`
+**Output:** `[1,3,12,0,0]`
+**Explanation:** Move all zeros to the end, keeping the original order of 1, 3, 12.
+
+**Example 2:**
+**Input:** `nums = [0]`
+**Output:** `[0]`
+**Explanation:** A single zero remains as is.
 
 ---
 
@@ -380,6 +440,16 @@ double findMaxAverage(vector<int>& nums, int k) {
 }
 ```
 
+**Example 1:**
+**Input:** `nums = [1,12,-5,-6,50,3], k = 4`
+**Output:** `12.75000`
+**Explanation:** Maximum average is (12 - 5 - 6 + 50) / 4 = 51 / 4 = 12.75
+
+**Example 2:**
+**Input:** `nums = [5], k = 1`
+**Output:** `5.00000`
+**Explanation:** Maximum average is 5 / 1 = 5.
+
 ---
 
 #### 2461. Maximum Sum of Distinct Subarrays With Length K
@@ -402,6 +472,24 @@ long long maximumSubarraySum(vector<int>& nums, int k) {
     return res;
 }
 ```
+
+**Example 1:**
+**Input:** `nums = [1,5,4,2,9,9,9], k = 3`
+**Output:** `15`
+**Explanation:** The subarrays of nums with length 3 are:
+- [1,5,4] which meets the requirements and has a sum of 10.
+- [5,4,2] which meets the requirements and has a sum of 11.
+- [4,2,9] which meets the requirements and has a sum of 15.
+- [2,9,9] which does not meet the requirements because the element 9 is repeated.
+- [9,9,9] which does not meet the requirements because the element 9 is repeated.
+We return 15 because it is the maximum subarray sum of all the subarrays that meet the conditions.
+
+**Example 2:**
+**Input:** `nums = [4,4,4], k = 3`
+**Output:** `0`
+**Explanation:** The subarrays of nums with length 3 are:
+- [4,4,4] which does not meet the requirements because the element 4 is repeated.
+We return 0 because no subarrays meet the conditions.
 
 ---
 
@@ -426,6 +514,16 @@ int lengthOfLongestSubstring(string s) {
 }
 ```
 
+**Example 1:**
+**Input:** `s = "abcabcbb"`
+**Output:** `3`
+**Explanation:** The answer is "abc", with the length of 3.
+
+**Example 2:**
+**Input:** `s = "bbbbb"`
+**Output:** `1`
+**Explanation:** The answer is "b", with the length of 1.
+
 ---
 
 #### 209. Minimum Size Subarray Sum
@@ -445,6 +543,16 @@ int minSubArrayLen(int target, vector<int>& nums) {
     return res == INT_MAX ? 0 : res;
 }
 ```
+
+**Example 1:**
+**Input:** `target = 7, nums = [2,3,1,2,4,3]`
+**Output:** `2`
+**Explanation:** The subarray [4,3] has the minimal length under the problem constraint.
+
+**Example 2:**
+**Input:** `target = 4, nums = [1,4,4]`
+**Output:** `1`
+**Explanation:** The subarray [4] has length 1.
 
 ---
 
@@ -468,6 +576,16 @@ int totalFruit(vector<int>& fruits) {
     return res;
 }
 ```
+
+**Example 1:**
+**Input:** `fruits = [1,2,1]`
+**Output:** `3`
+**Explanation:** We can pick from all 3 trees.
+
+**Example 2:**
+**Input:** `fruits = [0,1,2,2]`
+**Output:** `3`
+**Explanation:** We can pick from trees [1,2,2].
 
 ---
 
@@ -494,6 +612,17 @@ public:
 };
 ```
 
+**Example 1:**
+**Input:** 
+`["NumArray", "sumRange", "sumRange", "sumRange"]`
+`[[[-2, 0, 3, -5, 2, -1]], [0, 2], [2, 5], [0, 5]]`
+**Output:** `[null, 1, -1, -3]`
+**Explanation:** 
+NumArray numArray = new NumArray([-2, 0, 3, -5, 2, -1]);
+numArray.sumRange(0, 2); // return (-2) + 0 + 3 = 1
+numArray.sumRange(2, 5); // return 3 + (-5) + 2 + (-1) = -1
+numArray.sumRange(0, 5); // return (-2) + 0 + 3 + (-5) + 2 + (-1) = -3
+
 ---
 
 #### 560. Subarray Sum Equals K
@@ -512,6 +641,16 @@ int subarraySum(vector<int>& nums, int k) {
     return res;
 }
 ```
+
+**Example 1:**
+**Input:** `nums = [1,1,1], k = 2`
+**Output:** `2`
+**Explanation:** Subarrays are [1,1] from index 0-1 and [1,1] from index 1-2.
+
+**Example 2:**
+**Input:** `nums = [1,2,3], k = 3`
+**Output:** `2`
+**Explanation:** Subarrays are [1,2] and [3].
 
 ---
 
@@ -532,6 +671,16 @@ bool checkSubarraySum(vector<int>& nums, int k) {
     return false;
 }
 ```
+
+**Example 1:**
+**Input:** `nums = [23,2,4,6,7], k = 6`
+**Output:** `true`
+**Explanation:** [2, 4] is a continuous subarray of size 2 whose elements sum up to 6.
+
+**Example 2:**
+**Input:** `nums = [23,2,6,4,7], k = 13`
+**Output:** `false`
+**Explanation:** No subarray has sum multiple of 13.
 
 ---
 
@@ -555,6 +704,16 @@ vector<int> corpFlightBookings(vector<vector<int>>& bookings, int n) {
 }
 ```
 
+**Example 1:**
+**Input:** `bookings = [[1,2,10],[2,3,20],[2,5,25]], n = 5`
+**Output:** `[10,55,45,25,25]`
+**Explanation:** 
+Flight labels:        1   2   3   4   5
+Booking 1 reserved:  10  10
+Booking 2 reserved:      20  20
+Booking 3 reserved:      25  25  25  25
+Total seats:         10  55  45  25  25
+
 ---
 
 #### 1094. Car Pooling
@@ -577,6 +736,15 @@ bool carPooling(vector<vector<int>>& trips, int capacity) {
 }
 ```
 
+**Example 1:**
+**Input:** `trips = [[2,1,5],[3,3,7]], capacity = 4`
+**Output:** `false`
+**Explanation:** We pick up 2 passengers at 1. We pick up 3 passengers at 3 (total 5), which exceeds capacity 4.
+
+**Example 2:**
+**Input:** `trips = [[2,1,5],[3,3,7]], capacity = 5`
+**Output:** `true`
+
 ---
 
 ### Pattern: Kadane's Algorithm
@@ -598,6 +766,16 @@ int maxSubArray(vector<int>& nums) {
 }
 ```
 
+**Example 1:**
+**Input:** `nums = [-2,1,-3,4,-1,2,1,-5,4]`
+**Output:** `6`
+**Explanation:** The subarray [4,-1,2,1] has the largest sum 6.
+
+**Example 2:**
+**Input:** `nums = [1]`
+**Output:** `1`
+**Explanation:** The subarray [1] has the largest sum 1.
+
 ---
 
 #### 1749. Maximum Absolute Sum of Any Subarray
@@ -616,6 +794,16 @@ int maxAbsoluteSum(vector<int>& nums) {
     return max(maxSum, -minSum);
 }
 ```
+
+**Example 1:**
+**Input:** `nums = [1,-3,2,3,-4]`
+**Output:** `5`
+**Explanation:** The absolute sum of subarray [2,3] is |5| = 5.
+
+**Example 2:**
+**Input:** `nums = [2,-5,1,-4,3,-2]`
+**Output:** `8`
+**Explanation:** The absolute sum of subarray [-5,1,-4] is |-8| = 8.
 
 ---
 
@@ -640,6 +828,16 @@ int search(vector<int>& nums, int target) {
 }
 ```
 
+**Example 1:**
+**Input:** `nums = [-1,0,3,5,9,12], target = 9`
+**Output:** `4`
+**Explanation:** 9 exists in nums and its index is 4.
+
+**Example 2:**
+**Input:** `nums = [-1,0,3,5,9,12], target = 2`
+**Output:** `-1`
+**Explanation:** 2 does not exist in nums so return -1.
+
 ---
 
 #### 35. Search Insert Position
@@ -658,6 +856,14 @@ int searchInsert(vector<int>& nums, int target) {
     return l;
 }
 ```
+
+**Example 1:**
+**Input:** `nums = [1,3,5,6], target = 5`
+**Output:** `2`
+
+**Example 2:**
+**Input:** `nums = [1,3,5,6], target = 2`
+**Output:** `1`
 
 ---
 
@@ -683,6 +889,14 @@ int search(vector<int>& nums, int target) {
 }
 ```
 
+**Example 1:**
+**Input:** `nums = [4,5,6,7,0,1,2], target = 0`
+**Output:** `4`
+
+**Example 2:**
+**Input:** `nums = [4,5,6,7,0,1,2], target = 3`
+**Output:** `-1`
+
 ---
 
 ### Pattern: Binary Search on Answer
@@ -707,6 +921,14 @@ int minEatingSpeed(vector<int>& piles, int h) {
 }
 ```
 
+**Example 1:**
+**Input:** `piles = [3,6,7,11], h = 8`
+**Output:** `4`
+
+**Example 2:**
+**Input:** `piles = [30,11,23,4,20], h = 5`
+**Output:** `30`
+
 ---
 
 #### 1011. Capacity to Ship Packages Within D Days
@@ -730,6 +952,20 @@ int shipWithinDays(vector<int>& weights, int days) {
 }
 ```
 
+**Example 1:**
+**Input:** `weights = [1,2,3,4,5,6,7,8,9,10], days = 5`
+**Output:** `15`
+**Explanation:** A ship capacity of 15 is the minimum to ship all the packages in 5 days like this:
+1st day: 1, 2, 3, 4, 5
+2nd day: 6, 7
+3rd day: 8
+4th day: 9
+5th day: 10
+
+**Example 2:**
+**Input:** `weights = [3,2,2,4,1,4], days = 3`
+**Output:** `6`
+
 ---
 
 #### 410. Split Array Largest Sum
@@ -752,6 +988,15 @@ int splitArray(vector<int>& nums, int k) {
     return l;
 }
 ```
+
+**Example 1:**
+**Input:** `nums = [7,2,5,10,8], k = 2`
+**Output:** `18`
+**Explanation:** There are four ways to split nums into two subarrays. The best way is to split it into [7,2,5] and [10,8], where the largest sum among the two subarrays is only 18.
+
+**Example 2:**
+**Input:** `nums = [1,2,3,4,5], k = 2`
+**Output:** `9`
 
 ---
 
@@ -785,6 +1030,14 @@ vector<vector<int>> threeSum(vector<int>& nums) {
 }
 ```
 
+**Example 1:**
+**Input:** `nums = [-1,0,1,2,-1,-4]`
+**Output:** `[[-1,-1,2],[-1,0,1]]`
+
+**Example 2:**
+**Input:** `nums = [0,1,1]`
+**Output:** `[]`
+
 ---
 
 #### 18. 4Sum
@@ -817,6 +1070,14 @@ vector<vector<int>> fourSum(vector<int>& nums, int target) {
 }
 ```
 
+**Example 1:**
+**Input:** `nums = [1,0,-1,0,-2,2], target = 0`
+**Output:** `[[-2,-1,1,2],[-2,0,0,2],[-1,0,0,1]]`
+
+**Example 2:**
+**Input:** `nums = [2,2,2,2,2], target = 8`
+**Output:** `[[2,2,2,2]]`
+
 ---
 
 #### 179. Largest Number
@@ -834,6 +1095,14 @@ string largestNumber(vector<int>& nums) {
     return res;
 }
 ```
+
+**Example 1:**
+**Input:** `nums = [10,2]`
+**Output:** `"210"`
+
+**Example 2:**
+**Input:** `nums = [3,30,34,5,9]`
+**Output:** `"9534330"`
 
 ---
 
@@ -858,6 +1127,16 @@ vector<vector<int>> merge(vector<vector<int>>& intervals) {
 }
 ```
 
+**Example 1:**
+**Input:** `intervals = [[1,3],[2,6],[8,10],[15,18]]`
+**Output:** `[[1,6],[8,10],[15,18]]`
+**Explanation:** Since intervals [1,3] and [2,6] overlap, merge them into [1,6].
+
+**Example 2:**
+**Input:** `intervals = [[1,4],[4,5]]`
+**Output:** `[[1,5]]`
+**Explanation:** Intervals [1,4] and [4,5] are considered overlapping.
+
 ---
 
 #### 57. Insert Interval
@@ -880,6 +1159,15 @@ vector<vector<int>> insert(vector<vector<int>>& intervals, vector<int>& newInter
 }
 ```
 
+**Example 1:**
+**Input:** `intervals = [[1,3],[6,9]], newInterval = [2,5]`
+**Output:** `[[1,5],[6,9]]`
+
+**Example 2:**
+**Input:** `intervals = [[1,2],[3,5],[6,7],[8,10],[12,16]], newInterval = [4,8]`
+**Output:** `[[1,2],[3,10],[12,16]]`
+**Explanation:** Because the new interval [4,8] overlaps with [3,5],[6,7],[8,10].
+
 ---
 
 #### 435. Non-overlapping Intervals
@@ -897,6 +1185,15 @@ int eraseOverlapIntervals(vector<vector<int>>& intervals) {
     return res;
 }
 ```
+
+**Example 1:**
+**Input:** `intervals = [[1,2],[2,3],[3,4],[1,3]]`
+**Output:** `1`
+**Explanation:** [1,3] can be removed and the rest of the intervals are non-overlapping.
+
+**Example 2:**
+**Input:** `intervals = [[1,2],[1,2],[1,2]]`
+**Output:** `2`
 
 ---
 
@@ -922,6 +1219,14 @@ vector<int> spiralOrder(vector<vector<int>>& matrix) {
 }
 ```
 
+**Example 1:**
+**Input:** `matrix = [[1,2,3],[4,5,6],[7,8,9]]`
+**Output:** `[1,2,3,6,9,8,7,4,5]`
+
+**Example 2:**
+**Input:** `matrix = [[1,2,3,4],[5,6,7,8],[9,10,11,12]]`
+**Output:** `[1,2,3,4,8,12,11,10,9,5,6,7]`
+
 ---
 
 #### 48. Rotate Image
@@ -935,6 +1240,14 @@ void rotate(vector<vector<int>>& matrix) {
     for (int i=0;i<n;i++) reverse(matrix[i].begin(), matrix[i].end());
 }
 ```
+
+**Example 1:**
+**Input:** `matrix = [[1,2,3],[4,5,6],[7,8,9]]`
+**Output:** `[[7,4,1],[8,5,2],[9,6,3]]`
+
+**Example 2:**
+**Input:** `matrix = [[5,1,9,11],[2,4,8,10],[13,3,6,7],[15,14,12,16]]`
+**Output:** `[[15,13,2,5],[14,3,4,1],[12,6,8,9],[16,7,10,11]]`
 
 ---
 
@@ -957,6 +1270,14 @@ void setZeroes(vector<vector<int>>& matrix) {
 }
 ```
 
+**Example 1:**
+**Input:** `matrix = [[1,1,1],[1,0,1],[1,1,1]]`
+**Output:** `[[1,0,1],[0,0,0],[1,0,1]]`
+
+**Example 2:**
+**Input:** `matrix = [[0,1,2,0],[3,4,5,2],[1,3,1,5]]`
+**Output:** `[[0,0,0,0],[0,4,5,0],[0,3,1,0]]`
+
 ---
 
 ### Pattern: Dutch National Flag
@@ -977,6 +1298,14 @@ void sortColors(vector<int>& nums) {
     }
 }
 ```
+
+**Example 1:**
+**Input:** `nums = [2,0,2,1,1,0]`
+**Output:** `[0,0,1,1,2,2]`
+
+**Example 2:**
+**Input:** `nums = [2,0,1]`
+**Output:** `[0,1,2]`
 
 ---
 
@@ -999,6 +1328,16 @@ int firstMissingPositive(vector<int>& nums) {
 }
 ```
 
+**Example 1:**
+**Input:** `nums = [1,2,0]`
+**Output:** `3`
+**Explanation:** The numbers in the range [1,2] are all in the array.
+
+**Example 2:**
+**Input:** `nums = [3,4,-1,1]`
+**Output:** `2`
+**Explanation:** 1 is in the array but 2 is missing.
+
 ---
 
 #### 448. Find All Numbers Disappeared in an Array
@@ -1017,6 +1356,14 @@ vector<int> findDisappearedNumbers(vector<int>& nums) {
 }
 ```
 
+**Example 1:**
+**Input:** `nums = [4,3,2,7,8,2,3,1]`
+**Output:** `[5,6]`
+
+**Example 2:**
+**Input:** `nums = [1,1]`
+**Output:** `[2]`
+
 ---
 
 #### 287. Find the Duplicate Number
@@ -1032,6 +1379,14 @@ int findDuplicate(vector<int>& nums) {
     return slow;
 }
 ```
+
+**Example 1:**
+**Input:** `nums = [1,3,4,2,2]`
+**Output:** `2`
+
+**Example 2:**
+**Input:** `nums = [3,1,3,4,2]`
+**Output:** `3`
 
 ---
 
@@ -1057,6 +1412,16 @@ bool isPalindrome(string s) {
 }
 ```
 
+**Example 1:**
+**Input:** `s = "A man, a plan, a canal: Panama"`
+**Output:** `true`
+**Explanation:** "amanaplanacanalpanama" is a palindrome.
+
+**Example 2:**
+**Input:** `s = "race a car"`
+**Output:** `false`
+**Explanation:** "raceacar" is not a palindrome.
+
 ---
 
 #### 344. Reverse String
@@ -1069,6 +1434,14 @@ void reverseString(vector<char>& s) {
     while (l<r) swap(s[l++], s[r--]);
 }
 ```
+
+**Example 1:**
+**Input:** `s = ["h","e","l","l","o"]`
+**Output:** `["o","l","l","e","h"]`
+
+**Example 2:**
+**Input:** `s = ["H","a","n","n","a","h"]`
+**Output:** `["h","a","n","n","a","H"]`
 
 ---
 
@@ -1088,6 +1461,14 @@ string reverseVowels(string s) {
     return s;
 }
 ```
+
+**Example 1:**
+**Input:** `s = "hello"`
+**Output:** `"holle"`
+
+**Example 2:**
+**Input:** `s = "leetcode"`
+**Output:** `"leotcede"`
 
 ---
 
@@ -1119,6 +1500,15 @@ string minWindow(string s, string t) {
 }
 ```
 
+**Example 1:**
+**Input:** `s = "ADOBECODEBANC", t = "ABC"`
+**Output:** `"BANC"`
+**Explanation:** The minimum window substring "BANC" includes 'A', 'B', and 'C' from string t.
+
+**Example 2:**
+**Input:** `s = "a", t = "a"`
+**Output:** `"a"`
+
 ---
 
 #### 567. Permutation in String
@@ -1141,6 +1531,15 @@ bool checkInclusion(string s1, string s2) {
 }
 ```
 
+**Example 1:**
+**Input:** `s1 = "ab", s2 = "eidbaooo"`
+**Output:** `true`
+**Explanation:** s2 contains one permutation of s1 ("ba").
+
+**Example 2:**
+**Input:** `s1 = "ab", s2 = "eidboaoo"`
+**Output:** `false`
+
 ---
 
 ### Pattern: Character Frequency
@@ -1160,6 +1559,14 @@ bool isAnagram(string s, string t) {
 }
 ```
 
+**Example 1:**
+**Input:** `s = "anagram", t = "nagaram"`
+**Output:** `true`
+
+**Example 2:**
+**Input:** `s = "rat", t = "car"`
+**Output:** `false`
+
 ---
 
 #### 383. Ransom Note
@@ -1175,6 +1582,18 @@ bool canConstruct(string ransomNote, string magazine) {
 }
 ```
 
+**Example 1:**
+**Input:** `ransomNote = "a", magazine = "b"`
+**Output:** `false`
+
+**Example 2:**
+**Input:** `ransomNote = "aa", magazine = "ab"`
+**Output:** `false`
+
+**Example 3:**
+**Input:** `ransomNote = "aa", magazine = "aab"`
+**Output:** `true`
+
 ---
 
 #### 389. Find the Difference
@@ -1189,6 +1608,15 @@ char findTheDifference(string s, string t) {
     return res;
 }
 ```
+
+**Example 1:**
+**Input:** `s = "abcd", t = "abcde"`
+**Output:** `"e"`
+**Explanation:** 'e' is the letter that was added.
+
+**Example 2:**
+**Input:** `s = "", t = "y"`
+**Output:** `"y"`
 
 ---
 
@@ -1214,6 +1642,18 @@ vector<vector<string>> groupAnagrams(vector<string>& strs) {
 }
 ```
 
+**Example 1:**
+**Input:** `strs = ["eat","tea","tan","ate","nat","bat"]`
+**Output:** `[["bat"],["nat","tan"],["ate","eat","tea"]]`
+
+**Example 2:**
+**Input:** `strs = [""]`
+**Output:** `[[""]]`
+
+**Example 3:**
+**Input:** `strs = ["a"]`
+**Output:** `[["a"]]`
+
 ---
 
 #### 205. Isomorphic Strings
@@ -1231,6 +1671,18 @@ bool isIsomorphic(string s, string t) {
     return true;
 }
 ```
+
+**Example 1:**
+**Input:** `s = "egg", t = "add"`
+**Output:** `true`
+
+**Example 2:**
+**Input:** `s = "foo", t = "bar"`
+**Output:** `false`
+
+**Example 3:**
+**Input:** `s = "paper", t = "title"`
+**Output:** `true`
 
 ---
 
@@ -1255,6 +1707,18 @@ bool wordPattern(string pattern, string s) {
 }
 ```
 
+**Example 1:**
+**Input:** `pattern = "abba", s = "dog cat cat dog"`
+**Output:** `true`
+
+**Example 2:**
+**Input:** `pattern = "abba", s = "dog cat cat fish"`
+**Output:** `false`
+
+**Example 3:**
+**Input:** `pattern = "aaaa", s = "dog cat cat dog"`
+**Output:** `false`
+
 ---
 
 ### Pattern: String Parsing
@@ -1278,6 +1742,18 @@ int myAtoi(string s) {
     return res*sign;
 }
 ```
+
+**Example 1:**
+**Input:** `s = "42"`
+**Output:** `42`
+
+**Example 2:**
+**Input:** `s = "   -42"`
+**Output:** `-42`
+
+**Example 3:**
+**Input:** `s = "4193 with words"`
+**Output:** `4193`
 
 ---
 
@@ -1304,6 +1780,18 @@ string decodeString(string s) {
     return cur;
 }
 ```
+
+**Example 1:**
+**Input:** `s = "3[a]2[bc]"`
+**Output:** `"aaabcbc"`
+
+**Example 2:**
+**Input:** `s = "3[a2[c]]"`
+**Output:** `"accaccacc"`
+
+**Example 3:**
+**Input:** `s = "2[abc]3[cd]ef"`
+**Output:** `"abcabccdcdcdef"`
 
 ---
 
@@ -1334,6 +1822,16 @@ int strStr(string haystack, string needle) {
     return -1;
 }
 ```
+
+**Example 1:**
+**Input:** `haystack = "sadbutsad", needle = "sad"`
+**Output:** `0`
+**Explanation:** "sad" occurs at index 0 and 6. The first occurrence is at index 0, so we return 0.
+
+**Example 2:**
+**Input:** `haystack = "leetcode", needle = "leeto"`
+**Output:** `-1`
+**Explanation:** "leeto" did not occur in "leetcode", so we return -1.
 
 ---
 
@@ -1380,6 +1878,21 @@ public:
 };
 ```
 
+**Example 1:**
+**Input:**
+`["Trie", "insert", "search", "search", "startsWith", "insert", "search"]`
+`[[], ["apple"], ["apple"], ["app"], ["app"], ["app"], ["app"]]`
+**Output:**
+`[null, null, true, false, true, null, true]`
+**Explanation:**
+Trie trie = new Trie();
+trie.insert("apple");
+trie.search("apple");   // return True
+trie.search("app");     // return False
+trie.startsWith("app"); // return True
+trie.insert("app");
+trie.search("app");     // return True
+
 ---
 
 ## 3. HASHING
@@ -1405,6 +1918,14 @@ vector<int> topKFrequent(vector<int>& nums, int k) {
 }
 ```
 
+**Example 1:**
+**Input:** `nums = [1,1,1,2,2,3], k = 2`
+**Output:** `[1,2]`
+
+**Example 2:**
+**Input:** `nums = [1], k = 1`
+**Output:** `[1]`
+
 ---
 
 #### 451. Sort Characters By Frequency
@@ -1425,6 +1946,20 @@ string frequencySort(string s) {
     return res;
 }
 ```
+
+**Example 1:**
+**Input:** `s = "tree"`
+**Output:** `"eert"`
+**Explanation:** 'e' appears twice while 'r' and 't' both appear once. So 'e' must appear before both 'r' and 't'.
+
+**Example 2:**
+**Input:** `s = "cccaaa"`
+**Output:** `"aaaccc"`
+**Explanation:** Both 'c' and 'a' appear three times, so both "cccaaa" and "aaaccc" are valid answers.
+
+**Example 3:**
+**Input:** `s = "Aabb"`
+**Output:** `"bbAa"`
 
 ---
 
@@ -1448,6 +1983,19 @@ vector<int> twoSum(vector<int>& nums, int target) {
 }
 ```
 
+**Example 1:**
+**Input:** `nums = [2,7,11,15], target = 9`
+**Output:** `[0,1]`
+**Explanation:** Because nums[0] + nums[1] == 9, we return [0, 1].
+
+**Example 2:**
+**Input:** `nums = [3,2,4], target = 6`
+**Output:** `[1,2]`
+
+**Example 3:**
+**Input:** `nums = [3,3], target = 6`
+**Output:** `[0,1]`
+
 ---
 
 #### 217. Contains Duplicate
@@ -1464,6 +2012,18 @@ bool containsDuplicate(vector<int>& nums) {
     return false;
 }
 ```
+
+**Example 1:**
+**Input:** `nums = [1,2,3,1]`
+**Output:** `true`
+
+**Example 2:**
+**Input:** `nums = [1,2,3,4]`
+**Output:** `false`
+
+**Example 3:**
+**Input:** `nums = [1,1,1,3,3,4,3,2,4,2]`
+**Output:** `true`
 
 ---
 
@@ -1484,6 +2044,19 @@ bool isHappy(int n) {
     return true;
 }
 ```
+
+**Example 1:**
+**Input:** `n = 19`
+**Output:** `true`
+**Explanation:**
+1^2 + 9^2 = 82
+8^2 + 2^2 = 68
+6^2 + 8^2 = 100
+1^2 + 0^2 + 0^2 = 1
+
+**Example 2:**
+**Input:** `n = 2`
+**Output:** `false`
 
 ---
 
@@ -1507,6 +2080,16 @@ int findMaxLength(vector<int>& nums) {
     return res;
 }
 ```
+
+**Example 1:**
+**Input:** `nums = [0,1]`
+**Output:** `2`
+**Explanation:** [0, 1] is the longest contiguous subarray with an equal number of 0 and 1.
+
+**Example 2:**
+**Input:** `nums = [0,1,0]`
+**Output:** `2`
+**Explanation:** [0, 1] (or [1, 0]) is a longest contiguous subarray with equal number of 0 and 1.
 
 ---
 
@@ -1533,6 +2116,15 @@ int longestConsecutive(vector<int>& nums) {
 }
 ```
 
+**Example 1:**
+**Input:** `nums = [100,4,200,1,3,2]`
+**Output:** `4`
+**Explanation:** The longest consecutive elements sequence is [1, 2, 3, 4]. Therefore its length is 4.
+
+**Example 2:**
+**Input:** `nums = [0,3,7,2,5,8,4,6,0,1]`
+**Output:** `9`
+
 ---
 
 #### 349. Intersection of Two Arrays
@@ -1547,6 +2139,15 @@ vector<int> intersection(vector<int>& nums1, vector<int>& nums2) {
     return res;
 }
 ```
+
+**Example 1:**
+**Input:** `nums1 = [1,2,2,1], nums2 = [2,2]`
+**Output:** `[2]`
+
+**Example 2:**
+**Input:** `nums1 = [4,9,5], nums2 = [9,4,9,8,4]`
+**Output:** `[9,4]`
+**Explanation:** [4,9] is also accepted.
 
 ---
 
@@ -1578,6 +2179,14 @@ vector<vector<string>> findDuplicate(vector<string>& paths) {
 }
 ```
 
+**Example 1:**
+**Input:** `paths = ["root/a 1.txt(abcd) 2.txt(efgh)","root/c 3.txt(abcd)","root/c/d 4.txt(efgh)","root 4.txt(efgh)"]`
+**Output:** `[["root/a/2.txt","root/c/d/4.txt","root/4.txt"],["root/a/1.txt","root/c/3.txt"]]`
+
+**Example 2:**
+**Input:** `paths = ["root/a 1.txt(abcd) 2.txt(efgh)","root/c 3.txt(abcd)","root/c/d 4.txt(efgh)"]`
+**Output:** `[["root/a/2.txt","root/c/d/4.txt"],["root/a/1.txt","root/c/3.txt"]]`
+
 ---
 
 ## 4. LINKED LIST
@@ -1602,6 +2211,20 @@ bool hasCycle(ListNode *head) {
 }
 ```
 
+**Example 1:**
+**Input:** `head = [3,2,0,-4], pos = 1`
+**Output:** `true`
+**Explanation:** There is a cycle in the linked list, where the tail connects to the 1st node (0-indexed).
+
+**Example 2:**
+**Input:** `head = [1,2], pos = 0`
+**Output:** `true`
+**Explanation:** There is a cycle in the linked list, where the tail connects to the 0th node.
+
+**Example 3:**
+**Input:** `head = [1], pos = -1`
+**Output:** `false`
+
 ---
 
 #### 876. Middle of the Linked List
@@ -1615,6 +2238,16 @@ ListNode* middleNode(ListNode* head) {
     return slow;
 }
 ```
+
+**Example 1:**
+**Input:** `head = [1,2,3,4,5]`
+**Output:** `[3,4,5]`
+**Explanation:** The middle node of the list is node 3.
+
+**Example 2:**
+**Input:** `head = [1,2,3,4,5,6]`
+**Output:** `[4,5,6]`
+**Explanation:** Since the list has two middle nodes with values 3 and 4, we return the second one.
 
 ---
 
@@ -1633,6 +2266,18 @@ ListNode* reverseList(ListNode* head) {
     return prev;
 }
 ```
+
+**Example 1:**
+**Input:** `head = [1,2,3,4,5]`
+**Output:** `[5,4,3,2,1]`
+
+**Example 2:**
+**Input:** `head = [1,2]`
+**Output:** `[2,1]`
+
+**Example 3:**
+**Input:** `head = []`
+**Output:** `[]`
 
 ---
 
@@ -1656,6 +2301,14 @@ ListNode* reverseBetween(ListNode* head, int left, int right) {
 }
 ```
 
+**Example 1:**
+**Input:** `head = [1,2,3,4,5], left = 2, right = 4`
+**Output:** `[1,4,3,2,5]`
+
+**Example 2:**
+**Input:** `head = [5], left = 1, right = 1`
+**Output:** `[5]`
+
 ---
 
 #### 25. Reverse Nodes in k-Group
@@ -1674,6 +2327,14 @@ ListNode* reverseKGroup(ListNode* head, int k) {
     return prev;
 }
 ```
+
+**Example 1:**
+**Input:** `head = [1,2,3,4,5], k = 2`
+**Output:** `[2,1,4,3,5]`
+
+**Example 2:**
+**Input:** `head = [1,2,3,4,5], k = 3`
+**Output:** `[3,2,1,4,5]`
 
 ---
 
@@ -1699,6 +2360,18 @@ ListNode* mergeTwoLists(ListNode* l1, ListNode* l2) {
 }
 ```
 
+**Example 1:**
+**Input:** `list1 = [1,2,4], list2 = [1,3,4]`
+**Output:** `[1,1,2,3,4,4]`
+
+**Example 2:**
+**Input:** `list1 = [], list2 = []`
+**Output:** `[]`
+
+**Example 3:**
+**Input:** `list1 = [], list2 = [0]`
+**Output:** `[0]`
+
 ---
 
 #### 23. Merge K Sorted Lists
@@ -1719,6 +2392,26 @@ ListNode* mergeKLists(vector<ListNode*>& lists) {
     return dummy.next;
 }
 ```
+
+**Example 1:**
+**Input:** `lists = [[1,4,5],[1,3,4],[2,6]]`
+**Output:** `[1,1,2,3,4,4,5,6]`
+**Explanation:** The linked-lists are:
+[
+  1->4->5,
+  1->3->4,
+  2->6
+]
+merging them into one sorted list:
+1->1->2->3->4->4->5->6
+
+**Example 2:**
+**Input:** `lists = []`
+**Output:** `[]`
+
+**Example 3:**
+**Input:** `lists = [[]]`
+**Output:** `[]`
 
 ---
 
@@ -1741,6 +2434,18 @@ ListNode* removeNthFromEnd(ListNode* head, int n) {
 }
 ```
 
+**Example 1:**
+**Input:** `head = [1,2,3,4,5], n = 2`
+**Output:** `[1,2,3,5]`
+
+**Example 2:**
+**Input:** `head = [1], n = 1`
+**Output:** `[]`
+
+**Example 3:**
+**Input:** `head = [1,2], n = 1`
+**Output:** `[1]`
+
 ---
 
 #### 24. Swap Nodes in Pairs
@@ -1759,6 +2464,18 @@ ListNode* swapPairs(ListNode* head) {
     return dummy.next;
 }
 ```
+
+**Example 1:**
+**Input:** `head = [1,2,3,4]`
+**Output:** `[2,1,4,3]`
+
+**Example 2:**
+**Input:** `head = []`
+**Output:** `[]`
+
+**Example 3:**
+**Input:** `head = [1]`
+**Output:** `[1]`
 
 ---
 
@@ -1789,6 +2506,18 @@ bool isValid(string s) {
 }
 ```
 
+**Example 1:**
+**Input:** `s = "()"`
+**Output:** `true`
+
+**Example 2:**
+**Input:** `s = "()[]{}"`
+**Output:** `true`
+
+**Example 3:**
+**Input:** `s = "(]"`
+**Output:** `false`
+
 ---
 
 #### 155. Min Stack
@@ -1808,6 +2537,22 @@ public:
     int getMin() { return st.top().second; }
 };
 ```
+
+**Example 1:**
+**Input:**
+`["MinStack","push","push","push","getMin","pop","top","getMin"]`
+`[[],[-2],[0],[-3],[],[],[],[]]`
+**Output:**
+`[null,null,null,null,-3,null,0,-2]`
+**Explanation:**
+MinStack minStack = new MinStack();
+minStack.push(-2);
+minStack.push(0);
+minStack.push(-3);
+minStack.getMin(); // return -3
+minStack.pop();
+minStack.top();    // return 0
+minStack.getMin(); // return -2
 
 ---
 
@@ -1833,6 +2578,18 @@ vector<int> nextGreaterElement(vector<int>& nums1, vector<int>& nums2) {
 }
 ```
 
+**Example 1:**
+**Input:** `nums1 = [4,1,2], nums2 = [1,3,4,2]`
+**Output:** `[-1,3,-1]`
+**Explanation:**
+- 4 is underlined in nums2 = [1,3,4,2]. There is no next greater element, so the answer is -1.
+- 1 is underlined in nums2 = [1,3,4,2]. The next greater element is 3.
+- 2 is underlined in nums2 = [1,3,4,2]. There is no next greater element, so the answer is -1.
+
+**Example 2:**
+**Input:** `nums1 = [2,4], nums2 = [1,2,3,4]`
+**Output:** `[3,-1]`
+
 ---
 
 #### 739. Daily Temperatures
@@ -1853,6 +2610,18 @@ vector<int> dailyTemperatures(vector<int>& temperatures) {
     return res;
 }
 ```
+
+**Example 1:**
+**Input:** `temperatures = [73,74,75,71,69,72,76,73]`
+**Output:** `[1,1,4,2,1,1,0,0]`
+
+**Example 2:**
+**Input:** `temperatures = [30,40,50,60]`
+**Output:** `[1,1,1,0]`
+
+**Example 3:**
+**Input:** `temperatures = [30,60,90]`
+**Output:** `[1,1,0]`
 
 ---
 
@@ -1881,6 +2650,15 @@ int largestRectangleArea(vector<int>& heights) {
 }
 ```
 
+**Example 1:**
+**Input:** `heights = [2,1,5,6,2,3]`
+**Output:** `10`
+**Explanation:** The above is a histogram where width of each bar is 1. The largest rectangle is shown in the red area, which has an area = 10 units.
+
+**Example 2:**
+**Input:** `heights = [2,4]`
+**Output:** `4`
+
 ---
 
 ### Pattern: Expression Evaluation
@@ -1907,6 +2685,21 @@ int evalRPN(vector<string>& tokens) {
     return st.top();
 }
 ```
+
+**Example 1:**
+**Input:** `tokens = ["2","1","+","3","*"]`
+**Output:** `9`
+**Explanation:** ((2 + 1) * 3) = 9
+
+**Example 2:**
+**Input:** `tokens = ["4","13","5","/","+"]`
+**Output:** `6`
+**Explanation:** (4 + (13 / 5)) = 6
+
+**Example 3:**
+**Input:** `tokens = ["10","6","9","3","+","-11","*","/","*","17","+","5","+"]`
+**Output:** `22`
+**Explanation:** ((10 * (6 / ((9 + 3) * -11))) + 17) + 5
 
 ---
 
@@ -1941,6 +2734,18 @@ vector<vector<int>> levelOrder(TreeNode* root) {
 }
 ```
 
+**Example 1:**
+**Input:** `root = [3,9,20,null,null,15,7]`
+**Output:** `[[3],[9,20],[15,7]]`
+
+**Example 2:**
+**Input:** `root = [1]`
+**Output:** `[[1]]`
+
+**Example 3:**
+**Input:** `root = []`
+**Output:** `[]`
+
 ---
 
 #### 994. Rotting Oranges
@@ -1972,6 +2777,19 @@ int orangesRotting(vector<vector<int>>& grid) {
 }
 ```
 
+**Example 1:**
+**Input:** `grid = [[2,1,1],[1,1,0],[0,1,1]]`
+**Output:** `4`
+
+**Example 2:**
+**Input:** `grid = [[2,1,1],[0,1,1],[1,0,1]]`
+**Output:** `-1`
+**Explanation:** The orange in the bottom left corner (row 2, column 0) is never rotten, because rotting only happens 4-directionally.
+
+**Example 3:**
+**Input:** `grid = [[0,2]]`
+**Output:** `0`
+
 ---
 
 ### Pattern: Monotonic Deque
@@ -1995,6 +2813,23 @@ vector<int> maxSlidingWindow(vector<int>& nums, int k) {
     return res;
 }
 ```
+
+**Example 1:**
+**Input:** `nums = [1,3,-1,-3,5,3,6,7], k = 3`
+**Output:** `[3,3,5,5,6,7]`
+**Explanation:**
+Window position                Max
+---------------               -----
+[1  3  -1] -3  5  3  6  7       3
+ 1 [3  -1  -3] 5  3  6  7       3
+ 1  3 [-1  -3  5] 3  6  7       5
+ 1  3  -1 [-3  5  3] 6  7       5
+ 1  3  -1  -3 [5  3  6] 7       6
+ 1  3  -1  -3  5 [3  6  7]      7
+
+**Example 2:**
+**Input:** `nums = [1], k = 1`
+**Output:** `[1]`
 
 ---
 
@@ -2022,6 +2857,18 @@ vector<vector<int>> kClosest(vector<vector<int>>& points, int k) {
 }
 ```
 
+**Example 1:**
+**Input:** `points = [[1,3],[-2,2]], k = 1`
+**Output:** `[[-2,2]]`
+**Explanation:**
+The distance between (1, 3) and the origin is sqrt(10).
+The distance between (-2, 2) and the origin is sqrt(8).
+Since sqrt(8) < sqrt(10), (-2, 2) is closer to the origin.
+
+**Example 2:**
+**Input:** `points = [[3,3],[5,-1],[-2,4]], k = 2`
+**Output:** `[[3,3],[-2,4]]`
+
 ---
 
 #### 215. Kth Largest Element in an Array
@@ -2038,6 +2885,14 @@ int findKthLargest(vector<int>& nums, int k) {
     return pq.top();
 }
 ```
+
+**Example 1:**
+**Input:** `nums = [3,2,1,5,6,4], k = 2`
+**Output:** `5`
+
+**Example 2:**
+**Input:** `nums = [3,2,3,1,2,4,5,5,6], k = 4`
+**Output:** `4`
 
 ---
 
@@ -2064,6 +2919,20 @@ public:
     }
 };
 ```
+
+**Example 1:**
+**Input:**
+`["MedianFinder", "addNum", "addNum", "findMedian", "addNum", "findMedian"]`
+`[[], [1], [2], [], [3], []]`
+**Output:**
+`[null, null, null, 1.5, null, 2.0]`
+**Explanation:**
+MedianFinder medianFinder = new MedianFinder();
+medianFinder.addNum(1);    // arr = [1]
+medianFinder.addNum(2);    // arr = [1, 2]
+medianFinder.findMedian(); // return 1.5 (i.e., (1 + 2) / 2)
+medianFinder.addNum(3);    // arr[1, 2, 3]
+medianFinder.findMedian(); // return 2.0
 
 ---
 
@@ -2092,6 +2961,20 @@ int findMaximizedCapital(int k, int w, vector<int>& profits, vector<int>& capita
 }
 ```
 
+**Example 1:**
+**Input:** `k = 2, w = 0, profits = [1,2,3], capital = [0,1,1]`
+**Output:** `4`
+**Explanation:**
+Since your initial capital is 0, you can only start the project indexed 0.
+After finishing it you will obtain profit 1 and your capital becomes 1.
+With capital 1, you can either start the project indexed 1 or the project indexed 2.
+Since you can choose at most 2 projects, you need to finish the project indexed 2 to get the maximum capital.
+Therefore, output the final maximized capital, which is 0 + 1 + 3 = 4.
+
+**Example 2:**
+**Input:** `k = 3, w = 0, profits = [1,2,3], capital = [0,1,2]`
+**Output:** `6`
+
 ---
 
 ## 8. TREES
@@ -2111,6 +2994,14 @@ int maxDepth(TreeNode* root) {
 }
 ```
 
+**Example 1:**
+**Input:** `root = [3,9,20,null,null,15,7]`
+**Output:** `3`
+
+**Example 2:**
+**Input:** `root = [1,null,2]`
+**Output:** `2`
+
 ---
 
 #### 112. Path Sum
@@ -2125,6 +3016,19 @@ bool hasPathSum(TreeNode* root, int targetSum) {
            hasPathSum(root->right, targetSum - root->val);
 }
 ```
+
+**Example 1:**
+**Input:** `root = [5,4,8,11,null,13,4,7,2,null,null,null,1], targetSum = 22`
+**Output:** `true`
+**Explanation:** The root-to-leaf path with the target sum is shown.
+
+**Example 2:**
+**Input:** `root = [1,2,3], targetSum = 5`
+**Output:** `false`
+
+**Example 3:**
+**Input:** `root = [], targetSum = 0`
+**Output:** `false`
 
 ---
 
@@ -2145,6 +3049,15 @@ int diameterOfBinaryTree(TreeNode* root) {
     return res;
 }
 ```
+
+**Example 1:**
+**Input:** `root = [1,2,3,4,5]`
+**Output:** `3`
+**Explanation:** 3 is the length of the path [4,2,1,3] or [5,2,1,3].
+
+**Example 2:**
+**Input:** `root = [1,2]`
+**Output:** `1`
 
 ---
 
@@ -2173,6 +3086,18 @@ vector<int> rightSideView(TreeNode* root) {
     return res;
 }
 ```
+
+**Example 1:**
+**Input:** `root = [1,2,3,null,5,null,4]`
+**Output:** `[1,3,4]`
+
+**Example 2:**
+**Input:** `root = [1,null,3]`
+**Output:** `[1,3]`
+
+**Example 3:**
+**Input:** `root = []`
+**Output:** `[]`
 
 ---
 
@@ -2204,6 +3129,18 @@ vector<vector<int>> zigzagLevelOrder(TreeNode* root) {
 }
 ```
 
+**Example 1:**
+**Input:** `root = [3,9,20,null,null,15,7]`
+**Output:** `[[3],[20,9],[15,7]]`
+
+**Example 2:**
+**Input:** `root = [1]`
+**Output:** `[[1]]`
+
+**Example 3:**
+**Input:** `root = []`
+**Output:** `[]`
+
 ---
 
 ### Pattern: BST
@@ -2222,6 +3159,15 @@ bool isValidBST(TreeNode* root, long lo=LONG_MIN, long hi=LONG_MAX) {
            isValidBST(root->right, root->val, hi);
 }
 ```
+
+**Example 1:**
+**Input:** `root = [2,1,3]`
+**Output:** `true`
+
+**Example 2:**
+**Input:** `root = [5,1,4,null,null,3,6]`
+**Output:** `false`
+**Explanation:** The root node's value is 5 but its right child's value is 4.
 
 ---
 
@@ -2243,6 +3189,14 @@ int kthSmallest(TreeNode* root, int k) {
 }
 ```
 
+**Example 1:**
+**Input:** `root = [3,1,4,null,2], k = 1`
+**Output:** `1`
+
+**Example 2:**
+**Input:** `root = [5,3,6,2,4,null,null,1], k = 3`
+**Output:** `3`
+
 ---
 
 #### 235. Lowest Common Ancestor of a BST
@@ -2256,6 +3210,16 @@ TreeNode* lowestCommonAncestor(TreeNode* root, TreeNode* p, TreeNode* q) {
     return root;
 }
 ```
+
+**Example 1:**
+**Input:** `root = [6,2,8,0,4,7,9,null,null,3,5], p = 2, q = 8`
+**Output:** `6`
+**Explanation:** The LCA of nodes 2 and 8 is 6.
+
+**Example 2:**
+**Input:** `root = [6,2,8,0,4,7,9,null,null,3,5], p = 2, q = 4`
+**Output:** `2`
+**Explanation:** The LCA of nodes 2 and 4 is 2, since a node can be a descendant of itself according to the LCA definition.
 
 ---
 
@@ -2284,6 +3248,14 @@ TreeNode* buildTree(vector<int>& preorder, vector<int>& inorder) {
 }
 ```
 
+**Example 1:**
+**Input:** `preorder = [3,9,20,15,7], inorder = [9,3,15,20,7]`
+**Output:** `[3,9,20,null,null,15,7]`
+
+**Example 2:**
+**Input:** `preorder = [-1], inorder = [-1]`
+**Output:** `[-1]`
+
 ---
 
 ### Pattern: Tree DP
@@ -2309,6 +3281,16 @@ int rob(TreeNode* root) {
 }
 ```
 
+**Example 1:**
+**Input:** `root = [3,2,3,null,3,null,1]`
+**Output:** `7`
+**Explanation:** Maximum amount of money the thief can rob = 3 + 3 + 1 = 7.
+
+**Example 2:**
+**Input:** `root = [3,4,5,1,3,null,1]`
+**Output:** `9`
+**Explanation:** Maximum amount of money the thief can rob = 4 + 5 = 9.
+
 ---
 
 #### 124. Binary Tree Maximum Path Sum
@@ -2329,6 +3311,16 @@ int maxPathSum(TreeNode* root) {
     return res;
 }
 ```
+
+**Example 1:**
+**Input:** `root = [1,2,3]`
+**Output:** `6`
+**Explanation:** The optimal path is 2 -> 1 -> 3 with a path sum of 2 + 1 + 3 = 6.
+
+**Example 2:**
+**Input:** `root = [-10,9,20,null,null,15,7]`
+**Output:** `42`
+**Explanation:** The optimal path is 15 -> 20 -> 7 with a path sum of 15 + 20 + 7 = 42.
 
 ---
 
@@ -2356,6 +3348,14 @@ int numIslands(vector<vector<char>>& grid) {
 }
 ```
 
+**Example 1:**
+**Input:** `grid = [["1","1","1","1","0"],["1","1","0","1","0"],["1","1","0","0","0"],["0","0","0","0","0"]]`
+**Output:** `1`
+
+**Example 2:**
+**Input:** `grid = [["1","1","0","0","0"],["1","1","0","0","0"],["0","0","1","0","0"],["0","0","0","1","1"]]`
+**Output:** `3`
+
 ---
 
 #### 133. Clone Graph
@@ -2376,6 +3376,23 @@ Node* cloneGraph(Node* node) {
 }
 ```
 
+**Example 1:**
+**Input:** `adjList = [[2,4],[1,3],[2,4],[1,3]]`
+**Output:** `[[2,4],[1,3],[2,4],[1,3]]`
+**Explanation:** There are 4 nodes in the graph.
+1st node (val = 1)'s neighbors are 2nd node (val = 2) and 4th node (val = 4).
+2nd node (val = 2)'s neighbors are 1st node (val = 1) and 3rd node (val = 3).
+3rd node (val = 3)'s neighbors are 2nd node (val = 2) and 4th node (val = 4).
+4th node (val = 4)'s neighbors are 1st node (val = 1) and 3rd node (val = 3).
+
+**Example 2:**
+**Input:** `adjList = [[]]`
+**Output:** `[[]]`
+
+**Example 3:**
+**Input:** `adjList = []`
+**Output:** `[]`
+
 ---
 
 #### 695. Max Area of Island
@@ -2395,6 +3412,15 @@ int maxAreaOfIsland(vector<vector<int>>& grid) {
     return res;
 }
 ```
+
+**Example 1:**
+**Input:** `grid = [[0,0,1,0,0,0,0,1,0,0,0,0,0],[0,0,0,0,0,0,0,1,1,1,0,0,0],[0,1,1,0,1,0,0,0,0,0,0,0,0],[0,1,0,0,1,1,0,0,1,0,1,0,0],[0,1,0,0,1,1,0,0,1,1,1,0,0],[0,0,0,0,0,0,0,0,0,0,1,0,0],[0,0,0,0,0,0,0,1,1,1,0,0,0],[0,0,0,0,0,0,0,1,1,0,0,0,0]]`
+**Output:** `6`
+**Explanation:** The answer is not 11, because the island must be connected 4-directionally.
+
+**Example 2:**
+**Input:** `grid = [[0,0,0,0,0,0,0,0]]`
+**Output:** `0`
 
 ---
 
@@ -2432,6 +3458,16 @@ int ladderLength(string beginWord, string endWord, vector<string>& wordList) {
 }
 ```
 
+**Example 1:**
+**Input:** `beginWord = "hit", endWord = "cog", wordList = ["hot","dot","dog","lot","log","cog"]`
+**Output:** `5`
+**Explanation:** One shortest transformation sequence is "hit" -> "hot" -> "dot" -> "dog" -> cog", which is 5 words long.
+
+**Example 2:**
+**Input:** `beginWord = "hit", endWord = "cog", wordList = ["hot","dot","dog","lot","log"]`
+**Output:** `0`
+**Explanation:** The endWord "cog" is not in wordList, therefore there is no valid transformation sequence.
+
 ---
 
 ### Pattern: Topological Sort
@@ -2458,6 +3494,16 @@ bool canFinish(int numCourses, vector<vector<int>>& prerequisites) {
 }
 ```
 
+**Example 1:**
+**Input:** `numCourses = 2, prerequisites = [[1,0]]`
+**Output:** `true`
+**Explanation:** There are a total of 2 courses to take. To take course 1 you should have finished course 0. So it is possible.
+
+**Example 2:**
+**Input:** `numCourses = 2, prerequisites = [[1,0],[0,1]]`
+**Output:** `false`
+**Explanation:** There are a total of 2 courses to take. To take course 1 you should have finished course 0, and to take course 0 you should also have finished course 1. So it is impossible.
+
 ---
 
 #### 210. Course Schedule II
@@ -2480,6 +3526,20 @@ vector<int> findOrder(int numCourses, vector<vector<int>>& prerequisites) {
     return order.size()==numCourses ? order : vector<int>{};
 }
 ```
+
+**Example 1:**
+**Input:** `numCourses = 2, prerequisites = [[1,0]]`
+**Output:** `[0,1]`
+**Explanation:** There are a total of 2 courses to take. To take course 1 you should have finished course 0. So the correct course order is [0,1].
+
+**Example 2:**
+**Input:** `numCourses = 4, prerequisites = [[1,0],[2,0],[3,1],[3,2]]`
+**Output:** `[0,2,1,3]`
+**Explanation:** There are a total of 4 courses to take. To take course 3 you should have finished both courses 1 and 2. Both courses 1 and 2 should be taken after you finished course 0. So one correct course order is [0,1,2,3]. Another correct ordering is [0,2,1,3].
+
+**Example 3:**
+**Input:** `numCourses = 1, prerequisites = []`
+**Output:** `[0]`
 
 ---
 
@@ -2508,6 +3568,14 @@ vector<int> findRedundantConnection(vector<vector<int>>& edges) {
 }
 ```
 
+**Example 1:**
+**Input:** `edges = [[1,2],[1,3],[2,3]]`
+**Output:** `[2,3]`
+
+**Example 2:**
+**Input:** `edges = [[1,2],[2,3],[3,4],[1,4],[1,5]]`
+**Output:** `[1,4]`
+
 ---
 
 #### 547. Number of Provinces
@@ -2531,6 +3599,14 @@ int findCircleNum(vector<vector<int>>& isConnected) {
     return res;
 }
 ```
+
+**Example 1:**
+**Input:** `isConnected = [[1,1,0],[1,1,0],[0,0,1]]`
+**Output:** `2`
+
+**Example 2:**
+**Input:** `isConnected = [[1,0,0],[0,1,0],[0,0,1]]`
+**Output:** `3`
 
 ---
 
@@ -2565,6 +3641,18 @@ int networkDelayTime(vector<vector<int>>& times, int n, int k) {
 }
 ```
 
+**Example 1:**
+**Input:** `times = [[2,1,1],[2,3,1],[3,4,1]], n = 4, k = 2`
+**Output:** `2`
+
+**Example 2:**
+**Input:** `times = [[1,2,1]], n = 2, k = 1`
+**Output:** `1`
+
+**Example 3:**
+**Input:** `times = [[1,2,1]], n = 2, k = 2`
+**Output:** `-1`
+
 ---
 
 #### 1631. Path With Minimum Effort
@@ -2598,6 +3686,21 @@ int minimumEffortPath(vector<vector<int>>& heights) {
 }
 ```
 
+**Example 1:**
+**Input:** `heights = [[1,2,2],[3,8,2],[5,3,5]]`
+**Output:** `2`
+**Explanation:** The route of [1,3,5,3,5] has a maximum absolute difference of 2 in consecutive cells. This is better than the route of [1,2,2,2,5], where the maximum absolute difference is 3.
+
+**Example 2:**
+**Input:** `heights = [[1,2,3],[3,8,4],[5,3,5]]`
+**Output:** `1`
+**Explanation:** The route of [1,2,3,4,5] has a maximum absolute difference of 1 in consecutive cells, which is better than route [1,3,5,3,5].
+
+**Example 3:**
+**Input:** `heights = [[1,2,1,1,1],[1,2,1,2,1],[1,2,1,2,1],[1,2,1,2,1],[1,1,1,2,1]]`
+**Output:** `0`
+**Explanation:** This route does not require any effort.
+
 ---
 
 ## 10. BACKTRACKING
@@ -2627,6 +3730,14 @@ vector<vector<int>> subsets(vector<int>& nums) {
 }
 ```
 
+**Example 1:**
+**Input:** `nums = [1,2,3]`
+**Output:** `[[],[1],[2],[1,2],[3],[1,3],[2,3],[1,2,3]]`
+
+**Example 2:**
+**Input:** `nums = [0]`
+**Output:** `[[],[0]]`
+
 ---
 
 #### 90. Subsets II
@@ -2651,6 +3762,14 @@ vector<vector<int>> subsetsWithDup(vector<int>& nums) {
     return res;
 }
 ```
+
+**Example 1:**
+**Input:** `nums = [1,2,2]`
+**Output:** `[[],[1],[1,2],[1,2,2],[2],[2,2]]`
+
+**Example 2:**
+**Input:** `nums = [0]`
+**Output:** `[[],[0]]`
 
 ---
 
@@ -2678,6 +3797,18 @@ vector<vector<int>> permute(vector<int>& nums) {
 }
 ```
 
+**Example 1:**
+**Input:** `nums = [1,2,3]`
+**Output:** `[[1,2,3],[1,3,2],[2,1,3],[2,3,1],[3,1,2],[3,2,1]]`
+
+**Example 2:**
+**Input:** `nums = [0,1]`
+**Output:** `[[0,1],[1,0]]`
+
+**Example 3:**
+**Input:** `nums = [1]`
+**Output:** `[[1]]`
+
 ---
 
 #### 47. Permutations II
@@ -2704,6 +3835,14 @@ vector<vector<int>> permuteUnique(vector<int>& nums) {
     return res;
 }
 ```
+
+**Example 1:**
+**Input:** `nums = [1,1,2]`
+**Output:** `[[1,1,2],[1,2,1],[2,1,1]]`
+
+**Example 2:**
+**Input:** `nums = [1,2,3]`
+**Output:** `[[1,2,3],[1,3,2],[2,1,3],[2,3,1],[3,1,2],[3,2,1]]`
 
 ---
 
@@ -2734,6 +3873,22 @@ vector<vector<int>> combinationSum(vector<int>& candidates, int target) {
 }
 ```
 
+**Example 1:**
+**Input:** `candidates = [2,3,6,7], target = 7`
+**Output:** `[[2,2,3],[7]]`
+**Explanation:**
+2 and 3 are candidates, and 2 + 2 + 3 = 7. Note that 2 can be used multiple times.
+7 is a candidate, and 7 = 7.
+These are the only two combinations.
+
+**Example 2:**
+**Input:** `candidates = [2,3,5], target = 8`
+**Output:** `[[2,2,2,2],[2,3,3],[3,5]]`
+
+**Example 3:**
+**Input:** `candidates = [2], target = 1`
+**Output:** `[]`
+
 ---
 
 ### Pattern: Grid Backtracking
@@ -2759,6 +3914,18 @@ bool exist(vector<vector<char>>& board, string word) {
     return false;
 }
 ```
+
+**Example 1:**
+**Input:** `board = [["A","B","C","E"],["S","F","C","S"],["A","D","E","E"]], word = "ABCCED"`
+**Output:** `true`
+
+**Example 2:**
+**Input:** `board = [["A","B","C","E"],["S","F","C","S"],["A","D","E","E"]], word = "SEE"`
+**Output:** `true`
+
+**Example 3:**
+**Input:** `board = [["A","B","C","E"],["S","F","C","S"],["A","D","E","E"]], word = "ABCB"`
+**Output:** `false`
 
 ---
 
@@ -2787,6 +3954,15 @@ vector<vector<string>> solveNQueens(int n) {
 }
 ```
 
+**Example 1:**
+**Input:** `n = 4`
+**Output:** `[[".Q..","...Q","Q...","..Q."],["..Q.","Q...","...Q",".Q.."]]`
+**Explanation:** There exist two distinct solutions to the 4-queens puzzle as shown above.
+
+**Example 2:**
+**Input:** `n = 1`
+**Output:** `[["Q"]]`
+
 ---
 
 ## 11. DYNAMIC PROGRAMMING
@@ -2808,6 +3984,21 @@ int climbStairs(int n) {
 }
 ```
 
+**Example 1:**
+**Input:** `n = 2`
+**Output:** `2`
+**Explanation:** There are two ways to climb to the top.
+1. 1 step + 1 step
+2. 2 steps
+
+**Example 2:**
+**Input:** `n = 3`
+**Output:** `3`
+**Explanation:** There are three ways to climb to the top.
+1. 1 step + 1 step + 1 step
+2. 1 step + 2 steps
+3. 2 steps + 1 step
+
 ---
 
 #### 198. House Robber
@@ -2821,6 +4012,18 @@ int rob(vector<int>& nums) {
     return cur;
 }
 ```
+
+**Example 1:**
+**Input:** `nums = [1,2,3,1]`
+**Output:** `4`
+**Explanation:** Rob house 1 (money = 1) and then rob house 3 (money = 3).
+Total amount you can rob = 1 + 3 = 4.
+
+**Example 2:**
+**Input:** `nums = [2,7,9,3,1]`
+**Output:** `12`
+**Explanation:** Rob house 1 (money = 2), rob house 3 (money = 9) and rob house 5 (money = 1).
+Total amount you can rob = 2 + 9 + 1 = 12.
 
 ---
 
@@ -2839,6 +4042,19 @@ int coinChange(vector<int>& coins, int amount) {
 }
 ```
 
+**Example 1:**
+**Input:** `coins = [1,2,5], amount = 11`
+**Output:** `3`
+**Explanation:** 11 = 5 + 5 + 1
+
+**Example 2:**
+**Input:** `coins = [2], amount = 3`
+**Output:** `-1`
+
+**Example 3:**
+**Input:** `coins = [1], amount = 0`
+**Output:** `0`
+
 ---
 
 ### Pattern: 2D DP
@@ -2856,6 +4072,18 @@ int uniquePaths(int m, int n) {
     return dp[n-1];
 }
 ```
+
+**Example 1:**
+**Input:** `m = 3, n = 7`
+**Output:** `28`
+
+**Example 2:**
+**Input:** `m = 3, n = 2`
+**Output:** `3`
+**Explanation:** From the top-left corner, there are a total of 3 ways to reach the bottom-right corner:
+1. Right -> Down -> Down
+2. Down -> Down -> Right
+3. Down -> Right -> Down
 
 ---
 
@@ -2876,6 +4104,24 @@ int minDistance(string word1, string word2) {
     return dp[m][n];
 }
 ```
+
+**Example 1:**
+**Input:** `word1 = "horse", word2 = "ros"`
+**Output:** `3`
+**Explanation:**
+horse -> rorse (replace 'h' with 'r')
+rorse -> rose (remove 'r')
+rose -> ros (remove 'e')
+
+**Example 2:**
+**Input:** `word1 = "intention", word2 = "execution"`
+**Output:** `5`
+**Explanation:**
+intention -> inention (remove 't')
+inention -> enention (replace 'i' with 'e')
+enention -> exention (replace 'n' with 'x')
+exention -> exection (replace 'n' with 'c')
+exection -> execution (insert 'u')
 
 ---
 
@@ -2899,6 +4145,16 @@ bool canPartition(vector<int>& nums) {
 }
 ```
 
+**Example 1:**
+**Input:** `nums = [1,5,11,5]`
+**Output:** `true`
+**Explanation:** The array can be partitioned as [1, 5, 5] and [11].
+
+**Example 2:**
+**Input:** `nums = [1,2,3,5]`
+**Output:** `false`
+**Explanation:** The array cannot be partitioned into equal sum subsets.
+
 ---
 
 #### 494. Target Sum
@@ -2921,6 +4177,20 @@ int findTargetSumWays(vector<int>& nums, int target) {
 }
 ```
 
+**Example 1:**
+**Input:** `nums = [1,1,1,1,1], target = 3`
+**Output:** `5`
+**Explanation:** There are 5 ways to assign symbols to make the sum of nums be target 3.
+-1 + 1 + 1 + 1 + 1 = 3
++1 - 1 + 1 + 1 + 1 = 3
++1 + 1 - 1 + 1 + 1 = 3
++1 + 1 + 1 - 1 + 1 = 3
++1 + 1 + 1 + 1 - 1 = 3
+
+**Example 2:**
+**Input:** `nums = [1], target = 1`
+**Output:** `1`
+
 ---
 
 ### Pattern: LIS
@@ -2942,6 +4212,19 @@ int lengthOfLIS(vector<int>& nums) {
     return tails.size();
 }
 ```
+
+**Example 1:**
+**Input:** `nums = [10,9,2,5,3,7,101,18]`
+**Output:** `4`
+**Explanation:** The longest increasing subsequence is [2,3,7,101], therefore the length is 4.
+
+**Example 2:**
+**Input:** `nums = [0,1,0,3,2,3]`
+**Output:** `4`
+
+**Example 3:**
+**Input:** `nums = [7,7,7,7,7,7,7]`
+**Output:** `1`
 
 ---
 
@@ -2967,6 +4250,16 @@ int longestPalindromeSubseq(string s) {
 }
 ```
 
+**Example 1:**
+**Input:** `s = "bbbab"`
+**Output:** `4`
+**Explanation:** One possible longest palindromic subsequence is "bbbb".
+
+**Example 2:**
+**Input:** `s = "cbbd"`
+**Output:** `2`
+**Explanation:** One possible longest palindromic subsequence is "bb".
+
 ---
 
 #### 647. Palindromic Substrings
@@ -2983,6 +4276,16 @@ int countSubstrings(string s) {
     return res;
 }
 ```
+
+**Example 1:**
+**Input:** `s = "abc"`
+**Output:** `3`
+**Explanation:** Three palindromic strings: "a", "b", "c".
+
+**Example 2:**
+**Input:** `s = "aaa"`
+**Output:** `6`
+**Explanation:** Six palindromic strings: "a", "a", "a", "aa", "aa", "aaa".
 
 ---
 
@@ -3008,6 +4311,17 @@ int maxCoins(vector<int>& nums) {
 }
 ```
 
+**Example 1:**
+**Input:** `nums = [3,1,5,8]`
+**Output:** `167`
+**Explanation:**
+nums = [3,1,5,8] --> [3,5,8] --> [3,8] --> [8] --> []
+coins =  3*1*5    +   3*5*8   +  1*3*8  + 1*8*1 = 167
+
+**Example 2:**
+**Input:** `nums = [1,5]`
+**Output:** `10`
+
 ---
 
 ## 12. GREEDY
@@ -3031,6 +4345,17 @@ int findMinArrowShots(vector<vector<int>>& points) {
 }
 ```
 
+**Example 1:**
+**Input:** `points = [[10,16],[2,8],[1,6],[7,12]]`
+**Output:** `2`
+**Explanation:** The balloons can be burst by 2 arrows:
+- Shoot an arrow at x = 6, bursting the balloons [2,8] and [1,6].
+- Shoot an arrow at x = 11, bursting the balloons [10,16] and [7,12].
+
+**Example 2:**
+**Input:** `points = [[1,2],[3,4],[5,6],[7,8]]`
+**Output:** `4`
+
 ---
 
 ### Pattern: Jump Problems
@@ -3052,6 +4377,16 @@ bool canJump(vector<int>& nums) {
 }
 ```
 
+**Example 1:**
+**Input:** `nums = [2,3,1,1,4]`
+**Output:** `true`
+**Explanation:** Jump 1 step from index 0 to 1, then 3 steps to the last index.
+
+**Example 2:**
+**Input:** `nums = [3,2,1,0,4]`
+**Output:** `false`
+**Explanation:** You will always arrive at index 3 no matter what. Its maximum jump length is 0, which makes it impossible to reach the last index.
+
 ---
 
 #### 45. Jump Game II
@@ -3068,6 +4403,15 @@ int jump(vector<int>& nums) {
     return jumps;
 }
 ```
+
+**Example 1:**
+**Input:** `nums = [2,3,1,1,4]`
+**Output:** `2`
+**Explanation:** The minimum number of jumps to reach the last index is 2. Jump 1 step from index 0 to 1, then 3 steps to the last index.
+
+**Example 2:**
+**Input:** `nums = [2,3,0,1,4]`
+**Output:** `2`
 
 ---
 
@@ -3089,6 +4433,14 @@ int singleNumber(vector<int>& nums) {
 }
 ```
 
+**Example 1:**
+**Input:** `nums = [2,2,1]`
+**Output:** `1`
+
+**Example 2:**
+**Input:** `nums = [4,1,2,1,2]`
+**Output:** `4`
+
 ---
 
 #### 268. Missing Number
@@ -3102,6 +4454,14 @@ int missingNumber(vector<int>& nums) {
     return res;
 }
 ```
+
+**Example 1:**
+**Input:** `nums = [3,0,1]`
+**Output:** `2`
+
+**Example 2:**
+**Input:** `nums = [0,1]`
+**Output:** `2`
 
 ---
 
@@ -3123,6 +4483,15 @@ vector<int> singleNumber(vector<int>& nums) {
 }
 ```
 
+**Example 1:**
+**Input:** `nums = [1,2,1,3,2,5]`
+**Output:** `[3,5]`
+**Explanation:**  [5, 3] is also a valid answer.
+
+**Example 2:**
+**Input:** `nums = [-1,0]`
+**Output:** `[-1,0]`
+
 ---
 
 ### Pattern: Bitmask
@@ -3141,6 +4510,18 @@ vector<int> countBits(int n) {
 }
 ```
 
+**Example 1:**
+**Input:** `n = 2`
+**Output:** `[0,1,1]`
+**Explanation:**
+0 --> 0
+1 --> 1
+2 --> 10
+
+**Example 2:**
+**Input:** `n = 5`
+**Output:** `[0,1,1,2,1,2]`
+
 ---
 
 #### 318. Maximum Product of Word Lengths
@@ -3158,6 +4539,16 @@ int maxProduct(vector<string>& words) {
     return res;
 }
 ```
+
+**Example 1:**
+**Input:** `words = ["abcw","baz","foo","bar","xtfn","abcdef"]`
+**Output:** `16`
+**Explanation:** The two words can be "abcw", "xtfn".
+
+**Example 2:**
+**Input:** `words = ["a","ab","abc","d","cd","bcd","abcd"]`
+**Output:** `4`
+**Explanation:** The two words can be "ab", "cd".
 
 ---
 
@@ -3187,6 +4578,18 @@ public:
 };
 ```
 
+**Example 1:**
+**Input:**
+`["NumArray", "sumRange", "update", "sumRange"]`
+`[[[1, 3, 5]], [0, 2], [1, 2], [0, 2]]`
+**Output:**
+`[null, 9, null, 8]`
+**Explanation:**
+NumArray numArray = new NumArray([1, 3, 5]);
+numArray.sumRange(0, 2); // return 1 + 3 + 5 = 9
+numArray.update(1, 2);   // nums = [1, 2, 5]
+numArray.sumRange(0, 2); // return 1 + 2 + 5 = 8
+
 ---
 
 #### 315. Count of Smaller Numbers After Self
@@ -3212,6 +4615,23 @@ vector<int> countSmaller(vector<int>& nums) {
     return res;
 }
 ```
+
+**Example 1:**
+**Input:** `nums = [5,2,6,1]`
+**Output:** `[2,1,1,0]`
+**Explanation:**
+To the right of 5 there are 2 smaller elements (2 and 1).
+To the right of 2 there is only 1 smaller element (1).
+To the right of 6 there is 1 smaller element (1).
+To the right of 1 there is 0 smaller element.
+
+**Example 2:**
+**Input:** `nums = [-1]`
+**Output:** `[0]`
+
+**Example 3:**
+**Input:** `nums = [-1,-1]`
+**Output:** `[0,0]`
 
 ---
 
@@ -3244,6 +4664,14 @@ vector<vector<int>> updateMatrix(vector<vector<int>>& mat) {
 }
 ```
 
+**Example 1:**
+**Input:** `mat = [[0,0,0],[0,1,0],[0,0,0]]`
+**Output:** `[[0,0,0],[0,1,0],[0,0,0]]`
+
+**Example 2:**
+**Input:** `mat = [[0,0,0],[0,1,0],[1,1,1]]`
+**Output:** `[[0,0,0],[0,1,0],[1,2,1]]`
+
 ---
 
 #### 417. Pacific Atlantic Water Flow
@@ -3275,6 +4703,14 @@ vector<vector<int>> pacificAtlantic(vector<vector<int>>& heights) {
 }
 ```
 
+**Example 1:**
+**Input:** `heights = [[1,2,2,3,5],[3,2,3,4,4],[2,4,5,3,1],[6,7,1,4,5],[5,1,1,2,4]]`
+**Output:** `[[0,4],[1,3],[1,4],[2,2],[3,0],[3,1],[4,0]]`
+
+**Example 2:**
+**Input:** `heights = [[1]]`
+**Output:** `[[0,0]]`
+
 ---
 
 ## 16. BELLMAN-FORD
@@ -3300,6 +4736,18 @@ int findCheapestPrice(int n, vector<vector<int>>& flights, int src, int dst, int
     return prices[dst]==INT_MAX ? -1 : prices[dst];
 }
 ```
+
+**Example 1:**
+**Input:** `n = 4, flights = [[0,1,100],[1,2,100],[2,0,100],[1,3,600],[2,3,200]], src = 0, dst = 3, k = 1`
+**Output:** `700`
+
+**Example 2:**
+**Input:** `n = 3, flights = [[0,1,100],[1,2,100],[0,2,500]], src = 0, dst = 2, k = 1`
+**Output:** `200`
+
+**Example 3:**
+**Input:** `n = 3, flights = [[0,1,100],[1,2,100],[0,2,500]], src = 0, dst = 2, k = 0`
+**Output:** `500`
 
 ---
 
@@ -3335,6 +4783,14 @@ int minCostConnectPoints(vector<vector<int>>& points) {
 }
 ```
 
+**Example 1:**
+**Input:** `points = [[0,0],[2,2],[3,10],[5,2],[7,0]]`
+**Output:** `20`
+
+**Example 2:**
+**Input:** `points = [[3,12],[-2,5],[-4,1]]`
+**Output:** `18`
+
 ---
 
 ## 18. DP + BITMASK
@@ -3366,6 +4822,16 @@ int shortestPathLength(vector<vector<int>>& graph) {
 }
 ```
 
+**Example 1:**
+**Input:** `graph = [[1,2,3],[0],[0],[0]]`
+**Output:** `4`
+**Explanation:** One possible path is [1,0,2,0,3]
+
+**Example 2:**
+**Input:** `graph = [[1],[0,2,4],[1,3,4],[2],[1,2]]`
+**Output:** `4`
+**Explanation:** One possible path is [0,1,4,2,3]
+
 ---
 
 ## 19. FLOYD'S CYCLE DETECTION (Standalone)
@@ -3386,5 +4852,17 @@ int findDuplicate(vector<int>& nums) {
     return slow;
 }
 ```
+
+**Example 1:**
+**Input:** `nums = [1,3,4,2,2]`
+**Output:** `2`
+
+**Example 2:**
+**Input:** `nums = [3,1,3,4,2]`
+**Output:** `3`
+
+**Example 3:**
+**Input:** `nums = [3,3,3,3,3]`
+**Output:** `3`
 
 ---
