@@ -257,7 +257,7 @@
 ---
 
 #### Find Maximum in Array
-**Link:** <a href="https://leetcode.com/problems/find-maximum-in-array/" target="_blank" rel="noopener noreferrer">https://leetcode.com/problems/find-maximum-in-array/</a>  
+**Link:** [https://leetcode.com/problems/find-maximum-in-array/](https://leetcode.com/problems/find-maximum-in-array/)  
 **Problem:** Given an integer array `nums`, return the maximum element.
 
 ```cpp
@@ -281,7 +281,7 @@ int findMax(vector<int>& nums) {
 ---
 
 #### 121. Best Time to Buy and Sell Stock
-**Link:** <a href="https://leetcode.com/problems/best-time-to-buy-and-sell-stock/" target="_blank" rel="noopener noreferrer">https://leetcode.com/problems/best-time-to-buy-and-sell-stock/</a>  
+**Link:** [https://leetcode.com/problems/best-time-to-buy-and-sell-stock/](https://leetcode.com/problems/best-time-to-buy-and-sell-stock/)  
 **Problem:** You are given an array `prices` where `prices[i]` is the price of a given stock on the ith day. You want to maximize your profit by choosing a single day to buy one stock and choosing a different day in the future to sell that stock. Return the maximum profit you can achieve from this transaction. If you cannot achieve any profit, return 0.
 
 ```cpp
@@ -308,7 +308,7 @@ int maxProfit(vector<int>& prices) {
 ---
 
 #### 169. Majority Element
-**Link:** <a href="https://leetcode.com/problems/majority-element/" target="_blank" rel="noopener noreferrer">https://leetcode.com/problems/majority-element/</a>  
+**Link:** [https://leetcode.com/problems/majority-element/](https://leetcode.com/problems/majority-element/)  
 **Problem:** Given an array `nums` of size `n`, return the majority element. The majority element is the element that appears more than `⌊n / 2⌋` times. You may assume that the majority element always exists in the array.
 
 ```cpp
@@ -339,7 +339,7 @@ int majorityElement(vector<int>& nums) {
 ---
 
 #### 167. Two Sum II
-**Link:** <a href="https://leetcode.com/problems/two-sum-ii-input-array-is-sorted/" target="_blank" rel="noopener noreferrer">https://leetcode.com/problems/two-sum-ii-input-array-is-sorted/</a>  
+**Link:** [https://leetcode.com/problems/two-sum-ii-input-array-is-sorted/](https://leetcode.com/problems/two-sum-ii-input-array-is-sorted/)  
 **Problem:** Given a 1-indexed array of integers `numbers` that is already sorted in non-decreasing order, find two numbers such that they add up to a specific `target` number. Return the indices of the two numbers as an integer array `[index1, index2]` of length 2.
 
 ```cpp
@@ -368,7 +368,7 @@ vector<int> twoSum(vector<int>& numbers, int target) {
 ---
 
 #### 11. Container With Most Water
-**Link:** <a href="https://leetcode.com/problems/container-with-most-water/" target="_blank" rel="noopener noreferrer">https://leetcode.com/problems/container-with-most-water/</a>  
+**Link:** [https://leetcode.com/problems/container-with-most-water/](https://leetcode.com/problems/container-with-most-water/)  
 **Problem:** You are given an integer array `height` of length `n`. There are `n` vertical lines drawn such that the two endpoints of the ith line are `(i, 0)` and `(i, height[i])`. Find two lines that together with the x-axis form a container, such that the container contains the most water. Return the maximum amount of water a container can store.
 
 ```cpp
@@ -396,7 +396,7 @@ int maxArea(vector<int>& height) {
 ---
 
 #### 283. Move Zeroes
-**Link:** <a href="https://leetcode.com/problems/move-zeroes/" target="_blank" rel="noopener noreferrer">https://leetcode.com/problems/move-zeroes/</a>  
+**Link:** [https://leetcode.com/problems/move-zeroes/](https://leetcode.com/problems/move-zeroes/)  
 **Problem:** Given an integer array `nums`, move all 0's to the end of it while maintaining the relative order of the non-zero elements. Note that you must do this in-place without making a copy of the array.
 
 ```cpp
@@ -424,7 +424,7 @@ void moveZeroes(vector<int>& nums) {
 ---
 
 #### 643. Maximum Average Subarray I
-**Link:** <a href="https://leetcode.com/problems/maximum-average-subarray-i/" target="_blank" rel="noopener noreferrer">https://leetcode.com/problems/maximum-average-subarray-i/</a>  
+**Link:** [https://leetcode.com/problems/maximum-average-subarray-i/](https://leetcode.com/problems/maximum-average-subarray-i/)  
 **Problem:** You are given an integer array `nums` consisting of `n` elements, and an integer `k`. Find a contiguous subarray whose length is equal to `k` that has the maximum average value and return this value.
 
 ```cpp
@@ -453,7 +453,7 @@ double findMaxAverage(vector<int>& nums, int k) {
 ---
 
 #### 2461. Maximum Sum of Distinct Subarrays With Length K
-**Link:** <a href="https://leetcode.com/problems/maximum-sum-of-distinct-subarrays-with-length-k/" target="_blank" rel="noopener noreferrer">https://leetcode.com/problems/maximum-sum-of-distinct-subarrays-with-length-k/</a>  
+**Link:** [https://leetcode.com/problems/maximum-sum-of-distinct-subarrays-with-length-k/](https://leetcode.com/problems/maximum-sum-of-distinct-subarrays-with-length-k/)  
 **Problem:** You are given an integer array `nums` and an integer `k`. Find the maximum subarray sum of all the subarrays of `nums` that meet the following conditions: the length of the subarray is `k`, and all the elements of the subarray are distinct. Return the maximum subarray sum of all the subarrays that meet the conditions. If no subarray meets the conditions, return 0.
 
 ```cpp
@@ -498,7 +498,7 @@ We return 0 because no subarrays meet the conditions.
 ---
 
 #### 3. Longest Substring Without Repeating Characters
-**Link:** <a href="https://leetcode.com/problems/longest-substring-without-repeating-characters/" target="_blank" rel="noopener noreferrer">https://leetcode.com/problems/longest-substring-without-repeating-characters/</a>  
+**Link:** [https://leetcode.com/problems/longest-substring-without-repeating-characters/](https://leetcode.com/problems/longest-substring-without-repeating-characters/)  
 **Problem:** Given a string `s`, find the length of the longest substring without repeating characters.
 
 ```cpp
@@ -527,7 +527,7 @@ int lengthOfLongestSubstring(string s) {
 ---
 
 #### 209. Minimum Size Subarray Sum
-**Link:** <a href="https://leetcode.com/problems/minimum-size-subarray-sum/" target="_blank" rel="noopener noreferrer">https://leetcode.com/problems/minimum-size-subarray-sum/</a>  
+**Link:** [https://leetcode.com/problems/minimum-size-subarray-sum/](https://leetcode.com/problems/minimum-size-subarray-sum/)  
 **Problem:** Given an array of positive integers `nums` and a positive integer `target`, return the minimal length of a subarray whose sum is greater than or equal to `target`. If there is no such subarray, return 0 instead.
 
 ```cpp
@@ -557,7 +557,7 @@ int minSubArrayLen(int target, vector<int>& nums) {
 ---
 
 #### 904. Fruit Into Baskets
-**Link:** <a href="https://leetcode.com/problems/fruit-into-baskets/" target="_blank" rel="noopener noreferrer">https://leetcode.com/problems/fruit-into-baskets/</a>  
+**Link:** [https://leetcode.com/problems/fruit-into-baskets/](https://leetcode.com/problems/fruit-into-baskets/)  
 **Problem:** You are visiting a farm that has a single row of fruit trees arranged from left to right. The trees are represented by an integer array `fruits` where `fruits[i]` is the type of fruit the ith tree produces. You want to collect as much fruit as possible with two baskets, where each basket can only hold a single type of fruit. Starting from any tree, you must pick exactly one fruit from every tree (including the start tree) while moving to the right. Return the maximum number of fruits you can pick.
 
 ```cpp
@@ -594,7 +594,7 @@ int totalFruit(vector<int>& fruits) {
 ---
 
 #### 303. Range Sum Query - Immutable
-**Link:** <a href="https://leetcode.com/problems/range-sum-query-immutable/" target="_blank" rel="noopener noreferrer">https://leetcode.com/problems/range-sum-query-immutable/</a>  
+**Link:** [https://leetcode.com/problems/range-sum-query-immutable/](https://leetcode.com/problems/range-sum-query-immutable/)  
 **Problem:** Given an integer array `nums`, handle multiple queries of the following type: Calculate the sum of the elements of `nums` between indices `left` and `right` inclusive where `left <= right`.
 
 ```cpp
@@ -626,7 +626,7 @@ numArray.sumRange(0, 5); // return (-2) + 0 + 3 + (-5) + 2 + (-1) = -3
 ---
 
 #### 560. Subarray Sum Equals K
-**Link:** <a href="https://leetcode.com/problems/subarray-sum-equals-k/" target="_blank" rel="noopener noreferrer">https://leetcode.com/problems/subarray-sum-equals-k/</a>  
+**Link:** [https://leetcode.com/problems/subarray-sum-equals-k/](https://leetcode.com/problems/subarray-sum-equals-k/)  
 **Problem:** Given an array of integers `nums` and an integer `k`, return the total number of subarrays whose sum equals to `k`.
 
 ```cpp
@@ -655,7 +655,7 @@ int subarraySum(vector<int>& nums, int k) {
 ---
 
 #### 523. Continuous Subarray Sum
-**Link:** <a href="https://leetcode.com/problems/continuous-subarray-sum/" target="_blank" rel="noopener noreferrer">https://leetcode.com/problems/continuous-subarray-sum/</a>  
+**Link:** [https://leetcode.com/problems/continuous-subarray-sum/](https://leetcode.com/problems/continuous-subarray-sum/)  
 **Problem:** Given an integer array `nums` and an integer `k`, return true if `nums` has a good subarray or false otherwise. A good subarray is a subarray where its length is at least two, and the sum of the elements of the subarray is a multiple of `k`.
 
 ```cpp
@@ -689,7 +689,7 @@ bool checkSubarraySum(vector<int>& nums, int k) {
 ---
 
 #### 1109. Corporate Flight Bookings
-**Link:** <a href="https://leetcode.com/problems/corporate-flight-bookings/" target="_blank" rel="noopener noreferrer">https://leetcode.com/problems/corporate-flight-bookings/</a>  
+**Link:** [https://leetcode.com/problems/corporate-flight-bookings/](https://leetcode.com/problems/corporate-flight-bookings/)  
 **Problem:** There are `n` flights and they are labeled from 1 to `n`. You are given an array of flight bookings `bookings`, where `bookings[i] = [firsti, lasti, seatsi]` represents a booking for flights `firsti` through `lasti` (inclusive) with `seatsi` seats reserved for each flight. Return an array `answer` of length `n`, where `answer[i]` is the total number of seats reserved for flight `i`.
 
 ```cpp
@@ -717,7 +717,7 @@ Total seats:         10  55  45  25  25
 ---
 
 #### 1094. Car Pooling
-**Link:** <a href="https://leetcode.com/problems/car-pooling/" target="_blank" rel="noopener noreferrer">https://leetcode.com/problems/car-pooling/</a>  
+**Link:** [https://leetcode.com/problems/car-pooling/](https://leetcode.com/problems/car-pooling/)  
 **Problem:** There is a car with `capacity` empty seats. The vehicle only drives east (i.e., it cannot turn around and drive west). You are given the integer `capacity` and an array `trips` where `trips[i] = [numPassengersi, fromi, toi]` indicates that the ith trip has `numPassengersi` passengers and the passengers must be picked up at location `fromi` and dropped off at location `toi`. Return true if it is possible to pick up and drop off all passengers for all the given trips, or false otherwise.
 
 ```cpp
@@ -752,7 +752,7 @@ bool carPooling(vector<vector<int>>& trips, int capacity) {
 ---
 
 #### 53. Maximum Subarray
-**Link:** <a href="https://leetcode.com/problems/maximum-subarray/" target="_blank" rel="noopener noreferrer">https://leetcode.com/problems/maximum-subarray/</a>  
+**Link:** [https://leetcode.com/problems/maximum-subarray/](https://leetcode.com/problems/maximum-subarray/)  
 **Problem:** Given an integer array `nums`, find the subarray with the largest sum, and return its sum.
 
 ```cpp
@@ -779,7 +779,7 @@ int maxSubArray(vector<int>& nums) {
 ---
 
 #### 1749. Maximum Absolute Sum of Any Subarray
-**Link:** <a href="https://leetcode.com/problems/maximum-absolute-sum-of-any-subarray/" target="_blank" rel="noopener noreferrer">https://leetcode.com/problems/maximum-absolute-sum-of-any-subarray/</a>  
+**Link:** [https://leetcode.com/problems/maximum-absolute-sum-of-any-subarray/](https://leetcode.com/problems/maximum-absolute-sum-of-any-subarray/)  
 **Problem:** You are given an integer array `nums`. The absolute sum of a subarray `[numsl, numsl+1, ..., numsr-1, numsr]` is `abs(numsl + numsl+1 + ... + numsr-1 + numsr)`. Return the maximum absolute sum of any (possibly empty) subarray of `nums`.
 
 ```cpp
@@ -812,7 +812,7 @@ int maxAbsoluteSum(vector<int>& nums) {
 ---
 
 #### 704. Binary Search
-**Link:** <a href="https://leetcode.com/problems/binary-search/" target="_blank" rel="noopener noreferrer">https://leetcode.com/problems/binary-search/</a>  
+**Link:** [https://leetcode.com/problems/binary-search/](https://leetcode.com/problems/binary-search/)  
 **Problem:** Given an array of integers `nums` which is sorted in ascending order, and an integer `target`, write a function to search target in nums. If target exists, then return its index. Otherwise, return -1.
 
 ```cpp
@@ -841,7 +841,7 @@ int search(vector<int>& nums, int target) {
 ---
 
 #### 35. Search Insert Position
-**Link:** <a href="https://leetcode.com/problems/search-insert-position/" target="_blank" rel="noopener noreferrer">https://leetcode.com/problems/search-insert-position/</a>  
+**Link:** [https://leetcode.com/problems/search-insert-position/](https://leetcode.com/problems/search-insert-position/)  
 **Problem:** Given a sorted array of distinct integers and a target value, return the index if the target is found. If not, return the index where it would be if it were inserted in order.
 
 ```cpp
@@ -868,7 +868,7 @@ int searchInsert(vector<int>& nums, int target) {
 ---
 
 #### 33. Search in Rotated Sorted Array
-**Link:** <a href="https://leetcode.com/problems/search-in-rotated-sorted-array/" target="_blank" rel="noopener noreferrer">https://leetcode.com/problems/search-in-rotated-sorted-array/</a>  
+**Link:** [https://leetcode.com/problems/search-in-rotated-sorted-array/](https://leetcode.com/problems/search-in-rotated-sorted-array/)  
 **Problem:** There is an integer array `nums` sorted in ascending order (with distinct values). Prior to being passed to your function, `nums` is possibly rotated at an unknown pivot index `k`. Given the array `nums` after the possible rotation and an integer `target`, return the index of `target` if it is in `nums`, or -1 if it is not in `nums`.
 
 ```cpp
@@ -904,7 +904,7 @@ int search(vector<int>& nums, int target) {
 ---
 
 #### 875. Koko Eating Bananas
-**Link:** <a href="https://leetcode.com/problems/koko-eating-bananas/" target="_blank" rel="noopener noreferrer">https://leetcode.com/problems/koko-eating-bananas/</a>  
+**Link:** [https://leetcode.com/problems/koko-eating-bananas/](https://leetcode.com/problems/koko-eating-bananas/)  
 **Problem:** Koko loves to eat bananas. There are `n` piles of bananas, the ith pile has `piles[i]` bananas. Koko can decide her bananas-per-hour eating speed of `k`. Each hour, she chooses some pile of bananas and eats `k` bananas from that pile. She likes to eat slowly but still wants to finish eating all the bananas before the guards return in `h` hours. Return the minimum integer `k` such that she can eat all the bananas within `h` hours.
 
 ```cpp
@@ -932,7 +932,7 @@ int minEatingSpeed(vector<int>& piles, int h) {
 ---
 
 #### 1011. Capacity to Ship Packages Within D Days
-**Link:** <a href="https://leetcode.com/problems/capacity-to-ship-packages-within-d-days/" target="_blank" rel="noopener noreferrer">https://leetcode.com/problems/capacity-to-ship-packages-within-d-days/</a>  
+**Link:** [https://leetcode.com/problems/capacity-to-ship-packages-within-d-days/](https://leetcode.com/problems/capacity-to-ship-packages-within-d-days/)  
 **Problem:** A conveyor belt has packages that must be shipped from one port to another within `days` days. The ith package on the conveyor belt has a weight of `weights[i]`. Each day, we load the ship with packages on the conveyor belt (in the order given by weights). We may not load more weight than the maximum weight capacity of the ship. Return the least weight capacity of the ship that will result in all the packages on the conveyor belt being shipped within `days` days.
 
 ```cpp
@@ -969,7 +969,7 @@ int shipWithinDays(vector<int>& weights, int days) {
 ---
 
 #### 410. Split Array Largest Sum
-**Link:** <a href="https://leetcode.com/problems/split-array-largest-sum/" target="_blank" rel="noopener noreferrer">https://leetcode.com/problems/split-array-largest-sum/</a>  
+**Link:** [https://leetcode.com/problems/split-array-largest-sum/](https://leetcode.com/problems/split-array-largest-sum/)  
 **Problem:** Given an integer array `nums` and an integer `k`, split `nums` into `k` non-empty subarrays such that the largest sum of any subarray is minimized. Return the minimized largest sum of the split.
 
 ```cpp
@@ -1005,7 +1005,7 @@ int splitArray(vector<int>& nums, int k) {
 ---
 
 #### 15. 3Sum
-**Link:** <a href="https://leetcode.com/problems/3sum/" target="_blank" rel="noopener noreferrer">https://leetcode.com/problems/3sum/</a>  
+**Link:** [https://leetcode.com/problems/3sum/](https://leetcode.com/problems/3sum/)  
 **Problem:** Given an integer array `nums`, return all the triplets `[nums[i], nums[j], nums[k]]` such that `i != j`, `i != k`, and `j != k`, and `nums[i] + nums[j] + nums[k] == 0`. Notice that the solution set must not contain duplicate triplets.
 
 ```cpp
@@ -1041,7 +1041,7 @@ vector<vector<int>> threeSum(vector<int>& nums) {
 ---
 
 #### 18. 4Sum
-**Link:** <a href="https://leetcode.com/problems/4sum/" target="_blank" rel="noopener noreferrer">https://leetcode.com/problems/4sum/</a>  
+**Link:** [https://leetcode.com/problems/4sum/](https://leetcode.com/problems/4sum/)  
 **Problem:** Given an array `nums` of `n` integers and an integer `target`, return an array of all the unique quadruplets `[nums[a], nums[b], nums[c], nums[d]]` such that their sum equals `target`.
 
 ```cpp
@@ -1081,7 +1081,7 @@ vector<vector<int>> fourSum(vector<int>& nums, int target) {
 ---
 
 #### 179. Largest Number
-**Link:** <a href="https://leetcode.com/problems/largest-number/" target="_blank" rel="noopener noreferrer">https://leetcode.com/problems/largest-number/</a>  
+**Link:** [https://leetcode.com/problems/largest-number/](https://leetcode.com/problems/largest-number/)  
 **Problem:** Given a list of non-negative integers `nums`, arrange them such that they form the largest number and return it as a string. Since the result may be very large, so you need to return a string instead of an integer.
 
 ```cpp
@@ -1111,7 +1111,7 @@ string largestNumber(vector<int>& nums) {
 ---
 
 #### 56. Merge Intervals
-**Link:** <a href="https://leetcode.com/problems/merge-intervals/" target="_blank" rel="noopener noreferrer">https://leetcode.com/problems/merge-intervals/</a>  
+**Link:** [https://leetcode.com/problems/merge-intervals/](https://leetcode.com/problems/merge-intervals/)  
 **Problem:** Given an array of `intervals` where `intervals[i] = [starti, endi]`, merge all overlapping intervals, and return an array of the non-overlapping intervals that cover all the intervals in the input.
 
 ```cpp
@@ -1140,7 +1140,7 @@ vector<vector<int>> merge(vector<vector<int>>& intervals) {
 ---
 
 #### 57. Insert Interval
-**Link:** <a href="https://leetcode.com/problems/insert-interval/" target="_blank" rel="noopener noreferrer">https://leetcode.com/problems/insert-interval/</a>  
+**Link:** [https://leetcode.com/problems/insert-interval/](https://leetcode.com/problems/insert-interval/)  
 **Problem:** You are given an array of non-overlapping intervals `intervals` sorted in ascending order by start point and a new interval `newInterval`. Insert `newInterval` into `intervals` such that the intervals remain sorted and non-overlapping (merge overlapping intervals if necessary). Return the resulting array of intervals.
 
 ```cpp
@@ -1171,7 +1171,7 @@ vector<vector<int>> insert(vector<vector<int>>& intervals, vector<int>& newInter
 ---
 
 #### 435. Non-overlapping Intervals
-**Link:** <a href="https://leetcode.com/problems/non-overlapping-intervals/" target="_blank" rel="noopener noreferrer">https://leetcode.com/problems/non-overlapping-intervals/</a>  
+**Link:** [https://leetcode.com/problems/non-overlapping-intervals/](https://leetcode.com/problems/non-overlapping-intervals/)  
 **Problem:** Given an array of intervals `intervals` where `intervals[i] = [starti, endi]`, return the minimum number of intervals you need to remove to make the rest of the intervals non-overlapping.
 
 ```cpp
@@ -1202,7 +1202,7 @@ int eraseOverlapIntervals(vector<vector<int>>& intervals) {
 ---
 
 #### 54. Spiral Matrix
-**Link:** <a href="https://leetcode.com/problems/spiral-matrix/" target="_blank" rel="noopener noreferrer">https://leetcode.com/problems/spiral-matrix/</a>  
+**Link:** [https://leetcode.com/problems/spiral-matrix/](https://leetcode.com/problems/spiral-matrix/)  
 **Problem:** Given an `m x n` matrix, return all elements of the matrix in spiral order.
 
 ```cpp
@@ -1230,7 +1230,7 @@ vector<int> spiralOrder(vector<vector<int>>& matrix) {
 ---
 
 #### 48. Rotate Image
-**Link:** <a href="https://leetcode.com/problems/rotate-image/" target="_blank" rel="noopener noreferrer">https://leetcode.com/problems/rotate-image/</a>  
+**Link:** [https://leetcode.com/problems/rotate-image/](https://leetcode.com/problems/rotate-image/)  
 **Problem:** You are given an `n x n` 2D `matrix` representing an image, rotate the image by 90 degrees (clockwise). You have to rotate the image in-place.
 
 ```cpp
@@ -1252,7 +1252,7 @@ void rotate(vector<vector<int>>& matrix) {
 ---
 
 #### 73. Set Matrix Zeroes
-**Link:** <a href="https://leetcode.com/problems/set-matrix-zeroes/" target="_blank" rel="noopener noreferrer">https://leetcode.com/problems/set-matrix-zeroes/</a>  
+**Link:** [https://leetcode.com/problems/set-matrix-zeroes/](https://leetcode.com/problems/set-matrix-zeroes/)  
 **Problem:** Given an `m x n` integer matrix, if an element is 0, set its entire row and column to 0's. You must do it in place.
 
 ```cpp
@@ -1285,7 +1285,7 @@ void setZeroes(vector<vector<int>>& matrix) {
 ---
 
 #### 75. Sort Colors
-**Link:** <a href="https://leetcode.com/problems/sort-colors/" target="_blank" rel="noopener noreferrer">https://leetcode.com/problems/sort-colors/</a>  
+**Link:** [https://leetcode.com/problems/sort-colors/](https://leetcode.com/problems/sort-colors/)  
 **Problem:** Given an array `nums` with `n` objects colored red, white, or blue, sort them in-place so that objects of the same color are adjacent, with the colors in the order red, white, and blue. We will use the integers 0, 1, and 2 to represent the color red, white, and blue, respectively.
 
 ```cpp
@@ -1314,7 +1314,7 @@ void sortColors(vector<int>& nums) {
 ---
 
 #### 41. First Missing Positive
-**Link:** <a href="https://leetcode.com/problems/first-missing-positive/" target="_blank" rel="noopener noreferrer">https://leetcode.com/problems/first-missing-positive/</a>  
+**Link:** [https://leetcode.com/problems/first-missing-positive/](https://leetcode.com/problems/first-missing-positive/)  
 **Problem:** Given an unsorted integer array `nums`, return the smallest missing positive integer. You must implement an algorithm that runs in O(n) time and uses O(1) auxiliary space.
 
 ```cpp
@@ -1341,7 +1341,7 @@ int firstMissingPositive(vector<int>& nums) {
 ---
 
 #### 448. Find All Numbers Disappeared in an Array
-**Link:** <a href="https://leetcode.com/problems/find-all-numbers-disappeared-in-an-array/" target="_blank" rel="noopener noreferrer">https://leetcode.com/problems/find-all-numbers-disappeared-in-an-array/</a>  
+**Link:** [https://leetcode.com/problems/find-all-numbers-disappeared-in-an-array/](https://leetcode.com/problems/find-all-numbers-disappeared-in-an-array/)  
 **Problem:** Given an array `nums` of `n` integers where `nums[i]` is in the range `[1, n]`, return an array of all the integers in the range `[1, n]` that do not appear in `nums`.
 
 ```cpp
@@ -1367,7 +1367,7 @@ vector<int> findDisappearedNumbers(vector<int>& nums) {
 ---
 
 #### 287. Find the Duplicate Number
-**Link:** <a href="https://leetcode.com/problems/find-the-duplicate-number/" target="_blank" rel="noopener noreferrer">https://leetcode.com/problems/find-the-duplicate-number/</a>  
+**Link:** [https://leetcode.com/problems/find-the-duplicate-number/](https://leetcode.com/problems/find-the-duplicate-number/)  
 **Problem:** Given an array of integers `nums` containing `n + 1` integers where each integer is in the range `[1, n]` inclusive, there is only one repeated number in `nums`, return this repeated number. You must solve the problem without modifying the array and uses only constant extra space.
 
 ```cpp
@@ -1397,7 +1397,7 @@ int findDuplicate(vector<int>& nums) {
 ---
 
 #### 125. Valid Palindrome
-**Link:** <a href="https://leetcode.com/problems/valid-palindrome/" target="_blank" rel="noopener noreferrer">https://leetcode.com/problems/valid-palindrome/</a>  
+**Link:** [https://leetcode.com/problems/valid-palindrome/](https://leetcode.com/problems/valid-palindrome/)  
 **Problem:** A phrase is a palindrome if, after converting all uppercase letters into lowercase letters and removing all non-alphanumeric characters, it reads the same forward and backward. Given a string `s`, return true if it is a palindrome, or false otherwise.
 
 ```cpp
@@ -1425,7 +1425,7 @@ bool isPalindrome(string s) {
 ---
 
 #### 344. Reverse String
-**Link:** <a href="https://leetcode.com/problems/reverse-string/" target="_blank" rel="noopener noreferrer">https://leetcode.com/problems/reverse-string/</a>  
+**Link:** [https://leetcode.com/problems/reverse-string/](https://leetcode.com/problems/reverse-string/)  
 **Problem:** Write a function that reverses a string. The input string is given as an array of characters `s`. You must do this by modifying the input array in-place with O(1) extra memory.
 
 ```cpp
@@ -1446,7 +1446,7 @@ void reverseString(vector<char>& s) {
 ---
 
 #### 345. Reverse Vowels of a String
-**Link:** <a href="https://leetcode.com/problems/reverse-vowels-of-a-string/" target="_blank" rel="noopener noreferrer">https://leetcode.com/problems/reverse-vowels-of-a-string/</a>  
+**Link:** [https://leetcode.com/problems/reverse-vowels-of-a-string/](https://leetcode.com/problems/reverse-vowels-of-a-string/)  
 **Problem:** Given a string `s`, reverse only all the vowels in the string and return it.
 
 ```cpp
@@ -1477,7 +1477,7 @@ string reverseVowels(string s) {
 ---
 
 #### 76. Minimum Window Substring
-**Link:** <a href="https://leetcode.com/problems/minimum-window-substring/" target="_blank" rel="noopener noreferrer">https://leetcode.com/problems/minimum-window-substring/</a>  
+**Link:** [https://leetcode.com/problems/minimum-window-substring/](https://leetcode.com/problems/minimum-window-substring/)  
 **Problem:** Given two strings `s` and `t` of lengths `m` and `n` respectively, return the minimum window substring of `s` such that every character in `t` (including duplicates) is included in the window. If there is no such substring, return the empty string "".
 
 ```cpp
@@ -1512,7 +1512,7 @@ string minWindow(string s, string t) {
 ---
 
 #### 567. Permutation in String
-**Link:** <a href="https://leetcode.com/problems/permutation-in-string/" target="_blank" rel="noopener noreferrer">https://leetcode.com/problems/permutation-in-string/</a>  
+**Link:** [https://leetcode.com/problems/permutation-in-string/](https://leetcode.com/problems/permutation-in-string/)  
 **Problem:** Given two strings `s1` and `s2`, return true if `s2` contains a permutation of `s1`, or false otherwise. In other words, return true if one of `s1`'s permutations is the substring of `s2`.
 
 ```cpp
@@ -1547,7 +1547,7 @@ bool checkInclusion(string s1, string s2) {
 ---
 
 #### 242. Valid Anagram
-**Link:** <a href="https://leetcode.com/problems/valid-anagram/" target="_blank" rel="noopener noreferrer">https://leetcode.com/problems/valid-anagram/</a>  
+**Link:** [https://leetcode.com/problems/valid-anagram/](https://leetcode.com/problems/valid-anagram/)  
 **Problem:** Given two strings `s` and `t`, return true if `t` is an anagram of `s`, and false otherwise.
 
 ```cpp
@@ -1570,7 +1570,7 @@ bool isAnagram(string s, string t) {
 ---
 
 #### 383. Ransom Note
-**Link:** <a href="https://leetcode.com/problems/ransom-note/" target="_blank" rel="noopener noreferrer">https://leetcode.com/problems/ransom-note/</a>  
+**Link:** [https://leetcode.com/problems/ransom-note/](https://leetcode.com/problems/ransom-note/)  
 **Problem:** Given two strings `ransomNote` and `magazine`, return true if `ransomNote` can be constructed by using the letters from `magazine` and false otherwise. Each letter in `magazine` can only be used once in `ransomNote`.
 
 ```cpp
@@ -1597,7 +1597,7 @@ bool canConstruct(string ransomNote, string magazine) {
 ---
 
 #### 389. Find the Difference
-**Link:** <a href="https://leetcode.com/problems/find-the-difference/" target="_blank" rel="noopener noreferrer">https://leetcode.com/problems/find-the-difference/</a>  
+**Link:** [https://leetcode.com/problems/find-the-difference/](https://leetcode.com/problems/find-the-difference/)  
 **Problem:** You are given two strings `s` and `t`. String `t` is generated by random shuffling string `s` and then add one more letter at a random position. Return the letter that was added to `t`.
 
 ```cpp
@@ -1625,7 +1625,7 @@ char findTheDifference(string s, string t) {
 ---
 
 #### 49. Group Anagrams
-**Link:** <a href="https://leetcode.com/problems/group-anagrams/" target="_blank" rel="noopener noreferrer">https://leetcode.com/problems/group-anagrams/</a>  
+**Link:** [https://leetcode.com/problems/group-anagrams/](https://leetcode.com/problems/group-anagrams/)  
 **Problem:** Given an array of strings `strs`, group the anagrams together. You can return the answer in any order.
 
 ```cpp
@@ -1657,7 +1657,7 @@ vector<vector<string>> groupAnagrams(vector<string>& strs) {
 ---
 
 #### 205. Isomorphic Strings
-**Link:** <a href="https://leetcode.com/problems/isomorphic-strings/" target="_blank" rel="noopener noreferrer">https://leetcode.com/problems/isomorphic-strings/</a>  
+**Link:** [https://leetcode.com/problems/isomorphic-strings/](https://leetcode.com/problems/isomorphic-strings/)  
 **Problem:** Given two strings `s` and `t`, determine if they are isomorphic. Two strings `s` and `t` are isomorphic if the characters in `s` can be replaced to get `t`.
 
 ```cpp
@@ -1687,7 +1687,7 @@ bool isIsomorphic(string s, string t) {
 ---
 
 #### 290. Word Pattern
-**Link:** <a href="https://leetcode.com/problems/word-pattern/" target="_blank" rel="noopener noreferrer">https://leetcode.com/problems/word-pattern/</a>  
+**Link:** [https://leetcode.com/problems/word-pattern/](https://leetcode.com/problems/word-pattern/)  
 **Problem:** Given a `pattern` and a string `s`, find if `s` follows the same pattern. Here, "follow" means a full match, such that there is a bijection between a letter in `pattern` and a non-empty word in `s`.
 
 ```cpp
@@ -1726,7 +1726,7 @@ bool wordPattern(string pattern, string s) {
 ---
 
 #### 8. String to Integer (atoi)
-**Link:** <a href="https://leetcode.com/problems/string-to-integer-atoi/" target="_blank" rel="noopener noreferrer">https://leetcode.com/problems/string-to-integer-atoi/</a>  
+**Link:** [https://leetcode.com/problems/string-to-integer-atoi/](https://leetcode.com/problems/string-to-integer-atoi/)  
 **Problem:** Implement the `myAtoi(string s)` function, which converts a string to a 32-bit signed integer.
 
 ```cpp
@@ -1758,7 +1758,7 @@ int myAtoi(string s) {
 ---
 
 #### 394. Decode String
-**Link:** <a href="https://leetcode.com/problems/decode-string/" target="_blank" rel="noopener noreferrer">https://leetcode.com/problems/decode-string/</a>  
+**Link:** [https://leetcode.com/problems/decode-string/](https://leetcode.com/problems/decode-string/)  
 **Problem:** Given an encoded string, return its decoded string. The encoding rule is: `k[encoded_string]`, where the `encoded_string` inside the square brackets is being repeated exactly `k` times.
 
 ```cpp
@@ -1800,7 +1800,7 @@ string decodeString(string s) {
 ---
 
 #### 28. Find the Index of the First Occurrence in a String
-**Link:** <a href="https://leetcode.com/problems/find-the-index-of-the-first-occurrence-in-a-string/" target="_blank" rel="noopener noreferrer">https://leetcode.com/problems/find-the-index-of-the-first-occurrence-in-a-string/</a>  
+**Link:** [https://leetcode.com/problems/find-the-index-of-the-first-occurrence-in-a-string/](https://leetcode.com/problems/find-the-index-of-the-first-occurrence-in-a-string/)  
 **Problem:** Given two strings `needle` and `haystack`, return the index of the first occurrence of `needle` in `haystack`, or -1 if `needle` is not part of `haystack`.
 
 ```cpp
@@ -1840,7 +1840,7 @@ int strStr(string haystack, string needle) {
 ---
 
 #### 208. Implement Trie (Prefix Tree)
-**Link:** <a href="https://leetcode.com/problems/implement-trie-prefix-tree/" target="_blank" rel="noopener noreferrer">https://leetcode.com/problems/implement-trie-prefix-tree/</a>  
+**Link:** [https://leetcode.com/problems/implement-trie-prefix-tree/](https://leetcode.com/problems/implement-trie-prefix-tree/)  
 **Problem:** A trie (pronounced as "try") or prefix tree is a tree data structure used to efficiently store and retrieve keys in a dataset of strings. Implement the Trie class with `insert`, `search`, and `startsWith` methods.
 
 ```cpp
@@ -1902,7 +1902,7 @@ trie.search("app");     // return True
 ---
 
 #### 347. Top K Frequent Elements
-**Link:** <a href="https://leetcode.com/problems/top-k-frequent-elements/" target="_blank" rel="noopener noreferrer">https://leetcode.com/problems/top-k-frequent-elements/</a>  
+**Link:** [https://leetcode.com/problems/top-k-frequent-elements/](https://leetcode.com/problems/top-k-frequent-elements/)  
 **Problem:** Given an integer array `nums` and an integer `k`, return the `k` most frequent elements. You may return the answer in any order.
 
 ```cpp
@@ -1929,7 +1929,7 @@ vector<int> topKFrequent(vector<int>& nums, int k) {
 ---
 
 #### 451. Sort Characters By Frequency
-**Link:** <a href="https://leetcode.com/problems/sort-characters-by-frequency/" target="_blank" rel="noopener noreferrer">https://leetcode.com/problems/sort-characters-by-frequency/</a>  
+**Link:** [https://leetcode.com/problems/sort-characters-by-frequency/](https://leetcode.com/problems/sort-characters-by-frequency/)  
 **Problem:** Given a string `s`, sort it in decreasing order based on the frequency of the characters. The frequency of a character is the number of times it appears in the string. Return the sorted string. If there are multiple answers, return any of them.
 
 ```cpp
@@ -1968,7 +1968,7 @@ string frequencySort(string s) {
 ---
 
 #### 1. Two Sum
-**Link:** <a href="https://leetcode.com/problems/two-sum/" target="_blank" rel="noopener noreferrer">https://leetcode.com/problems/two-sum/</a>  
+**Link:** [https://leetcode.com/problems/two-sum/](https://leetcode.com/problems/two-sum/)  
 **Problem:** Given an array of integers `nums` and an integer `target`, return indices of the two numbers such that they add up to `target`. You may assume that each input would have exactly one solution, and you may not use the same element twice.
 
 ```cpp
@@ -1999,7 +1999,7 @@ vector<int> twoSum(vector<int>& nums, int target) {
 ---
 
 #### 217. Contains Duplicate
-**Link:** <a href="https://leetcode.com/problems/contains-duplicate/" target="_blank" rel="noopener noreferrer">https://leetcode.com/problems/contains-duplicate/</a>  
+**Link:** [https://leetcode.com/problems/contains-duplicate/](https://leetcode.com/problems/contains-duplicate/)  
 **Problem:** Given an integer array `nums`, return true if any value appears at least twice in the array, and return false if every element is distinct.
 
 ```cpp
@@ -2028,7 +2028,7 @@ bool containsDuplicate(vector<int>& nums) {
 ---
 
 #### 202. Happy Number
-**Link:** <a href="https://leetcode.com/problems/happy-number/" target="_blank" rel="noopener noreferrer">https://leetcode.com/problems/happy-number/</a>  
+**Link:** [https://leetcode.com/problems/happy-number/](https://leetcode.com/problems/happy-number/)  
 **Problem:** Write an algorithm to determine if a number `n` is happy. A happy number is a number defined by the following process: Starting with any positive integer, replace the number by the sum of the squares of its digits, and repeat the process until the number equals 1 (where it will stay), or it loops endlessly in a cycle which does not include 1.
 
 ```cpp
@@ -2065,7 +2065,7 @@ bool isHappy(int n) {
 ---
 
 #### 525. Contiguous Array
-**Link:** <a href="https://leetcode.com/problems/contiguous-array/" target="_blank" rel="noopener noreferrer">https://leetcode.com/problems/contiguous-array/</a>  
+**Link:** [https://leetcode.com/problems/contiguous-array/](https://leetcode.com/problems/contiguous-array/)  
 **Problem:** Given a binary array `nums`, return the maximum length of a contiguous subarray with an equal number of 0 and 1.
 
 ```cpp
@@ -2098,7 +2098,7 @@ int findMaxLength(vector<int>& nums) {
 ---
 
 #### 128. Longest Consecutive Sequence
-**Link:** <a href="https://leetcode.com/problems/longest-consecutive-sequence/" target="_blank" rel="noopener noreferrer">https://leetcode.com/problems/longest-consecutive-sequence/</a>  
+**Link:** [https://leetcode.com/problems/longest-consecutive-sequence/](https://leetcode.com/problems/longest-consecutive-sequence/)  
 **Problem:** Given an unsorted array of integers `nums`, return the length of the longest consecutive elements sequence. You must write an algorithm that runs in O(n) time.
 
 ```cpp
@@ -2128,7 +2128,7 @@ int longestConsecutive(vector<int>& nums) {
 ---
 
 #### 349. Intersection of Two Arrays
-**Link:** <a href="https://leetcode.com/problems/intersection-of-two-arrays/" target="_blank" rel="noopener noreferrer">https://leetcode.com/problems/intersection-of-two-arrays/</a>  
+**Link:** [https://leetcode.com/problems/intersection-of-two-arrays/](https://leetcode.com/problems/intersection-of-two-arrays/)  
 **Problem:** Given two integer arrays `nums1` and `nums2`, return an array of their intersection. Each element in the result must be unique and you may return the result in any order.
 
 ```cpp
@@ -2156,7 +2156,7 @@ vector<int> intersection(vector<int>& nums1, vector<int>& nums2) {
 ---
 
 #### 609. Find Duplicate File in System
-**Link:** <a href="https://leetcode.com/problems/find-duplicate-file-in-system/" target="_blank" rel="noopener noreferrer">https://leetcode.com/problems/find-duplicate-file-in-system/</a>  
+**Link:** [https://leetcode.com/problems/find-duplicate-file-in-system/](https://leetcode.com/problems/find-duplicate-file-in-system/)  
 **Problem:** Given a list `paths` of directory info, find all the groups of duplicate files. A group of duplicate files consists of at least two files that have the same content.
 
 ```cpp
@@ -2196,7 +2196,7 @@ vector<vector<string>> findDuplicate(vector<string>& paths) {
 ---
 
 #### 141. Linked List Cycle
-**Link:** <a href="https://leetcode.com/problems/linked-list-cycle/" target="_blank" rel="noopener noreferrer">https://leetcode.com/problems/linked-list-cycle/</a>  
+**Link:** [https://leetcode.com/problems/linked-list-cycle/](https://leetcode.com/problems/linked-list-cycle/)  
 **Problem:** Given `head`, the head of a linked list, determine if the linked list has a cycle in it. Return true if there is a cycle in the linked list, otherwise, return false.
 
 ```cpp
@@ -2228,7 +2228,7 @@ bool hasCycle(ListNode *head) {
 ---
 
 #### 876. Middle of the Linked List
-**Link:** <a href="https://leetcode.com/problems/middle-of-the-linked-list/" target="_blank" rel="noopener noreferrer">https://leetcode.com/problems/middle-of-the-linked-list/</a>  
+**Link:** [https://leetcode.com/problems/middle-of-the-linked-list/](https://leetcode.com/problems/middle-of-the-linked-list/)  
 **Problem:** Given the `head` of a singly linked list, return the middle node of the linked list. If there are two middle nodes, return the second middle node.
 
 ```cpp
@@ -2256,7 +2256,7 @@ ListNode* middleNode(ListNode* head) {
 ---
 
 #### 206. Reverse Linked List
-**Link:** <a href="https://leetcode.com/problems/reverse-linked-list/" target="_blank" rel="noopener noreferrer">https://leetcode.com/problems/reverse-linked-list/</a>  
+**Link:** [https://leetcode.com/problems/reverse-linked-list/](https://leetcode.com/problems/reverse-linked-list/)  
 **Problem:** Given the `head` of a singly linked list, reverse the list, and return the reversed list.
 
 ```cpp
@@ -2282,7 +2282,7 @@ ListNode* reverseList(ListNode* head) {
 ---
 
 #### 92. Reverse Linked List II
-**Link:** <a href="https://leetcode.com/problems/reverse-linked-list-ii/" target="_blank" rel="noopener noreferrer">https://leetcode.com/problems/reverse-linked-list-ii/</a>  
+**Link:** [https://leetcode.com/problems/reverse-linked-list-ii/](https://leetcode.com/problems/reverse-linked-list-ii/)  
 **Problem:** Given the `head` of a singly linked list and two integers `left` and `right` where `left <= right`, reverse the nodes of the list from position `left` to position `right`, and return the reversed list.
 
 ```cpp
@@ -2312,7 +2312,7 @@ ListNode* reverseBetween(ListNode* head, int left, int right) {
 ---
 
 #### 25. Reverse Nodes in k-Group
-**Link:** <a href="https://leetcode.com/problems/reverse-nodes-in-k-group/" target="_blank" rel="noopener noreferrer">https://leetcode.com/problems/reverse-nodes-in-k-group/</a>  
+**Link:** [https://leetcode.com/problems/reverse-nodes-in-k-group/](https://leetcode.com/problems/reverse-nodes-in-k-group/)  
 **Problem:** Given the `head` of a linked list, reverse the nodes of the list `k` at a time, and return the modified list. If the number of nodes is not a multiple of `k` then left-out nodes in the end should remain as it is.
 
 ```cpp
@@ -2343,7 +2343,7 @@ ListNode* reverseKGroup(ListNode* head, int k) {
 ---
 
 #### 21. Merge Two Sorted Lists
-**Link:** <a href="https://leetcode.com/problems/merge-two-sorted-lists/" target="_blank" rel="noopener noreferrer">https://leetcode.com/problems/merge-two-sorted-lists/</a>  
+**Link:** [https://leetcode.com/problems/merge-two-sorted-lists/](https://leetcode.com/problems/merge-two-sorted-lists/)  
 **Problem:** You are given the heads of two sorted linked lists `list1` and `list2`. Merge the two lists into one sorted list. The list should be made by splicing together the nodes of the first two lists. Return the head of the merged linked list.
 
 ```cpp
@@ -2375,7 +2375,7 @@ ListNode* mergeTwoLists(ListNode* l1, ListNode* l2) {
 ---
 
 #### 23. Merge K Sorted Lists
-**Link:** <a href="https://leetcode.com/problems/merge-k-sorted-lists/" target="_blank" rel="noopener noreferrer">https://leetcode.com/problems/merge-k-sorted-lists/</a>  
+**Link:** [https://leetcode.com/problems/merge-k-sorted-lists/](https://leetcode.com/problems/merge-k-sorted-lists/)  
 **Problem:** You are given an array of `k` linked-lists lists, each linked-list is sorted in ascending order. Merge all the linked-lists into one sorted linked-list and return it.
 
 ```cpp
@@ -2420,7 +2420,7 @@ merging them into one sorted list:
 ---
 
 #### 19. Remove Nth Node From End of List
-**Link:** <a href="https://leetcode.com/problems/remove-nth-node-from-end-of-list/" target="_blank" rel="noopener noreferrer">https://leetcode.com/problems/remove-nth-node-from-end-of-list/</a>  
+**Link:** [https://leetcode.com/problems/remove-nth-node-from-end-of-list/](https://leetcode.com/problems/remove-nth-node-from-end-of-list/)  
 **Problem:** Given the `head` of a linked list, remove the nth node from the end of the list and return its head.
 
 ```cpp
@@ -2449,7 +2449,7 @@ ListNode* removeNthFromEnd(ListNode* head, int n) {
 ---
 
 #### 24. Swap Nodes in Pairs
-**Link:** <a href="https://leetcode.com/problems/swap-nodes-in-pairs/" target="_blank" rel="noopener noreferrer">https://leetcode.com/problems/swap-nodes-in-pairs/</a>  
+**Link:** [https://leetcode.com/problems/swap-nodes-in-pairs/](https://leetcode.com/problems/swap-nodes-in-pairs/)  
 **Problem:** Given a linked list, swap every two adjacent nodes and return its head. You must solve the problem without modifying the values in the list's nodes.
 
 ```cpp
@@ -2486,7 +2486,7 @@ ListNode* swapPairs(ListNode* head) {
 ---
 
 #### 20. Valid Parentheses
-**Link:** <a href="https://leetcode.com/problems/valid-parentheses/" target="_blank" rel="noopener noreferrer">https://leetcode.com/problems/valid-parentheses/</a>  
+**Link:** [https://leetcode.com/problems/valid-parentheses/](https://leetcode.com/problems/valid-parentheses/)  
 **Problem:** Given a string `s` containing just the characters `'('`, `')'`, `'{'`, `'}'`, `'['` and `']'`, determine if the input string is valid.
 
 ```cpp
@@ -2521,7 +2521,7 @@ bool isValid(string s) {
 ---
 
 #### 155. Min Stack
-**Link:** <a href="https://leetcode.com/problems/min-stack/" target="_blank" rel="noopener noreferrer">https://leetcode.com/problems/min-stack/</a>  
+**Link:** [https://leetcode.com/problems/min-stack/](https://leetcode.com/problems/min-stack/)  
 **Problem:** Design a stack that supports push, pop, top, and retrieving the minimum element in constant time.
 
 ```cpp
@@ -2561,7 +2561,7 @@ minStack.getMin(); // return -2
 ---
 
 #### 496. Next Greater Element I
-**Link:** <a href="https://leetcode.com/problems/next-greater-element-i/" target="_blank" rel="noopener noreferrer">https://leetcode.com/problems/next-greater-element-i/</a>  
+**Link:** [https://leetcode.com/problems/next-greater-element-i/](https://leetcode.com/problems/next-greater-element-i/)  
 **Problem:** The next greater element of some element `x` in an array is the first greater element that is to the right of `x` in the same array. Given two distinct 0-indexed integer arrays `nums1` and `nums2`, return an array `ans` of length `nums1.length` such that `ans[i]` is the next greater element of `nums1[i]` in `nums2`.
 
 ```cpp
@@ -2593,7 +2593,7 @@ vector<int> nextGreaterElement(vector<int>& nums1, vector<int>& nums2) {
 ---
 
 #### 739. Daily Temperatures
-**Link:** <a href="https://leetcode.com/problems/daily-temperatures/" target="_blank" rel="noopener noreferrer">https://leetcode.com/problems/daily-temperatures/</a>  
+**Link:** [https://leetcode.com/problems/daily-temperatures/](https://leetcode.com/problems/daily-temperatures/)  
 **Problem:** Given an array of integers `temperatures` represents the daily temperatures, return an array `answer` such that `answer[i]` is the number of days you have to wait after the ith day to get a warmer temperature. If there is no future day for which this is possible, keep `answer[i] == 0` instead.
 
 ```cpp
@@ -2630,7 +2630,7 @@ vector<int> dailyTemperatures(vector<int>& temperatures) {
 ---
 
 #### 84. Largest Rectangle in Histogram
-**Link:** <a href="https://leetcode.com/problems/largest-rectangle-in-histogram/" target="_blank" rel="noopener noreferrer">https://leetcode.com/problems/largest-rectangle-in-histogram/</a>  
+**Link:** [https://leetcode.com/problems/largest-rectangle-in-histogram/](https://leetcode.com/problems/largest-rectangle-in-histogram/)  
 **Problem:** Given an array of integers `heights` representing the histogram's bar height where the width of each bar is 1, return the area of the largest rectangle in the histogram.
 
 ```cpp
@@ -2666,7 +2666,7 @@ int largestRectangleArea(vector<int>& heights) {
 ---
 
 #### 150. Evaluate Reverse Polish Notation
-**Link:** <a href="https://leetcode.com/problems/evaluate-reverse-polish-notation/" target="_blank" rel="noopener noreferrer">https://leetcode.com/problems/evaluate-reverse-polish-notation/</a>  
+**Link:** [https://leetcode.com/problems/evaluate-reverse-polish-notation/](https://leetcode.com/problems/evaluate-reverse-polish-notation/)  
 **Problem:** You are given an array of strings `tokens` that represents an arithmetic expression in Reverse Polish Notation. Evaluate the expression. Return an integer that represents the value of the expression.
 
 ```cpp
@@ -2710,7 +2710,7 @@ int evalRPN(vector<string>& tokens) {
 ---
 
 #### 102. Binary Tree Level Order Traversal
-**Link:** <a href="https://leetcode.com/problems/binary-tree-level-order-traversal/" target="_blank" rel="noopener noreferrer">https://leetcode.com/problems/binary-tree-level-order-traversal/</a>  
+**Link:** [https://leetcode.com/problems/binary-tree-level-order-traversal/](https://leetcode.com/problems/binary-tree-level-order-traversal/)  
 **Problem:** Given the `root` of a binary tree, return the level order traversal of its nodes' values (i.e., from left to right, level by level).
 
 ```cpp
@@ -2749,7 +2749,7 @@ vector<vector<int>> levelOrder(TreeNode* root) {
 ---
 
 #### 994. Rotting Oranges
-**Link:** <a href="https://leetcode.com/problems/rotting-oranges/" target="_blank" rel="noopener noreferrer">https://leetcode.com/problems/rotting-oranges/</a>  
+**Link:** [https://leetcode.com/problems/rotting-oranges/](https://leetcode.com/problems/rotting-oranges/)  
 **Problem:** You are given an `m x n` grid where each cell can have one of three values: 0 (empty), 1 (fresh orange), or 2 (rotten orange). Every minute, any fresh orange that is 4-directionally adjacent to a rotten orange becomes rotten. Return the minimum number of minutes that must elapse until no cell has a fresh orange. If this is impossible, return -1.
 
 ```cpp
@@ -2797,7 +2797,7 @@ int orangesRotting(vector<vector<int>>& grid) {
 ---
 
 #### 239. Sliding Window Maximum
-**Link:** <a href="https://leetcode.com/problems/sliding-window-maximum/" target="_blank" rel="noopener noreferrer">https://leetcode.com/problems/sliding-window-maximum/</a>  
+**Link:** [https://leetcode.com/problems/sliding-window-maximum/](https://leetcode.com/problems/sliding-window-maximum/)  
 **Problem:** You are given an array of integers `nums`, there is a sliding window of size `k` which is moving from the very left of the array to the very right. You can only see the `k` numbers in the window. Each time the sliding window moves right by one position. Return the max sliding window.
 
 ```cpp
@@ -2840,7 +2840,7 @@ Window position                Max
 ---
 
 #### 973. K Closest Points to Origin
-**Link:** <a href="https://leetcode.com/problems/k-closest-points-to-origin/" target="_blank" rel="noopener noreferrer">https://leetcode.com/problems/k-closest-points-to-origin/</a>  
+**Link:** [https://leetcode.com/problems/k-closest-points-to-origin/](https://leetcode.com/problems/k-closest-points-to-origin/)  
 **Problem:** Given an array of `points` where `points[i] = [xi, yi]` represents a point on the X-Y plane and an integer `k`, return the `k` closest points to the origin (0, 0). The distance between two points on the X-Y plane is the Euclidean distance.
 
 ```cpp
@@ -2872,7 +2872,7 @@ Since sqrt(8) < sqrt(10), (-2, 2) is closer to the origin.
 ---
 
 #### 215. Kth Largest Element in an Array
-**Link:** <a href="https://leetcode.com/problems/kth-largest-element-in-an-array/" target="_blank" rel="noopener noreferrer">https://leetcode.com/problems/kth-largest-element-in-an-array/</a>  
+**Link:** [https://leetcode.com/problems/kth-largest-element-in-an-array/](https://leetcode.com/problems/kth-largest-element-in-an-array/)  
 **Problem:** Given an integer array `nums` and an integer `k`, return the kth largest element in the array. Note that it is the kth largest element in the sorted order, not the kth distinct element.
 
 ```cpp
@@ -2901,7 +2901,7 @@ int findKthLargest(vector<int>& nums, int k) {
 ---
 
 #### 295. Find Median from Data Stream
-**Link:** <a href="https://leetcode.com/problems/find-median-from-data-stream/" target="_blank" rel="noopener noreferrer">https://leetcode.com/problems/find-median-from-data-stream/</a>  
+**Link:** [https://leetcode.com/problems/find-median-from-data-stream/](https://leetcode.com/problems/find-median-from-data-stream/)  
 **Problem:** The MedianFinder class finds the median of a data stream. Implement the `addNum` and `findMedian` methods.
 
 ```cpp
@@ -2941,7 +2941,7 @@ medianFinder.findMedian(); // return 2.0
 ---
 
 #### 502. IPO
-**Link:** <a href="https://leetcode.com/problems/ipo/" target="_blank" rel="noopener noreferrer">https://leetcode.com/problems/ipo/</a>  
+**Link:** [https://leetcode.com/problems/ipo/](https://leetcode.com/problems/ipo/)  
 **Problem:** Suppose LeetCode will start its IPO soon. In order to sell a good price of its shares to Venture Capital, LeetCode would like to work on some projects to increase its capital before the IPO. Given `n` projects where the ith project has a pure profit `profits[i]` and a minimum capital `capital[i]` required, design a way to maximize the final capital, doing at most `k` distinct projects.
 
 ```cpp
@@ -2984,7 +2984,7 @@ Therefore, output the final maximized capital, which is 0 + 1 + 3 = 4.
 ---
 
 #### 104. Maximum Depth of Binary Tree
-**Link:** <a href="https://leetcode.com/problems/maximum-depth-of-binary-tree/" target="_blank" rel="noopener noreferrer">https://leetcode.com/problems/maximum-depth-of-binary-tree/</a>  
+**Link:** [https://leetcode.com/problems/maximum-depth-of-binary-tree/](https://leetcode.com/problems/maximum-depth-of-binary-tree/)  
 **Problem:** Given the `root` of a binary tree, return its maximum depth. A binary tree's maximum depth is the number of nodes along the longest path from the root node down to the farthest leaf node.
 
 ```cpp
@@ -3005,7 +3005,7 @@ int maxDepth(TreeNode* root) {
 ---
 
 #### 112. Path Sum
-**Link:** <a href="https://leetcode.com/problems/path-sum/" target="_blank" rel="noopener noreferrer">https://leetcode.com/problems/path-sum/</a>  
+**Link:** [https://leetcode.com/problems/path-sum/](https://leetcode.com/problems/path-sum/)  
 **Problem:** Given the `root` of a binary tree and an integer `targetSum`, return true if the tree has a root-to-leaf path such that adding up all the values along the path equals `targetSum`.
 
 ```cpp
@@ -3033,7 +3033,7 @@ bool hasPathSum(TreeNode* root, int targetSum) {
 ---
 
 #### 543. Diameter of Binary Tree
-**Link:** <a href="https://leetcode.com/problems/diameter-of-binary-tree/" target="_blank" rel="noopener noreferrer">https://leetcode.com/problems/diameter-of-binary-tree/</a>  
+**Link:** [https://leetcode.com/problems/diameter-of-binary-tree/](https://leetcode.com/problems/diameter-of-binary-tree/)  
 **Problem:** Given the `root` of a binary tree, return the length of the diameter of the tree. The diameter of a binary tree is the length of the longest path between any two nodes in a tree. This path may or may not pass through the root.
 
 ```cpp
@@ -3066,7 +3066,7 @@ int diameterOfBinaryTree(TreeNode* root) {
 ---
 
 #### 199. Binary Tree Right Side View
-**Link:** <a href="https://leetcode.com/problems/binary-tree-right-side-view/" target="_blank" rel="noopener noreferrer">https://leetcode.com/problems/binary-tree-right-side-view/</a>  
+**Link:** [https://leetcode.com/problems/binary-tree-right-side-view/](https://leetcode.com/problems/binary-tree-right-side-view/)  
 **Problem:** Given the `root` of a binary tree, imagine yourself standing on the right side of it, return the values of the nodes you can see ordered from top to bottom.
 
 ```cpp
@@ -3102,7 +3102,7 @@ vector<int> rightSideView(TreeNode* root) {
 ---
 
 #### 103. Binary Tree Zigzag Level Order Traversal
-**Link:** <a href="https://leetcode.com/problems/binary-tree-zigzag-level-order-traversal/" target="_blank" rel="noopener noreferrer">https://leetcode.com/problems/binary-tree-zigzag-level-order-traversal/</a>  
+**Link:** [https://leetcode.com/problems/binary-tree-zigzag-level-order-traversal/](https://leetcode.com/problems/binary-tree-zigzag-level-order-traversal/)  
 **Problem:** Given the `root` of a binary tree, return the zigzag level order traversal of its nodes' values (i.e., from left to right, then right to left for the next level and alternate between).
 
 ```cpp
@@ -3148,7 +3148,7 @@ vector<vector<int>> zigzagLevelOrder(TreeNode* root) {
 ---
 
 #### 98. Validate Binary Search Tree
-**Link:** <a href="https://leetcode.com/problems/validate-binary-search-tree/" target="_blank" rel="noopener noreferrer">https://leetcode.com/problems/validate-binary-search-tree/</a>  
+**Link:** [https://leetcode.com/problems/validate-binary-search-tree/](https://leetcode.com/problems/validate-binary-search-tree/)  
 **Problem:** Given the `root` of a binary tree, determine if it is a valid binary search tree (BST).
 
 ```cpp
@@ -3172,7 +3172,7 @@ bool isValidBST(TreeNode* root, long lo=LONG_MIN, long hi=LONG_MAX) {
 ---
 
 #### 230. Kth Smallest Element in a BST
-**Link:** <a href="https://leetcode.com/problems/kth-smallest-element-in-a-bst/" target="_blank" rel="noopener noreferrer">https://leetcode.com/problems/kth-smallest-element-in-a-bst/</a>  
+**Link:** [https://leetcode.com/problems/kth-smallest-element-in-a-bst/](https://leetcode.com/problems/kth-smallest-element-in-a-bst/)  
 **Problem:** Given the `root` of a binary search tree, and an integer `k`, return the kth smallest value (1-indexed) of all the values of the nodes in the tree.
 
 ```cpp
@@ -3200,7 +3200,7 @@ int kthSmallest(TreeNode* root, int k) {
 ---
 
 #### 235. Lowest Common Ancestor of a BST
-**Link:** <a href="https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-search-tree/" target="_blank" rel="noopener noreferrer">https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-search-tree/</a>  
+**Link:** [https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-search-tree/](https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-search-tree/)  
 **Problem:** Given a binary search tree (BST), find the lowest common ancestor (LCA) node of two given nodes in the BST.
 
 ```cpp
@@ -3228,7 +3228,7 @@ TreeNode* lowestCommonAncestor(TreeNode* root, TreeNode* p, TreeNode* q) {
 ---
 
 #### 105. Construct Binary Tree from Preorder and Inorder Traversal
-**Link:** <a href="https://leetcode.com/problems/construct-binary-tree-from-preorder-and-inorder-traversal/" target="_blank" rel="noopener noreferrer">https://leetcode.com/problems/construct-binary-tree-from-preorder-and-inorder-traversal/</a>  
+**Link:** [https://leetcode.com/problems/construct-binary-tree-from-preorder-and-inorder-traversal/](https://leetcode.com/problems/construct-binary-tree-from-preorder-and-inorder-traversal/)  
 **Problem:** Given two integer arrays `preorder` and `inorder` where `preorder` is the preorder traversal of a binary tree and `inorder` is the inorder traversal of the same tree, construct and return the binary tree.
 
 ```cpp
@@ -3263,7 +3263,7 @@ TreeNode* buildTree(vector<int>& preorder, vector<int>& inorder) {
 ---
 
 #### 337. House Robber III
-**Link:** <a href="https://leetcode.com/problems/house-robber-iii/" target="_blank" rel="noopener noreferrer">https://leetcode.com/problems/house-robber-iii/</a>  
+**Link:** [https://leetcode.com/problems/house-robber-iii/](https://leetcode.com/problems/house-robber-iii/)  
 **Problem:** The thief has found himself a new place for his thievery again. There is only one entrance to this area, called `root`. Besides the root, each house has one and only one parent house. After a tour, the smart thief realized that all houses in this place form a binary tree. Determine the maximum amount of money the thief can rob tonight without alerting the police.
 
 ```cpp
@@ -3294,7 +3294,7 @@ int rob(TreeNode* root) {
 ---
 
 #### 124. Binary Tree Maximum Path Sum
-**Link:** <a href="https://leetcode.com/problems/binary-tree-maximum-path-sum/" target="_blank" rel="noopener noreferrer">https://leetcode.com/problems/binary-tree-maximum-path-sum/</a>  
+**Link:** [https://leetcode.com/problems/binary-tree-maximum-path-sum/](https://leetcode.com/problems/binary-tree-maximum-path-sum/)  
 **Problem:** A path in a binary tree is a sequence of nodes where each pair of adjacent nodes in the sequence has an edge connecting them. A node can only appear in the sequence at most once. Note that the path does not need to pass through the root. Given the `root` of a binary tree, return the maximum path sum of any non-empty path.
 
 ```cpp
@@ -3331,7 +3331,7 @@ int maxPathSum(TreeNode* root) {
 ---
 
 #### 200. Number of Islands
-**Link:** <a href="https://leetcode.com/problems/number-of-islands/" target="_blank" rel="noopener noreferrer">https://leetcode.com/problems/number-of-islands/</a>  
+**Link:** [https://leetcode.com/problems/number-of-islands/](https://leetcode.com/problems/number-of-islands/)  
 **Problem:** Given an `m x n` 2D binary grid `grid` which represents a map of '1's (land) and '0's (water), return the number of islands. An island is surrounded by water and is formed by connecting adjacent lands horizontally or vertically.
 
 ```cpp
@@ -3359,7 +3359,7 @@ int numIslands(vector<vector<char>>& grid) {
 ---
 
 #### 133. Clone Graph
-**Link:** <a href="https://leetcode.com/problems/clone-graph/" target="_blank" rel="noopener noreferrer">https://leetcode.com/problems/clone-graph/</a>  
+**Link:** [https://leetcode.com/problems/clone-graph/](https://leetcode.com/problems/clone-graph/)  
 **Problem:** Given a reference of a node in a connected undirected graph, return a deep copy (clone) of the graph. Each node in the graph contains a value (int) and a list (List[Node]) of its neighbors.
 
 ```cpp
@@ -3396,7 +3396,7 @@ Node* cloneGraph(Node* node) {
 ---
 
 #### 695. Max Area of Island
-**Link:** <a href="https://leetcode.com/problems/max-area-of-island/" target="_blank" rel="noopener noreferrer">https://leetcode.com/problems/max-area-of-island/</a>  
+**Link:** [https://leetcode.com/problems/max-area-of-island/](https://leetcode.com/problems/max-area-of-island/)  
 **Problem:** You are given an `m x n` binary matrix `grid`. An island is a group of 1's (representing land) connected 4-directionally. Return the maximum area of an island in `grid`. If there is no island, return 0.
 
 ```cpp
@@ -3429,7 +3429,7 @@ int maxAreaOfIsland(vector<vector<int>>& grid) {
 ---
 
 #### 127. Word Ladder
-**Link:** <a href="https://leetcode.com/problems/word-ladder/" target="_blank" rel="noopener noreferrer">https://leetcode.com/problems/word-ladder/</a>  
+**Link:** [https://leetcode.com/problems/word-ladder/](https://leetcode.com/problems/word-ladder/)  
 **Problem:** A transformation sequence from word `beginWord` to word `endWord` using a dictionary `wordList` is a sequence of words where each adjacent pair differs by a single character, and each word is in the dictionary. Given `beginWord`, `endWord`, and `wordList`, return the number of words in the shortest transformation sequence, or 0 if no such sequence exists.
 
 ```cpp
@@ -3475,7 +3475,7 @@ int ladderLength(string beginWord, string endWord, vector<string>& wordList) {
 ---
 
 #### 207. Course Schedule
-**Link:** <a href="https://leetcode.com/problems/course-schedule/" target="_blank" rel="noopener noreferrer">https://leetcode.com/problems/course-schedule/</a>  
+**Link:** [https://leetcode.com/problems/course-schedule/](https://leetcode.com/problems/course-schedule/)  
 **Problem:** There are a total of `numCourses` courses you have to take, labeled from 0 to `numCourses - 1`. You are given an array `prerequisites` where `prerequisites[i] = [ai, bi]` indicates that you must take course `bi` first if you want to take course `ai`. Return true if you can finish all courses.
 
 ```cpp
@@ -3507,7 +3507,7 @@ bool canFinish(int numCourses, vector<vector<int>>& prerequisites) {
 ---
 
 #### 210. Course Schedule II
-**Link:** <a href="https://leetcode.com/problems/course-schedule-ii/" target="_blank" rel="noopener noreferrer">https://leetcode.com/problems/course-schedule-ii/</a>  
+**Link:** [https://leetcode.com/problems/course-schedule-ii/](https://leetcode.com/problems/course-schedule-ii/)  
 **Problem:** Return the ordering of courses you should take to finish all courses. If there are many valid answers, return any of them. If it is impossible to finish all courses, return an empty array.
 
 ```cpp
@@ -3548,7 +3548,7 @@ vector<int> findOrder(int numCourses, vector<vector<int>>& prerequisites) {
 ---
 
 #### 684. Redundant Connection
-**Link:** <a href="https://leetcode.com/problems/redundant-connection/" target="_blank" rel="noopener noreferrer">https://leetcode.com/problems/redundant-connection/</a>  
+**Link:** [https://leetcode.com/problems/redundant-connection/](https://leetcode.com/problems/redundant-connection/)  
 **Problem:** In this problem, a tree is an undirected graph that is connected and has no cycles. You are given a graph that started as a tree with `n` nodes labeled from 1 to `n`, with one additional edge added. Return an edge that can be removed so that the resulting graph is a tree of `n` nodes.
 
 ```cpp
@@ -3579,7 +3579,7 @@ vector<int> findRedundantConnection(vector<vector<int>>& edges) {
 ---
 
 #### 547. Number of Provinces
-**Link:** <a href="https://leetcode.com/problems/number-of-provinces/" target="_blank" rel="noopener noreferrer">https://leetcode.com/problems/number-of-provinces/</a>  
+**Link:** [https://leetcode.com/problems/number-of-provinces/](https://leetcode.com/problems/number-of-provinces/)  
 **Problem:** There are `n` cities. Some of them are connected, while some are not. If city `a` is connected directly with city `b`, and city `b` is connected directly with city `c`, then city `a` is connected indirectly with city `c`. A province is a group of directly or indirectly connected cities. Given an `n x n` matrix `isConnected`, return the total number of provinces.
 
 ```cpp
@@ -3615,7 +3615,7 @@ int findCircleNum(vector<vector<int>>& isConnected) {
 ---
 
 #### 743. Network Delay Time
-**Link:** <a href="https://leetcode.com/problems/network-delay-time/" target="_blank" rel="noopener noreferrer">https://leetcode.com/problems/network-delay-time/</a>  
+**Link:** [https://leetcode.com/problems/network-delay-time/](https://leetcode.com/problems/network-delay-time/)  
 **Problem:** You are given a network of `n` nodes, labeled from 1 to `n`. You are also given times, a list of travel times as directed edges `times[i] = (ui, vi, wi)`, where `ui` is the source node, `vi` is the target node, and `wi` is the time it takes for a signal to travel from source to target. Return the minimum time it takes for all the `n` nodes to receive the signal. If it is impossible for all the `n` nodes to receive the signal, return -1.
 
 ```cpp
@@ -3656,7 +3656,7 @@ int networkDelayTime(vector<vector<int>>& times, int n, int k) {
 ---
 
 #### 1631. Path With Minimum Effort
-**Link:** <a href="https://leetcode.com/problems/path-with-minimum-effort/" target="_blank" rel="noopener noreferrer">https://leetcode.com/problems/path-with-minimum-effort/</a>  
+**Link:** [https://leetcode.com/problems/path-with-minimum-effort/](https://leetcode.com/problems/path-with-minimum-effort/)  
 **Problem:** You are a hiker preparing for an upcoming hike. You are given `heights`, a 2D array of size `rows x columns`, where `heights[row][col]` represents the height of cell `(row, col)`. A route's effort is the maximum absolute difference in heights between two consecutive cells of the route. Return the minimum effort required to travel from the top-left cell to the bottom-right cell.
 
 ```cpp
@@ -3710,7 +3710,7 @@ int minimumEffortPath(vector<vector<int>>& heights) {
 ---
 
 #### 78. Subsets
-**Link:** <a href="https://leetcode.com/problems/subsets/" target="_blank" rel="noopener noreferrer">https://leetcode.com/problems/subsets/</a>  
+**Link:** [https://leetcode.com/problems/subsets/](https://leetcode.com/problems/subsets/)  
 **Problem:** Given an integer array `nums` of unique elements, return all possible subsets (the power set). The solution set must not contain duplicate subsets. Return the solution in any order.
 
 ```cpp
@@ -3741,7 +3741,7 @@ vector<vector<int>> subsets(vector<int>& nums) {
 ---
 
 #### 90. Subsets II
-**Link:** <a href="https://leetcode.com/problems/subsets-ii/" target="_blank" rel="noopener noreferrer">https://leetcode.com/problems/subsets-ii/</a>  
+**Link:** [https://leetcode.com/problems/subsets-ii/](https://leetcode.com/problems/subsets-ii/)  
 **Problem:** Given an integer array `nums` that may contain duplicates, return all possible subsets (the power set). The solution set must not contain duplicate subsets. Return the solution in any order.
 
 ```cpp
@@ -3778,7 +3778,7 @@ vector<vector<int>> subsetsWithDup(vector<int>& nums) {
 ---
 
 #### 46. Permutations
-**Link:** <a href="https://leetcode.com/problems/permutations/" target="_blank" rel="noopener noreferrer">https://leetcode.com/problems/permutations/</a>  
+**Link:** [https://leetcode.com/problems/permutations/](https://leetcode.com/problems/permutations/)  
 **Problem:** Given an array `nums` of distinct integers, return all the possible permutations. You can return the answer in any order.
 
 ```cpp
@@ -3812,7 +3812,7 @@ vector<vector<int>> permute(vector<int>& nums) {
 ---
 
 #### 47. Permutations II
-**Link:** <a href="https://leetcode.com/problems/permutations-ii/" target="_blank" rel="noopener noreferrer">https://leetcode.com/problems/permutations-ii/</a>  
+**Link:** [https://leetcode.com/problems/permutations-ii/](https://leetcode.com/problems/permutations-ii/)  
 **Problem:** Given a collection of numbers, `nums`, that might contain duplicates, return all possible unique permutations in any order.
 
 ```cpp
@@ -3851,7 +3851,7 @@ vector<vector<int>> permuteUnique(vector<int>& nums) {
 ---
 
 #### 39. Combination Sum
-**Link:** <a href="https://leetcode.com/problems/combination-sum/" target="_blank" rel="noopener noreferrer">https://leetcode.com/problems/combination-sum/</a>  
+**Link:** [https://leetcode.com/problems/combination-sum/](https://leetcode.com/problems/combination-sum/)  
 **Problem:** Given an array of distinct integers `candidates` and a target integer `target`, return a list of all unique combinations of candidates where the chosen numbers sum to target. You may return the combinations in any order. The same number may be chosen from candidates an unlimited number of times.
 
 ```cpp
@@ -3896,7 +3896,7 @@ These are the only two combinations.
 ---
 
 #### 79. Word Search
-**Link:** <a href="https://leetcode.com/problems/word-search/" target="_blank" rel="noopener noreferrer">https://leetcode.com/problems/word-search/</a>  
+**Link:** [https://leetcode.com/problems/word-search/](https://leetcode.com/problems/word-search/)  
 **Problem:** Given an `m x n` grid of characters `board` and a string `word`, return true if `word` exists in the grid. The word can be constructed from letters of sequentially adjacent cells, where adjacent cells are horizontally or vertically neighboring. The same letter cell may not be used more than once.
 
 ```cpp
@@ -3930,7 +3930,7 @@ bool exist(vector<vector<char>>& board, string word) {
 ---
 
 #### 51. N-Queens
-**Link:** <a href="https://leetcode.com/problems/n-queens/" target="_blank" rel="noopener noreferrer">https://leetcode.com/problems/n-queens/</a>  
+**Link:** [https://leetcode.com/problems/n-queens/](https://leetcode.com/problems/n-queens/)  
 **Problem:** The n-queens puzzle is the problem of placing `n` queens on an `n x n` chessboard such that no two queens attack each other. Given an integer `n`, return all distinct solutions to the n-queens puzzle. You may return the answer in any order.
 
 ```cpp
@@ -3972,7 +3972,7 @@ vector<vector<string>> solveNQueens(int n) {
 ---
 
 #### 70. Climbing Stairs
-**Link:** <a href="https://leetcode.com/problems/climbing-stairs/" target="_blank" rel="noopener noreferrer">https://leetcode.com/problems/climbing-stairs/</a>  
+**Link:** [https://leetcode.com/problems/climbing-stairs/](https://leetcode.com/problems/climbing-stairs/)  
 **Problem:** You are climbing a staircase. It takes `n` steps to reach the top. Each time you can either climb 1 or 2 steps. In how many distinct ways can you climb to the top?
 
 ```cpp
@@ -4002,7 +4002,7 @@ int climbStairs(int n) {
 ---
 
 #### 198. House Robber
-**Link:** <a href="https://leetcode.com/problems/house-robber/" target="_blank" rel="noopener noreferrer">https://leetcode.com/problems/house-robber/</a>  
+**Link:** [https://leetcode.com/problems/house-robber/](https://leetcode.com/problems/house-robber/)  
 **Problem:** You are a professional robber planning to rob houses along a street. Each house has a certain amount of money stashed. You cannot rob two adjacent houses. Given an integer array `nums` representing the amount of money of each house, return the maximum amount of money you can rob tonight without alerting the police.
 
 ```cpp
@@ -4028,7 +4028,7 @@ Total amount you can rob = 2 + 9 + 1 = 12.
 ---
 
 #### 322. Coin Change
-**Link:** <a href="https://leetcode.com/problems/coin-change/" target="_blank" rel="noopener noreferrer">https://leetcode.com/problems/coin-change/</a>  
+**Link:** [https://leetcode.com/problems/coin-change/](https://leetcode.com/problems/coin-change/)  
 **Problem:** You are given an integer array `coins` representing coins of different denominations and an integer `amount` representing a total amount of money. Return the fewest number of coins that you need to make up that amount. If that amount of money cannot be made up by any combination of the coins, return -1.
 
 ```cpp
@@ -4062,7 +4062,7 @@ int coinChange(vector<int>& coins, int amount) {
 ---
 
 #### 62. Unique Paths
-**Link:** <a href="https://leetcode.com/problems/unique-paths/" target="_blank" rel="noopener noreferrer">https://leetcode.com/problems/unique-paths/</a>  
+**Link:** [https://leetcode.com/problems/unique-paths/](https://leetcode.com/problems/unique-paths/)  
 **Problem:** There is a robot on an `m x n` grid. The robot is initially located at the top-left corner and wants to reach the bottom-right corner. The robot can only move either down or right at any point in time. How many possible unique paths are there?
 
 ```cpp
@@ -4088,7 +4088,7 @@ int uniquePaths(int m, int n) {
 ---
 
 #### 72. Edit Distance
-**Link:** <a href="https://leetcode.com/problems/edit-distance/" target="_blank" rel="noopener noreferrer">https://leetcode.com/problems/edit-distance/</a>  
+**Link:** [https://leetcode.com/problems/edit-distance/](https://leetcode.com/problems/edit-distance/)  
 **Problem:** Given two strings `word1` and `word2`, return the minimum number of operations required to convert `word1` to `word2`. You have three operations: insert a character, delete a character, or replace a character.
 
 ```cpp
@@ -4130,7 +4130,7 @@ exection -> execution (insert 'u')
 ---
 
 #### 416. Partition Equal Subset Sum
-**Link:** <a href="https://leetcode.com/problems/partition-equal-subset-sum/" target="_blank" rel="noopener noreferrer">https://leetcode.com/problems/partition-equal-subset-sum/</a>  
+**Link:** [https://leetcode.com/problems/partition-equal-subset-sum/](https://leetcode.com/problems/partition-equal-subset-sum/)  
 **Problem:** Given an integer array `nums`, return true if you can partition the array into two subsets such that the sum of the elements in both subsets is equal or false otherwise.
 
 ```cpp
@@ -4158,7 +4158,7 @@ bool canPartition(vector<int>& nums) {
 ---
 
 #### 494. Target Sum
-**Link:** <a href="https://leetcode.com/problems/target-sum/" target="_blank" rel="noopener noreferrer">https://leetcode.com/problems/target-sum/</a>  
+**Link:** [https://leetcode.com/problems/target-sum/](https://leetcode.com/problems/target-sum/)  
 **Problem:** You are given an integer array `nums` and an integer `target`. You want to build an expression out of nums by adding one of the symbols '+' and '-' before each integer in nums and then concatenate all the integers. Return the number of different expressions that you can build which evaluates to `target`.
 
 ```cpp
@@ -4198,7 +4198,7 @@ int findTargetSumWays(vector<int>& nums, int target) {
 ---
 
 #### 300. Longest Increasing Subsequence
-**Link:** <a href="https://leetcode.com/problems/longest-increasing-subsequence/" target="_blank" rel="noopener noreferrer">https://leetcode.com/problems/longest-increasing-subsequence/</a>  
+**Link:** [https://leetcode.com/problems/longest-increasing-subsequence/](https://leetcode.com/problems/longest-increasing-subsequence/)  
 **Problem:** Given an integer array `nums`, return the length of the longest strictly increasing subsequence.
 
 ```cpp
@@ -4233,7 +4233,7 @@ int lengthOfLIS(vector<int>& nums) {
 ---
 
 #### 516. Longest Palindromic Subsequence
-**Link:** <a href="https://leetcode.com/problems/longest-palindromic-subsequence/" target="_blank" rel="noopener noreferrer">https://leetcode.com/problems/longest-palindromic-subsequence/</a>  
+**Link:** [https://leetcode.com/problems/longest-palindromic-subsequence/](https://leetcode.com/problems/longest-palindromic-subsequence/)  
 **Problem:** Given a string `s`, find the longest palindromic subsequence's length in `s`.
 
 ```cpp
@@ -4263,7 +4263,7 @@ int longestPalindromeSubseq(string s) {
 ---
 
 #### 647. Palindromic Substrings
-**Link:** <a href="https://leetcode.com/problems/palindromic-substrings/" target="_blank" rel="noopener noreferrer">https://leetcode.com/problems/palindromic-substrings/</a>  
+**Link:** [https://leetcode.com/problems/palindromic-substrings/](https://leetcode.com/problems/palindromic-substrings/)  
 **Problem:** Given a string `s`, return the number of palindromic substrings in it. A string is a palindrome when it reads the same backward as forward.
 
 ```cpp
@@ -4294,7 +4294,7 @@ int countSubstrings(string s) {
 ---
 
 #### 312. Burst Balloons
-**Link:** <a href="https://leetcode.com/problems/burst-balloons/" target="_blank" rel="noopener noreferrer">https://leetcode.com/problems/burst-balloons/</a>  
+**Link:** [https://leetcode.com/problems/burst-balloons/](https://leetcode.com/problems/burst-balloons/)  
 **Problem:** You are given `n` balloons, indexed from 0 to `n - 1`. Each balloon is painted with a number on it represented by an array `nums`. You are asked to burst all the balloons. If you burst the ith balloon, you will get `nums[i - 1] * nums[i] * nums[i + 1]` coins. Return the maximum coins you can collect by bursting the balloons wisely.
 
 ```cpp
@@ -4331,7 +4331,7 @@ coins =  3*1*5    +   3*5*8   +  1*3*8  + 1*8*1 = 167
 ---
 
 #### 452. Minimum Number of Arrows to Burst Balloons
-**Link:** <a href="https://leetcode.com/problems/minimum-number-of-arrows-to-burst-balloons/" target="_blank" rel="noopener noreferrer">https://leetcode.com/problems/minimum-number-of-arrows-to-burst-balloons/</a>  
+**Link:** [https://leetcode.com/problems/minimum-number-of-arrows-to-burst-balloons/](https://leetcode.com/problems/minimum-number-of-arrows-to-burst-balloons/)  
 **Problem:** There are some spherical balloons taped onto a flat wall. The balloons are represented by a 2D array `points` where `points[i] = [xstart, xend]`. An arrow can be shot up at any x-coordinate. A balloon with `xstart` and `xend` is burst by an arrow shot at x if `xstart <= x <= xend`. Return the minimum number of arrows that must be shot to burst all balloons.
 
 ```cpp
@@ -4363,7 +4363,7 @@ int findMinArrowShots(vector<vector<int>>& points) {
 ---
 
 #### 55. Jump Game
-**Link:** <a href="https://leetcode.com/problems/jump-game/" target="_blank" rel="noopener noreferrer">https://leetcode.com/problems/jump-game/</a>  
+**Link:** [https://leetcode.com/problems/jump-game/](https://leetcode.com/problems/jump-game/)  
 **Problem:** You are given an integer array `nums`. You are initially positioned at the first index of the array. Each element in the array represents your maximum jump length at that position. Return true if you can reach the last index, or false otherwise.
 
 ```cpp
@@ -4390,7 +4390,7 @@ bool canJump(vector<int>& nums) {
 ---
 
 #### 45. Jump Game II
-**Link:** <a href="https://leetcode.com/problems/jump-game-ii/" target="_blank" rel="noopener noreferrer">https://leetcode.com/problems/jump-game-ii/</a>  
+**Link:** [https://leetcode.com/problems/jump-game-ii/](https://leetcode.com/problems/jump-game-ii/)  
 **Problem:** You are given a 0-indexed array of integers `nums` of length `n`. You are initially positioned at `nums[0]`. Each element `nums[i]` represents the maximum length of a forward jump from index `i`. Return the minimum number of jumps to reach `nums[n - 1]`.
 
 ```cpp
@@ -4422,7 +4422,7 @@ int jump(vector<int>& nums) {
 ---
 
 #### 136. Single Number
-**Link:** <a href="https://leetcode.com/problems/single-number/" target="_blank" rel="noopener noreferrer">https://leetcode.com/problems/single-number/</a>  
+**Link:** [https://leetcode.com/problems/single-number/](https://leetcode.com/problems/single-number/)  
 **Problem:** Given a non-empty array of integers `nums`, every element appears twice except for one. Find that single one. You must implement a solution with a linear runtime complexity and use only constant extra space.
 
 ```cpp
@@ -4444,7 +4444,7 @@ int singleNumber(vector<int>& nums) {
 ---
 
 #### 268. Missing Number
-**Link:** <a href="https://leetcode.com/problems/missing-number/" target="_blank" rel="noopener noreferrer">https://leetcode.com/problems/missing-number/</a>  
+**Link:** [https://leetcode.com/problems/missing-number/](https://leetcode.com/problems/missing-number/)  
 **Problem:** Given an array `nums` containing `n` distinct numbers in the range `[0, n]`, return the only number in the range that is missing from the array.
 
 ```cpp
@@ -4466,7 +4466,7 @@ int missingNumber(vector<int>& nums) {
 ---
 
 #### 260. Single Number III
-**Link:** <a href="https://leetcode.com/problems/single-number-iii/" target="_blank" rel="noopener noreferrer">https://leetcode.com/problems/single-number-iii/</a>  
+**Link:** [https://leetcode.com/problems/single-number-iii/](https://leetcode.com/problems/single-number-iii/)  
 **Problem:** Given an integer array `nums`, in which exactly two elements appear only once and all the other elements appear exactly twice. Find the two elements that appear only once. You can return the answer in any order.
 
 ```cpp
@@ -4499,7 +4499,7 @@ vector<int> singleNumber(vector<int>& nums) {
 ---
 
 #### 338. Counting Bits
-**Link:** <a href="https://leetcode.com/problems/counting-bits/" target="_blank" rel="noopener noreferrer">https://leetcode.com/problems/counting-bits/</a>  
+**Link:** [https://leetcode.com/problems/counting-bits/](https://leetcode.com/problems/counting-bits/)  
 **Problem:** Given an integer `n`, return an array `ans` of length `n + 1` such that for each `i` (0 <= i <= n), `ans[i]` is the number of 1's in the binary representation of `i`.
 
 ```cpp
@@ -4525,7 +4525,7 @@ vector<int> countBits(int n) {
 ---
 
 #### 318. Maximum Product of Word Lengths
-**Link:** <a href="https://leetcode.com/problems/maximum-product-of-word-lengths/" target="_blank" rel="noopener noreferrer">https://leetcode.com/problems/maximum-product-of-word-lengths/</a>  
+**Link:** [https://leetcode.com/problems/maximum-product-of-word-lengths/](https://leetcode.com/problems/maximum-product-of-word-lengths/)  
 **Problem:** Given a string array `words`, return the maximum value of `length(word[i]) * length(word[j])` where the two words do not share common letters. If no such two words exist, return 0.
 
 ```cpp
@@ -4559,7 +4559,7 @@ int maxProduct(vector<string>& words) {
 ---
 
 #### 307. Range Sum Query - Mutable
-**Link:** <a href="https://leetcode.com/problems/range-sum-query-mutable/" target="_blank" rel="noopener noreferrer">https://leetcode.com/problems/range-sum-query-mutable/</a>  
+**Link:** [https://leetcode.com/problems/range-sum-query-mutable/](https://leetcode.com/problems/range-sum-query-mutable/)  
 **Problem:** Given an integer array `nums`, handle multiple queries of the following types: update the value of an element in `nums`, and calculate the sum of the elements of `nums` between indices `left` and `right` inclusive.
 
 ```cpp
@@ -4593,7 +4593,7 @@ numArray.sumRange(0, 2); // return 1 + 2 + 5 = 8
 ---
 
 #### 315. Count of Smaller Numbers After Self
-**Link:** <a href="https://leetcode.com/problems/count-of-smaller-numbers-after-self/" target="_blank" rel="noopener noreferrer">https://leetcode.com/problems/count-of-smaller-numbers-after-self/</a>  
+**Link:** [https://leetcode.com/problems/count-of-smaller-numbers-after-self/](https://leetcode.com/problems/count-of-smaller-numbers-after-self/)  
 **Problem:** Given an integer array `nums`, return an integer array `counts` where `counts[i]` is the number of smaller elements to the right of `nums[i]`.
 
 ```cpp
@@ -4640,7 +4640,7 @@ To the right of 1 there is 0 smaller element.
 ---
 
 #### 542. 01 Matrix
-**Link:** <a href="https://leetcode.com/problems/01-matrix/" target="_blank" rel="noopener noreferrer">https://leetcode.com/problems/01-matrix/</a>  
+**Link:** [https://leetcode.com/problems/01-matrix/](https://leetcode.com/problems/01-matrix/)  
 **Problem:** Given an `m x n` binary matrix `mat`, return the distance of the nearest 0 for each cell. The distance between two adjacent cells is 1.
 
 ```cpp
@@ -4675,7 +4675,7 @@ vector<vector<int>> updateMatrix(vector<vector<int>>& mat) {
 ---
 
 #### 417. Pacific Atlantic Water Flow
-**Link:** <a href="https://leetcode.com/problems/pacific-atlantic-water-flow/" target="_blank" rel="noopener noreferrer">https://leetcode.com/problems/pacific-atlantic-water-flow/</a>  
+**Link:** [https://leetcode.com/problems/pacific-atlantic-water-flow/](https://leetcode.com/problems/pacific-atlantic-water-flow/)  
 **Problem:** There is an `m x n` rectangular island that borders both the Pacific Ocean and Atlantic Ocean. The Pacific Ocean touches the island's left and top edges, and the Atlantic Ocean touches the island's right and bottom edges. Water can flow to a neighboring cell (north, south, east, west) if the neighboring cell's height is less than or equal to the current cell's height. Return a list of grid coordinates `result` where `result[i] = [ri, ci]` denotes that rain water can flow from cell `(ri, ci)` to both the Pacific and Atlantic oceans.
 
 ```cpp
@@ -4718,7 +4718,7 @@ vector<vector<int>> pacificAtlantic(vector<vector<int>>& heights) {
 ---
 
 #### 787. Cheapest Flights Within K Stops
-**Link:** <a href="https://leetcode.com/problems/cheapest-flights-within-k-stops/" target="_blank" rel="noopener noreferrer">https://leetcode.com/problems/cheapest-flights-within-k-stops/</a>  
+**Link:** [https://leetcode.com/problems/cheapest-flights-within-k-stops/](https://leetcode.com/problems/cheapest-flights-within-k-stops/)  
 **Problem:** There are `n` cities connected by some number of flights. You are given an array `flights` where `flights[i] = [fromi, toi, pricei]`. You are also given three integers `src`, `dst`, and `k`. Return the cheapest price from `src` to `dst` with at most `k` stops. If there is no such route, return -1.
 
 ```cpp
@@ -4756,7 +4756,7 @@ int findCheapestPrice(int n, vector<vector<int>>& flights, int src, int dst, int
 ---
 
 #### Kruskal's MST (classic template)
-**Link:** <a href="https://leetcode.com/problems/min-cost-to-connect-all-points/" target="_blank" rel="noopener noreferrer">https://leetcode.com/problems/min-cost-to-connect-all-points/</a>  
+**Link:** [https://leetcode.com/problems/min-cost-to-connect-all-points/](https://leetcode.com/problems/min-cost-to-connect-all-points/)  
 **Problem:** You are given an array `points` representing integer coordinates of some points on a 2D-plane, where `points[i] = [xi, yi]`. The cost of connecting two points is the Manhattan distance between them. Return the minimum cost to make all points connected.
 
 ```cpp
@@ -4798,7 +4798,7 @@ int minCostConnectPoints(vector<vector<int>>& points) {
 ---
 
 #### 847. Shortest Path Visiting All Nodes
-**Link:** <a href="https://leetcode.com/problems/shortest-path-visiting-all-nodes/" target="_blank" rel="noopener noreferrer">https://leetcode.com/problems/shortest-path-visiting-all-nodes/</a>  
+**Link:** [https://leetcode.com/problems/shortest-path-visiting-all-nodes/](https://leetcode.com/problems/shortest-path-visiting-all-nodes/)  
 **Problem:** You have an undirected, connected graph of `n` nodes labeled from 0 to `n - 1`. Given an array `graph` where `graph[i]` is a list of all the nodes connected with node `i` by an edge, return the length of the shortest path that visits every node. You may start and stop at any node, you may revisit nodes multiple times, and you can reuse edges.
 
 ```cpp
@@ -4839,7 +4839,7 @@ int shortestPathLength(vector<vector<int>>& graph) {
 ---
 
 #### 287. Find the Duplicate Number (Floyd's)
-**Link:** <a href="https://leetcode.com/problems/find-the-duplicate-number/" target="_blank" rel="noopener noreferrer">https://leetcode.com/problems/find-the-duplicate-number/</a>  
+**Link:** [https://leetcode.com/problems/find-the-duplicate-number/](https://leetcode.com/problems/find-the-duplicate-number/)  
 **Problem:** Given an array of integers `nums` containing `n + 1` integers where each integer is in the range `[1, n]`, there is only one repeated number — find it using Floyd's cycle detection without modifying the array.
 
 ```cpp
